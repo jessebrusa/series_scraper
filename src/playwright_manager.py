@@ -15,8 +15,6 @@ class PlaywrightManager(PlaywrightSuper):
 
     def compile_series_data(self):
         def choose_series(series_list):
-            for i, series in enumerate(series_list):
-                print(f'{i+1}: {series["title"]}')
             result = 1  
             selected_series = series_list[result]
             return selected_series
@@ -27,8 +25,8 @@ class PlaywrightManager(PlaywrightSuper):
         selected_series = choose_series(series_list)
         self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
         episodes = compile_series_data.get_episode_titles()
-        for episode in episodes:
-            print(episode['title'])
-            self.go_to(episode['href'])
-            video_play_button_selector = '#video-js > button'
-            self.click(video_play_button_selector)
+        episode_data = compile_series_data.get_episode_data()
+        for i in range(len(episodes)):
+            print(episodes[i]['title'])
+            self.go_to(episodes[i]['href'])
+            print(episode_data[i])
