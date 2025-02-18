@@ -32,14 +32,14 @@ class Compile_Series_Data(PlaywrightSuper):
         return self.series_titles
 
     def get_episode_titles(self):
-        def collect_episode_list():
-            episode_selector = '#catlist-listview li a'
-            self.page.wait_for_selector(episode_selector)
-            episode_list = self.collect_selectors(episode_selector)
-            for episode in episode_list:
-                self.episode_titles.append({
-                    'title': episode.text_content().strip(),
-                    'href': episode.get_attribute('href')
-                })
-            print(self.episode_titles)
-        collect_episode_list()
+        episode_selector = '#catlist-listview li a'
+        self.page.wait_for_selector(episode_selector)
+        episode_list = self.collect_selectors(episode_selector)
+        for episode in episode_list:
+            self.episode_titles.append({
+                'title': episode.text_content().strip(),
+                'href': episode.get_attribute('href')
+            })
+        self.episode_titles.reverse()
+
+        return self.episode_titles

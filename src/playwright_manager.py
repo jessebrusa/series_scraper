@@ -26,4 +26,9 @@ class PlaywrightManager(PlaywrightSuper):
         series_list = compile_series_data.search_for_series(test_title)
         selected_series = choose_series(series_list)
         self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
-        compile_series_data.get_episode_titles()
+        episodes = compile_series_data.get_episode_titles()
+        for episode in episodes:
+            print(episode['title'])
+            self.go_to(episode['href'])
+            video_play_button_selector = '#video-js > button'
+            self.click(video_play_button_selector)
