@@ -4,7 +4,7 @@ class Compile_Series_Data(PlaywrightSuper):
     def __init__(self, page):
         super().__init__()
         self.page = page
-        self.series_titles = {}
+        self.series_titles = []
         self.episode_titles = []
 
     def search_for_series(self, title):
@@ -22,7 +22,10 @@ class Compile_Series_Data(PlaywrightSuper):
             self.page.wait_for_selector(title_selector)
             title_selector_list = self.collect_selectors(title_selector)
             for title in title_selector_list:
-                self.series_titles[title.text_content().strip()] = title.get_attribute('href')
+                self.series_titles.append({
+                    'title': title.text_content().strip(),
+                    'href': title.get_attribute('href')
+                })
 
         search_title(title)
         collect_series_titles()
