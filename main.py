@@ -1,9 +1,7 @@
-from src.data_manager import DataManager  
 from src.playwright_manager import PlaywrightManager
 
 class Main:
     def __init__(self):
-        self.data_manager = DataManager()
         self.playwright_manager = PlaywrightManager()
 
     def run(self):
