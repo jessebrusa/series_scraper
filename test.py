@@ -26,6 +26,26 @@ class VideoDownloader:
         else:
             print("Video URL not found")
 
+    def get_first_iframe(self, page):
+        # Wait for the iframe to be available and switch to it
+        iframe_selector = 'iframe'
+        page.wait_for_selector(iframe_selector)
+        iframe_element = page.query_selector(iframe_selector)
+        
+        # Ensure the iframe element is found
+        if iframe_element is None:
+            print("Iframe element not found")
+            return None
+        
+        iframe = iframe_element.content_frame()
+        
+        # Ensure the iframe is found
+        if iframe is None:
+            print("Iframe not found")
+            return None
+        
+        return iframe
+
     def download_video(self):
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=False)
@@ -35,30 +55,22 @@ class VideoDownloader:
             
             page.goto(self.url)
             
-            # Wait for the iframe to be available and switch to it
-            iframe_selector = '#frameNewcizgifilmuploads0'
-            page.wait_for_selector(iframe_selector)
-            iframe = None
-            for frame in page.frames:
-                if frame.url.startswith('https://embed.watchanimesub.net/inc/embed/video-js.php'):
-                    iframe = frame
-                    break
-            
-            # Ensure the iframe is found
+            # Get the first iframe
+            iframe = self.get_first_iframe(page)
             if iframe is None:
-                print("Iframe not found")
                 browser.close()
                 return
             
-            # Wait for the video element to be available within the iframe
-            video_selector = 'video'
+            # Wait for the video element to be available within the iframe's body
+            video_selector = '#video-js_html5_api'
             iframe.wait_for_selector(video_selector)
             
-            # Click the play button to generate the video URL using JavaScript within the iframe
-            iframe.evaluate('document.querySelector(\'button[title="Play Video"]\').click()')
+            # Wait for the src attribute to be set on the video element
+            iframe.wait_for_function('document.querySelector("#video-js_html5_api").getAttribute("src") !== null')
             
-            # Wait for the network request to complete
-            page.wait_for_timeout(10000)  # Adjust the timeout as needed
+            # Extract the video URL from the video element's src attribute
+            self.video_url = iframe.evaluate('document.querySelector("#video-js_html5_api").getAttribute("src")')
+            print(f"Video URL: {self.video_url}")
             
             # Download the video file
             self.download_video_file()
