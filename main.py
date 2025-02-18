@@ -13,6 +13,7 @@ class Main:
         self.page.goto('https://www.wcostream.tv/')
 
         self.playwright_manager.compile_series_data()
+        self.playwright_manager.download_episodes()
 
         self.playwright_manager.close_browser()
 
