@@ -27,9 +27,7 @@ class PlaywrightManager(PlaywrightSuper):
         self.episodes = compile_series_data.get_episode_titles()
         self.episode_data = compile_series_data.get_episode_data()
 
-    def download_episodes(self):
-        print(self.episode_data)
-   
+    def download_episodes(self):   
         for i in range(120, 121):
             print(self.episodes[i]['title'])
             self.go_to(self.episodes[i]['href'])

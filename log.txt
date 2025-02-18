@@ -1,0 +1,12 @@
+Waiting for selector took 0.0273 seconds.
+Collecting selectors took 0.2024 seconds.
+Processing episode list took 5.4746 seconds.
+Function 'get_episode_titles' took 5.7043 seconds to execute.
+Waiting for selector took 0.0000 seconds.
+Collecting selectors took 0.2154 seconds.
+Processing episode list took 5.3650 seconds.
+Function 'get_episode_titles' took 5.5804 seconds to execute.
+Waiting for selector took 0.0287 seconds.
+Collecting selectors took 0.1946 seconds.
+Processing episode list took 5.4209 seconds.
+Function 'get_episode_titles' took 5.6453 seconds to execute.
