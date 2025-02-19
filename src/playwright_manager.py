@@ -2,6 +2,7 @@ from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
 from .playwright_modules.compile_series_data import CompileSeriesData
 from .playwright_modules.extract_video_url import ExtractVideoUrl
+from .playwright_modules.video_downloader import VideoDownloader
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self):
@@ -9,10 +10,28 @@ class PlaywrightManager(PlaywrightSuper):
         self.playwright = sync_playwright().start()
         self.browser = None
         self.page = None
+        self.headers = {
+            'authority': 'lb.watchanimesub.net',
+            'method': 'GET',
+            'path': '/getvid?evid=2thBDdoDHeFGvmCBSouLs1bCrtku-akOqzoQcWahpjlyoXm7i4Jk_ummZjE9gfNc5c0S27nkI3cC2MiMc9Xb9or52kpMHqj4ZnPtClAMh99eNbEuwOAtuRcTYtgSN7Zmo-av1N-EV6JbwaAKGUyiBmTT9XzYgG9cPMzBtSBMvt8CHgAnnPFcyLBSzI-pv1YmlRGHIdmbH1mbURbJUT0EIJ8CF63TuyVkJBn4d3uw8FzzJokjbqPiXl22CMeSa9Wbb_mb5AtI1oIM72oGTbbDdkVJILQC1Pu6L0EglQO-djJLLFhjy1i5qMcYpHnnfNnr3IkutY2ueJpaViWGTye0O_6nH7F9LvQrtqgrFizTaCefXJ9U1S-2CC4s862TP8M2qRh2EmtJuDYmNXsaLAjbtgib1uiYvjZv9A_KyYRS6e7xaS2Aua9bwMqFKkTOjs2P1wF4p_q_LWFrLeeacfOGMw&json',
+            'scheme': 'https',
+            'accept': '*/*',
+            'accept-encoding': 'gzip, deflate, br, zstd',
+            'accept-language': 'en-US,en;q=0.9',
+            'origin': 'https://embed.watchanimesub.net',
+            'referer': 'https://embed.watchanimesub.net/',
+            'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"macOS"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-site',
+            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+        }
 
     def start_browser(self, headless=True):
         self.browser = self.playwright.chromium.launch(headless=headless)
-        self.page = self.browser.new_page()
+        self.page = self.browser.new_page(extra_http_headers=self.headers)
 
     def compile_series_data(self):
         def choose_series(series_list):
@@ -45,5 +64,11 @@ class PlaywrightManager(PlaywrightSuper):
             output_file_name = f's{season_number}e{episode_number}.mp4'
             print(output_file_name)
     
-            extracted_video_url = ExtractVideoUrl(self.page).extract()
-            print(extracted_video_url)
+            extractor = ExtractVideoUrl(self.page)
+            video_url = extractor.extract_video_url()
+            print(f"Extracted video URL: {video_url}")
+
+            if video_url:
+                VideoDownloader(video_url).download_video(output_file_name)
+            else:
+                print("Failed to extract video URL")

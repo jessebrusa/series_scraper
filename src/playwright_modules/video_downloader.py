@@ -1,86 +1,48 @@
 import yt_dlp
-from playwright.sync_api import sync_playwright
-from bs4 import BeautifulSoup
 
 class VideoDownloader:
-    def __init__(self, page):
-        self.page = page
-        self.video_url = None
-        self.headers = {}
-        print("VideoDownloader initialized")
+    def __init__(self, video_url):
+        self.video_url = video_url
+        self.headers = {
+            'authority': 'lb.watchanimesub.net',
+            'method': 'GET',
+            'path': '/getvid?evid=2thBDdoDHeFGvmCBSouLs1bCrtku-akOqzoQcWahpjlyoXm7i4Jk_ummZjE9gfNc5c0S27nkI3cC2MiMc9Xb9or52kpMHqj4ZnPtClAMh99eNbEuwOAtuRcTYtgSN7Zmo-av1N-EV6JbwaAKGUyiBmTT9XzYgG9cPMzBtSBMvt8CHgAnnPFcyLBSzI-pv1YmlRGHIdmbH1mbURbJUT0EIJ8CF63TuyVkJBn4d3uw8FzzJokjbqPiXl22CMeSa9Wbb_mb5AtI1oIM72oGTbbDdkVJILQC1Pu6L0EglQO-djJLLFhjy1i5qMcYpHnnfNnr3IkutY2ueJpaViWGTye0O_6nH7F9LvQrtqgrFizTaCefXJ9U1S-2CC4s862TP8M2qRh2EmtJuDYmNXsaLAjbtgib1uiYvjZv9A_KyYRS6e7xaS2Aua9bwMqFKkTOjs2P1wF4p_q_LWFrLeeacfOGMw&json',
+            'scheme': 'https',
+            'accept': '*/*',
+            'accept-encoding': 'gzip, deflate, br, zstd',
+            'accept-language': 'en-US,en;q=0.9',
+            'origin': 'https://embed.watchanimesub.net',
+            'referer': 'https://embed.watchanimesub.net/',
+            'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"macOS"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-site',
+            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+        }
 
-    def handle_request(self, request):
-        if 'getvid' in request.url:
-            self.video_url = request.url
-            self.headers = request.headers
-
-    def download_video_file(self, output_file='video.mp4'):
+    def download_video(self, output_file='video.mp4'):
+        # Debugging: Print the URL and headers
+        print(f"Video URL: {self.video_url}")
+        print(f"Headers: {self.headers}")
+        
         if self.video_url:
             # Download the video using yt-dlp with headers
             ydl_opts = {
                 'outtmpl': output_file,  # Specify the output file name
                 'http_headers': self.headers,  # Pass the headers to yt-dlp
             }
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([self.video_url])
-            print("Video downloaded successfully")
+            try:
+                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                    ydl.download([self.video_url])
+                print("Video downloaded successfully")
+            except yt_dlp.utils.DownloadError as e:
+                print(f"Download error: {e}")
         else:
             print("Video URL not found")
 
-    def get_first_iframe(self):
-        # Wait for the iframe with the specific id to be available and switch to it
-        iframe_selector = '#frameNewcizgifilmuploads0'
-        self.page.wait_for_selector(iframe_selector)
-        iframe_element = self.page.query_selector(iframe_selector)
-        
-        # Ensure the iframe element is found
-        if iframe_element is None:
-            print("Iframe element not found")
-            return None
-        
-        iframe = iframe_element.content_frame()
-        
-        # Ensure the iframe is found
-        if iframe is None:
-            print("Iframe not found")
-            return None
-        
-        return iframe
-
-    def download_video(self, output_file='video.mp4'):
-        self.page.on('request', self.handle_request)
-        
-        # Get the first iframe
-        iframe = self.get_first_iframe()
-        if iframe is None:
-            return
-        
-        # Get the HTML content of the iframe
-        iframe_content = iframe.content()
-        
-        # Use BeautifulSoup to parse the HTML content
-        soup = BeautifulSoup(iframe_content, 'html.parser')
-        
-        # Find the video tag with the specific id within the iframe
-        video_tag = soup.find('video', id='video-js_html5_api')
-        
-        # Extract the video URL from the video element's src attribute
-        if video_tag:
-            self.video_url = video_tag.get('src')
-            print(f"Video URL: {self.video_url}")
-        
-        # Download the video file
-        self.download_video_file(output_file)
-
 if __name__ == "__main__":
-    episode_url = 'https://www.wcostream.tv/naruto-shippuden-episode-123-english-dubbed-2'
-    
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        page = browser.new_page()
-        page.goto(episode_url)
-        
-        downloader = VideoDownloader(page)
-        downloader.download_video()
-        
-        browser.close()
+    video_url = 'https://t01.watchanimesub.net//getvid?evid=mvDpTdr2hjWnOq07jjZcwJpEcgVxj5X4LVQBvZATRvDU3Pz67_D90MKjOl-NC_XHibvlIXnR-87B85jGkHRZYqj32jTpv6j2sqJFnFdmol9H-ye-XCVCcW7HnYPuH-vhkNT-PRVH-NRFou4jl20Wy3N9SAbmnIKiq1do2zIA5Qj7E62DJXvfy-kKxAemVb8AZbIRgKiyMpJdojvz9IFDei0BnT-HJh69sp4sMNj5-u3BP6NNJK7ZmrPiZVQhW5jtAdwH2mJTk87bh68cjlb41gxhh6hQ79KjHqiOSDXo50-aNUfMlMzoLyV86bu0OIhthMXHx6bD8gqHzsN1u41r1hRZgL_QnFVCU-WRx15ar-t1ilAlrxQ83oNioo_5rmqaESTqRKUTCcy24_02Mx3BEqpp0rDf1VifcJqqc28DnRxpcQyQ_j6k-kvE8Z3bKDGmeaZ9KeQHKBHYG-yvG4oS2A'
+    downloader = VideoDownloader(video_url)
+    downloader.download_video()
