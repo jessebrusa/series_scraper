@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
-from .playwright_modules.compile_series_data import Compile_Series_Data
+from .playwright_modules.compile_series_data import CompileSeriesData
 from .playwright_modules.extract_video_url import ExtractVideoUrl
 
 class PlaywrightManager(PlaywrightSuper):
@@ -20,7 +20,7 @@ class PlaywrightManager(PlaywrightSuper):
             selected_series = series_list[result]
             return selected_series
         
-        compile_series_data = Compile_Series_Data(self.page)
+        compile_series_data = CompileSeriesData(self.page)
         test_title = 'Naruto'
         series_list = compile_series_data.search_for_series(test_title)
         selected_series = choose_series(series_list)
@@ -29,20 +29,21 @@ class PlaywrightManager(PlaywrightSuper):
         self.episode_data = compile_series_data.get_episode_data()
 
     def download_episodes(self):   
-        for i in range(120, 121):
-            print(self.episodes[i]['title'])
-            self.go_to(self.episodes[i]['href'])
-            if self.episode_data[i][0] is None:
+        for i in range(121, 122):  # Adjust the range to start from 121
+            episode_index = i - 1  # Adjust the index to match the episode number
+            print(self.episodes[episode_index]['title'])
+            self.go_to(self.episodes[episode_index]['href'])
+            if self.episode_data[episode_index][0] is None:
                 season_number = '01'
             else:
-                season_number = self.episode_data[i][0]
-            if self.episode_data[i][1] is None:
+                season_number = self.episode_data[episode_index][0]
+            if self.episode_data[episode_index][1] is None:
                 continue
             else:
-                episode_number = self.episode_data[i][1]
+                episode_number = self.episode_data[episode_index][1]
             
             output_file_name = f's{season_number}e{episode_number}.mp4'
             print(output_file_name)
-
+    
             extracted_video_url = ExtractVideoUrl(self.page).extract()
             print(extracted_video_url)

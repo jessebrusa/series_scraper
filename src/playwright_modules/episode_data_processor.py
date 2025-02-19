@@ -33,5 +33,8 @@ class EpisodeDataProcessor:
                     self.season_episode_list.append([season_number, self.format_episode_data(episode_numbers[0]), self.format_episode_data(episode_numbers[1])])
                 else:
                     self.season_episode_list.append([season_number, self.format_episode_data(episode_numbers[0])])
+            else:
+                # Skip entries without episode numbers
+                continue
 
         return self.season_episode_list
