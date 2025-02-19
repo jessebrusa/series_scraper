@@ -4,14 +4,6 @@ class ExtractVideoUrl:
     def __init__(self, page):
         self.page = page
 
-    def save_page_content(self):
-        self.page.wait_for_selector('body')
-        self.page.wait_for_timeout(5000)
-        content = self.page.content()
-        with open('page_content.html', 'w') as file:
-            file.write(content)
-            print("Page content written to page_content.html")
-
     def extract_video_url(self):
         try:
             self.page.wait_for_timeout(1000)
