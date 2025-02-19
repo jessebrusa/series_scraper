@@ -69,7 +69,7 @@ class PlaywrightManager(PlaywrightSuper):
             video_url = extractor.extract_video_url()
 
             if video_url and output_file_name:
-                self.name_url.append((output_file_name, video_url))
+                self.name_url.append([output_file_name, video_url])
 
             self.page.close()
 

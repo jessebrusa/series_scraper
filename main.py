@@ -1,4 +1,5 @@
 from src.playwright_manager import PlaywrightManager
+from src.video_downloader import VideoDownloader
 
 class Main:
     def __init__(self):
@@ -19,10 +20,19 @@ class Main:
         # self.playwright_manager.close_browser()
 
         with open('name_video.txt', 'r') as file:
-            name_video = file.read()
-        print(name_video)
+            lines = file.readlines()
+            name_video = [[lines[i].strip(), lines[i+1].strip()] for i in range(0, len(lines), 2)]
 
+        if name_video:
+            downloader = VideoDownloader(name_video, max_workers=10)
+            try:
+                downloader.download_videos()
+            except KeyboardInterrupt:
+                print("Main process interrupted. Exiting...")
 
 if __name__ == "__main__":
     main = Main()
-    main.run()
+    try:
+        main.run()
+    except KeyboardInterrupt:
+        print("Main process interrupted. Exiting...")
