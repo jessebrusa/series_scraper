@@ -1,5 +1,6 @@
 from .playwright_super import PlaywrightSuper
-from .compile_series_data import Compile_Series_Data
+from .compile_series_data import CompileSeriesData
+from .episode_data_processor import EpisodeDataProcessor
 from .extract_video_url import ExtractVideoUrl
 
-__all__ = ['PlaywrightSuper', 'Compile_Series_Data', 'extract_video_url']
+__all__ = ['PlaywrightSuper', 'CompileSeriesData', 'extract_video_url', 'EpisodeDataProcessor']

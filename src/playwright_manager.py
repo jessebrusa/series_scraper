@@ -2,6 +2,7 @@ from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
 from .playwright_modules.compile_series_data import Compile_Series_Data
 from .playwright_modules.extract_video_url import ExtractVideoUrl
+
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self):
         super().__init__()
@@ -31,7 +32,6 @@ class PlaywrightManager(PlaywrightSuper):
         for i in range(120, 121):
             print(self.episodes[i]['title'])
             self.go_to(self.episodes[i]['href'])
-            print(self.episode_data[i])
             if self.episode_data[i][0] is None:
                 season_number = '01'
             else:
@@ -40,6 +40,9 @@ class PlaywrightManager(PlaywrightSuper):
                 continue
             else:
                 episode_number = self.episode_data[i][1]
+            
+            output_file_name = f's{season_number}e{episode_number}.mp4'
+            print(output_file_name)
 
             extracted_video_url = ExtractVideoUrl(self.page).extract()
             print(extracted_video_url)
