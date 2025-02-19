@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
 from .playwright_modules.compile_series_data import CompileSeriesData
 from .playwright_modules.extract_video_url import ExtractVideoUrl
-from .playwright_modules.video_downloader import VideoDownloader
+import random
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self):
@@ -28,6 +28,7 @@ class PlaywrightManager(PlaywrightSuper):
             'sec-fetch-site': 'same-site',
             'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
         }
+        self.name_url = []
 
     def start_browser(self, headless=True):
         self.browser = self.playwright.chromium.launch(headless=headless)
@@ -47,10 +48,11 @@ class PlaywrightManager(PlaywrightSuper):
         self.episodes = compile_series_data.get_episode_titles()
         self.episode_data = compile_series_data.get_episode_data()
 
-    def download_episodes(self):   
-        for i in range(345, 346):  
+    def extract_video_urls(self):   
+        random_episode = random.randint(1, 350)
+        for i in range(random_episode, random_episode+15):  
             episode_index = i - 1  
-            print(self.episodes[episode_index]['title'])
+            self.page = self.browser.new_page(extra_http_headers=self.headers)
             self.go_to(self.episodes[episode_index]['href'])
             if self.episode_data[episode_index][0] is None:
                 season_number = '01'
@@ -62,13 +64,13 @@ class PlaywrightManager(PlaywrightSuper):
                 episode_number = self.episode_data[episode_index][1]
             
             output_file_name = f's{season_number}e{episode_number}.mp4'
-            print(output_file_name)
     
             extractor = ExtractVideoUrl(self.page)
             video_url = extractor.extract_video_url()
-            print(f"Extracted video URL: {video_url}")
 
-            if video_url:
-                VideoDownloader(video_url).download_video(output_file_name)
-            else:
-                print("Failed to extract video URL")
+            if video_url and output_file_name:
+                self.name_url.append((output_file_name, video_url))
+
+            self.page.close()
+
+        return self.name_url

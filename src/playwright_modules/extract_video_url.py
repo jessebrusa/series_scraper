@@ -14,24 +14,18 @@ class ExtractVideoUrl:
 
     def extract_video_url(self):
         try:
-            # Wait for the iframe to be loaded
-            print("Waiting for iframe to be loaded...")
-            self.page.wait_for_timeout(5000)
-            self.page.wait_for_selector('iframe#frameNewAnimeuploads0')
-            iframe_element = self.page.query_selector('iframe#frameNewAnimeuploads0')
+            self.page.wait_for_timeout(1000)
+            self.page.wait_for_selector('iframe')
+            iframe_element = self.page.query_selector('iframe')
             if not iframe_element:
                 print("Iframe element not found")
                 return None
 
-            # Get the iframe content
-            print("Getting iframe content...")
             iframe = iframe_element.content_frame()
             if not iframe:
                 print("Iframe content not found")
                 return None
 
-            # Wait for the video element to be loaded within the iframe
-            print("Waiting for video element to be loaded within the iframe...")
             iframe.wait_for_selector('video#video-js_html5_api')
             video_element = iframe.query_selector('video#video-js_html5_api')
             if not video_element:
@@ -39,7 +33,6 @@ class ExtractVideoUrl:
                 return None
 
             video_src = video_element.get_attribute('src')
-            print(f"Video URL: {video_src}")
             return video_src
         except Exception as e:
             print(f"Error extracting video URL: {e}")
