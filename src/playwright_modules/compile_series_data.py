@@ -48,24 +48,13 @@ class CompileSeriesData(PlaywrightSuper):
                 'href': episode.get_attribute('href')
             }
             for episode in episode_list
-            if 'episode' in episode.text_content().strip().lower()  # Filter out movies
+            if 'episode' in episode.text_content().strip().lower()
         ]
         
         self.episode_titles.reverse()
-        
-        for i, episode in enumerate(self.episode_titles):
-            print(f"Episode {i+1}: {episode['title']}")
+
         
         return self.episode_titles
     
-    def get_episode_data(self):
-        episode_data = self.episode_data_processor.process_episode_data(self.episode_titles)
-        
-        # Debug print to check processed episode data
-        for i, data in enumerate(episode_data):
-            print(f"Episode Data {i}: {data}")
-        
-        return episode_data
-
     def get_episode_data(self):
         return self.episode_data_processor.process_episode_data(self.episode_titles)

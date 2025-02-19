@@ -29,8 +29,8 @@ class PlaywrightManager(PlaywrightSuper):
         self.episode_data = compile_series_data.get_episode_data()
 
     def download_episodes(self):   
-        for i in range(121, 122):  # Adjust the range to start from 121
-            episode_index = i - 1  # Adjust the index to match the episode number
+        for i in range(345, 346):  
+            episode_index = i - 1  
             print(self.episodes[episode_index]['title'])
             self.go_to(self.episodes[episode_index]['href'])
             if self.episode_data[episode_index][0] is None:
