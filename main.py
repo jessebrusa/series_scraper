@@ -61,8 +61,8 @@ class Main:
 
     def run(self):
         self.nav_to_site()
-        self.search_anime(True)
-        self.choose_anime(True)
+        self.search_anime(debug=True)
+        self.choose_anime(debug=True)
         self.navigate_to_anime_page()
         self.collect_content_links()
 

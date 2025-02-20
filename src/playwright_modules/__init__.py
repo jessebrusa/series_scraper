@@ -1,5 +1,5 @@
 from .playwright_super import PlaywrightSuper
-from .compile_series_data import CompileSeriesData
+from .compile_episode_titles import CompileEpisodeTitles
 from .episode_data_processor import EpisodeDataProcessor
 
-__all__ = ['PlaywrightSuper', 'CompileSeriesData', 'EpisodeDataProcessor']
+__all__ = ['PlaywrightSuper', 'CompileEpisodeTitles', 'EpisodeDataProcessor']

@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
-from .playwright_modules.compile_series_data import CompileSeriesData
+from .playwright_modules.compile_episode_titles import CompileEpisodeTitles
 from .extract_video_url import ExtractVideoUrl
 import random
 
@@ -45,7 +45,7 @@ class PlaywrightManager(PlaywrightSuper):
         self.click(submit_button)
 
     def collect_episode_titles(self):
-        CompileSeriesData(self.data_manager, self.page).get_episode_titles()
+        CompileEpisodeTitles(self.data_manager, self.page).get_episode_titles()
 
     def collect_series_titles(self):
         title_selector = '.aramadabaslik a'
@@ -68,13 +68,13 @@ class PlaywrightManager(PlaywrightSuper):
             selected_series = series_list[result]
             return selected_series
         
-        compile_series_data = CompileSeriesData(self.page)
-        test_title = 'Naruto'
-        series_list = compile_series_data.search_for_series(test_title)
-        selected_series = choose_series(series_list)
-        self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
-        self.episodes = compile_series_data.get_episode_titles()
-        self.episode_data = compile_series_data.get_episode_data()
+        # compile_series_data = CompileSeriesData(self.page)
+        # test_title = 'Naruto'
+        # series_list = compile_series_data.search_for_series(test_title)
+        # selected_series = choose_series(series_list)
+        # self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
+        # self.episodes = compile_series_data.get_episode_titles()
+        # self.episode_data = compile_series_data.get_episode_data()
 
     def extract_video_urls(self):   
         random_episode = random.randint(1, 350)
