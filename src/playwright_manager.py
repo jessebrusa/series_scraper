@@ -9,8 +9,10 @@ class PlaywrightManager(PlaywrightSuper):
         super().__init__()
         self.data_manager = data_manager    
         self.playwright = sync_playwright().start()
-        self.browser = None
-        self.page = None
+        self.set_headers()
+        # self.name_url = []
+
+    def set_headers(self):
         self.headers = {
             'authority': 'lb.watchanimesub.net',
             'method': 'GET',
@@ -29,7 +31,6 @@ class PlaywrightManager(PlaywrightSuper):
             'sec-fetch-site': 'same-site',
             'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
         }
-        self.name_url = []
 
     def start_browser(self, headless=True):
         self.browser = self.playwright.chromium.launch(headless=headless)
@@ -43,9 +44,6 @@ class PlaywrightManager(PlaywrightSuper):
         submit_button = '#konuara > div > input[type=submit]'
         self.page.wait_for_selector(submit_button)
         self.click(submit_button)
-
-    def collect_episode_titles(self):
-        CompileEpisodeTitles(self.data_manager, self.page).get_episode_titles()
 
     def collect_series_titles(self):
         title_selector = '.aramadabaslik a'
@@ -61,44 +59,50 @@ class PlaywrightManager(PlaywrightSuper):
             })
 
         self.data_manager.set_series_title_options(series_titles_options)
-
-    def compile_series(self):
-        def choose_series(series_list):
-            result = 1  
-            selected_series = series_list[result]
-            return selected_series
-        
-        # compile_series_data = CompileSeriesData(self.page)
-        # test_title = 'Naruto'
-        # series_list = compile_series_data.search_for_series(test_title)
-        # selected_series = choose_series(series_list)
-        # self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
-        # self.episodes = compile_series_data.get_episode_titles()
-        # self.episode_data = compile_series_data.get_episode_data()
-
-    def extract_video_urls(self):   
-        random_episode = random.randint(1, 350)
-        for i in range(random_episode, random_episode+15):  
-            episode_index = i - 1  
-            self.page = self.browser.new_page(extra_http_headers=self.headers)
-            self.go_to(self.episodes[episode_index]['href'])
-            if self.episode_data[episode_index][0] is None:
-                season_number = '01'
-            else:
-                season_number = self.episode_data[episode_index][0]
-            if self.episode_data[episode_index][1] is None:
-                continue
-            else:
-                episode_number = self.episode_data[episode_index][1]
-            
-            output_file_name = f's{season_number}e{episode_number}.mp4'
     
-            extractor = ExtractVideoUrl(self.page)
-            video_url = extractor.extract_video_url()
+    def collect_episode_titles(self):
+        CompileEpisodeTitles(self.data_manager, self.page).get_episode_titles()
 
-            if video_url and output_file_name:
-                self.name_url.append([output_file_name, video_url])
 
-            self.page.close()
+    
 
-        return self.name_url
+    # def compile_series(self):
+    #     def choose_series(series_list):
+    #         result = 1  
+    #         selected_series = series_list[result]
+    #         return selected_series
+        
+    #     # compile_series_data = CompileSeriesData(self.page)
+    #     # test_title = 'Naruto'
+    #     # series_list = compile_series_data.search_for_series(test_title)
+    #     # selected_series = choose_series(series_list)
+    #     # self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
+    #     # self.episodes = compile_series_data.get_episode_titles()
+    #     # self.episode_data = compile_series_data.get_episode_data()
+
+    # def extract_video_urls(self):   
+    #     random_episode = random.randint(1, 350)
+    #     for i in range(random_episode, random_episode+15):  
+    #         episode_index = i - 1  
+    #         self.page = self.browser.new_page(extra_http_headers=self.headers)
+    #         self.go_to(self.episodes[episode_index]['href'])
+    #         if self.episode_data[episode_index][0] is None:
+    #             season_number = '01'
+    #         else:
+    #             season_number = self.episode_data[episode_index][0]
+    #         if self.episode_data[episode_index][1] is None:
+    #             continue
+    #         else:
+    #             episode_number = self.episode_data[episode_index][1]
+            
+    #         output_file_name = f's{season_number}e{episode_number}.mp4'
+    
+    #         extractor = ExtractVideoUrl(self.page)
+    #         video_url = extractor.extract_video_url()
+
+    #         if video_url and output_file_name:
+    #             self.name_url.append([output_file_name, video_url])
+
+    #         self.page.close()
+
+    #     return self.name_url

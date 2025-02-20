@@ -41,11 +41,11 @@ class Main:
     def navigate_to_anime_page(self):
         self.page.goto(self.data_manager.get_series_title_href())
 
-    def collect_content_links(self):
+    def collect_episode_links(self):
         self.playwright_manager.collect_episode_titles()
 
-    def filter_non_episodes(self):
-        pass
+    def filter_episodes(self):
+        self.data_manager.filter_episodes()
 
     def format_output_file_name(self):
         pass
@@ -64,7 +64,8 @@ class Main:
         self.search_anime(debug=True)
         self.choose_anime(debug=True)
         self.navigate_to_anime_page()
-        self.collect_content_links()
+        self.collect_episode_links()
+        self.filter_episodes()
 
         # self.playwright_manager.compile_series_data()
         # name_video = self.playwright_manager.extract_video_urls()
