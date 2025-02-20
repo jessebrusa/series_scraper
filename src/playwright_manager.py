@@ -5,8 +5,9 @@ from .extract_video_url import ExtractVideoUrl
 import random
 
 class PlaywrightManager(PlaywrightSuper):
-    def __init__(self):
+    def __init__(self, data_manager):
         super().__init__()
+        self.data_manager = data_manager    
         self.playwright = sync_playwright().start()
         self.browser = None
         self.page = None
@@ -34,7 +35,36 @@ class PlaywrightManager(PlaywrightSuper):
         self.browser = self.playwright.chromium.launch(headless=headless)
         self.page = self.browser.new_page(extra_http_headers=self.headers)
 
-    def compile_series_data(self):
+        self.compile_series_data = CompileSeriesData(self.page)
+
+    def search_for_series(self, title):
+        input_selector = '#searchbox'
+        self.page.wait_for_selector(input_selector)
+        self.type_input(input_selector, title)
+
+        submit_button = '#konuara > div > input[type=submit]'
+        self.page.wait_for_selector(submit_button)
+        self.click(submit_button)
+
+    def collect_series_titles(self):
+        title_selector = '.aramadabaslik a'
+        self.page.wait_for_selector(title_selector)
+
+        title_selector_list = self.collect_selectors(title_selector)
+
+        series_titles_options = []
+        for title in title_selector_list:
+            series_titles_options.append({
+                'title': title.text_content().strip(),
+                'href': title.get_attribute('href')
+            })
+        
+        self.data_manager.set_series_title_options(series_titles_options)
+
+    def choose_series(self):
+        pass
+
+    def compile_series(self):
         def choose_series(series_list):
             result = 1  
             selected_series = series_list[result]

@@ -1,7 +1,4 @@
 class PlaywrightSuper:
-    def go_to(self, url):
-        self.page.goto(url)
-
     def click(self, selector: str):
         self.page.click(selector)
 
