@@ -5,7 +5,7 @@ from src.video_downloader import VideoDownloader
 
 class Main:
     def __init__(self):
-        self.data_manager = DataManager('https://www.wcostream.tv/')
+        self.data_manager = DataManager()
         self.file_manager = FileManager()
         self.playwright_manager = PlaywrightManager(self.data_manager)
 
@@ -25,25 +25,24 @@ class Main:
         self.playwright_manager.collect_series_titles()
 
     def choose_anime(self, debug=False):
-        print('Enter the number of the anime you want to download: ')
-
-        for i, anime in enumerate(self.data_manager.get_series_title_options()):
-            print(f'{i+1}. {anime["title"]}')
         if debug:
             anime_number = 2
         else:
+            print('Enter the number of the anime you want to download: ')
+
+            for i, anime in enumerate(self.data_manager.get_series_title_options()):
+                print(f'{i+1}. {anime["title"]}')
+
             anime_number = int(input('Enter the number: '))
 
         selected_anime = self.data_manager.get_series_title_options()[anime_number-1]
         self.data_manager.set_series_title(selected_anime)
 
-        print(f'You have selected {selected_anime["title"]}')
-
     def navigate_to_anime_page(self):
         self.page.goto(self.data_manager.get_series_title_href())
 
     def collect_content_links(self):
-        pass
+        self.playwright_manager.collect_episode_titles()
 
     def filter_non_episodes(self):
         pass
@@ -65,6 +64,7 @@ class Main:
         self.search_anime(True)
         self.choose_anime(True)
         self.navigate_to_anime_page()
+        self.collect_content_links()
 
         # self.playwright_manager.compile_series_data()
         # name_video = self.playwright_manager.extract_video_urls()

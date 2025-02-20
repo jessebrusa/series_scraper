@@ -35,8 +35,6 @@ class PlaywrightManager(PlaywrightSuper):
         self.browser = self.playwright.chromium.launch(headless=headless)
         self.page = self.browser.new_page(extra_http_headers=self.headers)
 
-        self.compile_series_data = CompileSeriesData(self.page)
-
     def search_for_series(self, title):
         input_selector = '#searchbox'
         self.page.wait_for_selector(input_selector)
@@ -45,6 +43,9 @@ class PlaywrightManager(PlaywrightSuper):
         submit_button = '#konuara > div > input[type=submit]'
         self.page.wait_for_selector(submit_button)
         self.click(submit_button)
+
+    def collect_episode_titles(self):
+        CompileSeriesData(self.data_manager, self.page).get_episode_titles()
 
     def collect_series_titles(self):
         title_selector = '.aramadabaslik a'
@@ -58,11 +59,8 @@ class PlaywrightManager(PlaywrightSuper):
                 'title': title.text_content().strip(),
                 'href': title.get_attribute('href')
             })
-        
-        self.data_manager.set_series_title_options(series_titles_options)
 
-    def choose_series(self):
-        pass
+        self.data_manager.set_series_title_options(series_titles_options)
 
     def compile_series(self):
         def choose_series(series_list):
