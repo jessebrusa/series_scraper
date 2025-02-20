@@ -1,0 +1,22 @@
+components: data manager, file manager, playwright manager, 
+extract video url, video downloader
+
+1. init: data, file, playwright managers
+
+2. playwright search anime series and returns possible title_selector
+
+3. choose title and place into data manager
+
+4. click title link in playwright
+
+5. collect all content links playwright
+
+6. filter out non episodes 
+
+7. iterate through all links formating an output file name 
+
+8. every iteration create a sub list [link, output file name]
+
+9. go to each link and append sub list with extracted video url
+
+10. concurrently iterate through all sublists with video downloader

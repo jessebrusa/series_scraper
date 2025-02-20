@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
 from .playwright_modules.compile_series_data import CompileSeriesData
-from .playwright_modules.extract_video_url import ExtractVideoUrl
+from .extract_video_url import ExtractVideoUrl
 import random
 
 class PlaywrightManager(PlaywrightSuper):
