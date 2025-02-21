@@ -1,10 +1,17 @@
 import yt_dlp
 import concurrent.futures
+import os
 
 class VideoDownloader:
-    def __init__(self, video_list, max_workers=5):
-        self.video_list = video_list
+    def __init__(self, file_manager, data_manager, max_workers=5):
+        self.data_manager = data_manager
+        self.file_manager = file_manager
+        self.episode_finished_data = self.data_manager.get_processed_episodes()
         self.max_workers = max_workers
+        self.set_headers()
+        self.video_list = self.set_video_list()
+
+    def set_headers(self):
         self.headers = {
             'authority': 'lb.watchanimesub.net',
             'method': 'GET',
@@ -24,6 +31,31 @@ class VideoDownloader:
             'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
         }
 
+    def set_video_list(self):
+        video_list = []
+        for episode in self.episode_finished_data:
+            if 'video_url' in episode and 'output_file_name' in episode:
+                video_list.append({
+                    'video_url': episode['video_url'],
+                    'output_file': episode['output_file_name'],
+                    'season_number': episode['season_number']
+                })
+        return video_list
+    
+    def output_path(self, episode):
+        return os.path.join(self.file_manager.get_season_directory(episode['season_number']), episode['output_file'])
+
+    def download_videos(self):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            futures = []
+            for episode in self.video_list:
+                futures.append(executor.submit(self.download_video, episode['video_url'], self.output_path(episode)))
+            for future in concurrent.futures.as_completed(futures):
+                try:
+                    future.result()
+                except Exception as e:
+                    print(f"Error occurred: {e}")
+
     def download_video(self, video_url, output_file='video.mp4'):
         if video_url:
             ydl_opts = {
@@ -38,34 +70,3 @@ class VideoDownloader:
                 print(f"Download error for {output_file}: {e}")
         else:
             print("Video URL not found")
-
-    def download_videos(self):
-        with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
-            futures = []
-            try:
-                for item in self.video_list:
-                    if isinstance(item, (list, tuple)) and len(item) == 2:
-                        output_file, video_url = item
-                        futures.append(executor.submit(self.download_video, video_url, output_file))
-                    else:
-                        print(f"Invalid item format: {item}")
-                for future in concurrent.futures.as_completed(futures):
-                    try:
-                        future.result()
-                    except Exception as e:
-                        print(f"Error occurred: {e}")
-            except KeyboardInterrupt:
-                print("Download process interrupted. Shutting down...")
-                executor.shutdown(wait=False)
-                raise
-
-if __name__ == "__main__":
-    video_list = [
-        ['s01e01.mp4', 'https://t01.watchanimesub.net//getvid?evid=mvDpTdr2hjWnOq07jjZcwJpEcgVxj5X4LVQBvZATRvDU3Pz67_D90MKjOl-NC_XHibvlIXnR-87B85jGkHRZYqj32jTpv6j2sqJFnFdmol9H-ye-XCVCcW7HnYPuH-vhkNT-PRVH-NRFou4jl20Wy3N9SAbmnIKiq1do2zIA5Qj7E62DJXvfy-kKxAemVb8AZbIRgKiyMpJdojvz9IFDei0BnT-HJh69sp4sMNj5-u3BP6NNJK7ZmrPiZVQhW5jtAdwH2mJTk87bh68cjlb41gxhh6hQ79KjHqiOSDXo50-aNUfMlMzoLyV86bu0OIhthMXHx6bD8gqHzsN1u41r1hRZgL_QnFVCU-WRx15ar-t1ilAlrxQ83oNioo_5rmqaESTqRKUTCcy24_02Mx3BEqpp0rDf1VifcJqqc28DnRxpcQyQ_j6k-kvE8Z3bKDGmeaZ9KeQHKBHYG-yvG4oS2A'],
-        # Add more [output_file_name, video_url] pairs here
-    ]
-    downloader = VideoDownloader(video_list, max_workers=5)
-    try:
-        downloader.download_videos()
-    except KeyboardInterrupt:
-        print("Main process interrupted. Exiting...")

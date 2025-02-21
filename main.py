@@ -12,7 +12,6 @@ class Main:
     def nav_to_site(self, headless=True):
         self.playwright_manager.start_browser(headless=headless)
         self.page = self.playwright_manager.get_page()
-
         self.page.goto(self.data_manager.base_url)
 
     def search_anime(self, debug=False):
@@ -20,7 +19,6 @@ class Main:
             title = 'Attack on Titan'
         else:
             title = input('Enter the title of the anime you want to download: ')
-
         self.playwright_manager.search_for_series(title)
         self.playwright_manager.collect_series_titles()
 
@@ -28,15 +26,13 @@ class Main:
         if debug:
             anime_number = 1
         else:
-            print('Enter the number of the anime you want to download: ')
-
+            print('Enter the number of the anime you want to download:')
             for i, anime in enumerate(self.data_manager.get_series_title_options()):
                 print(f'{i+1}. {anime["title"]}')
-
             anime_number = int(input('Enter the number: '))
-
         selected_anime = self.data_manager.get_series_title_options()[anime_number-1]
         self.data_manager.set_series_title(selected_anime)
+        self.data_manager.write_series_title()
 
     def navigate_to_anime_page(self):
         self.page.goto(self.data_manager.get_series_title_href())
@@ -49,56 +45,38 @@ class Main:
     def filter_episodes(self, open_from_file=False, write_to_file=False):
         if open_from_file:
             self.data_manager.read_episodes()
-
         self.data_manager.filter_episodes()
-
         if write_to_file:
             self.data_manager.write_processed_episodes()
 
     def create_file_structure(self):
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
         self.file_manager.create_seasons_directories(self.data_manager.num_seasons())
-        
+
     def extract_video_urls(self, open_from_file=False, write_to_file=False):
         if open_from_file:
             self.data_manager.read_processed_episodes()
-
         self.playwright_manager.extract_video_urls()
-
         if write_to_file:
             self.data_manager.write_finished_episodes()
 
-    def download_videos(self):
-        pass
+    def download_videos(self, read_from_file=False):
+        if read_from_file:
+            self.data_manager.read_finished_episodes()
+        self.create_file_structure() 
+        VideoDownloader(self.file_manager, self.data_manager, max_workers=20).download_videos()
 
     def run(self):
+        self.data_manager.read_series_title()
         self.nav_to_site(headless=False)
-        # self.search_anime(debug=True)
-        # self.choose_anime(debug=True)
+        # self.search_anime(debug=False)
+        # self.choose_anime(debug=False)
         # self.navigate_to_anime_page()
         # self.collect_episode_links(write_to_file=True)
-        # self.filter_episodes(open_from_file=True, write_to_file=True)
+        # self.filter_episodes(write_to_file=True)
         # self.create_file_structure()
-        self.extract_video_urls(open_from_file=True, write_to_file=True)
-
-        # self.playwright_manager.compile_series_data()
-        # name_video = self.playwright_manager.extract_video_urls()
-        # with open('name_video.txt', 'w') as file:
-        #     for name in name_video:
-        #         file.write(f'{name}\n')
-
-        # self.playwright_manager.close_browser()
-
-        # with open('name_video.txt', 'r') as file:
-        #     lines = file.readlines()
-        #     name_video = [[lines[i].strip(), lines[i+1].strip()] for i in range(0, len(lines), 2)]
-
-        # if name_video:
-        #     downloader = VideoDownloader(name_video, max_workers=10)
-        #     try:
-        #         downloader.download_videos()
-        #     except KeyboardInterrupt:
-        #         print("Main process interrupted. Exiting...")
+        self.extract_video_urls(write_to_file=True, open_from_file=True)
+        self.download_videos(read_from_file=False)
 
 if __name__ == "__main__":
     main = Main()

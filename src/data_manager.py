@@ -12,10 +12,14 @@ class DataManager:
         self.series_title = series_title
 
     def get_series_title(self):
-        return self.series_title['title']
+        if self.series_title:
+            return self.series_title['title']
+        return None
 
     def get_series_title_href(self):
-        return f'{self.base_url}{self.series_title["href"]}'
+        if self.series_title:
+            return f'{self.base_url}{self.series_title["href"]}'
+        return None
 
     def set_series_title_options(self, series_title_options):
         self.series_title_options = series_title_options
@@ -79,3 +83,14 @@ class DataManager:
     def read_finished_episodes(self):
         with open('./test_data/finished_episodes.json', 'r') as json_file:
             self.processed_episodes = json.load(json_file)
+
+    def write_series_title(self):
+        with open('./test_data/series_title.json', 'w') as json_file:
+            json.dump(self.series_title, json_file, indent=4)
+
+    def read_series_title(self):
+        try:
+            with open('./test_data/series_title.json', 'r') as json_file:
+                self.series_title = json.load(json_file)
+        except FileNotFoundError:
+            self.series_title = None
