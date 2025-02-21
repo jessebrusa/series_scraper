@@ -55,10 +55,7 @@ class Main:
         if write_to_file:
             self.data_manager.write_processed_episodes()
 
-    def format_output_file_name(self):
-        pass
-
-    def format_data(self):
+    def create_file_structure(self):
         pass
 
     def extract_video_urls(self):
@@ -68,11 +65,11 @@ class Main:
         pass
 
     def run(self):
-        self.nav_to_site()
-        self.search_anime(debug=True)
-        self.choose_anime(debug=True)
-        self.navigate_to_anime_page()
-        self.collect_episode_links(write_to_file=True)
+        # self.nav_to_site()
+        # self.search_anime(debug=True)
+        # self.choose_anime(debug=True)
+        # self.navigate_to_anime_page()
+        # self.collect_episode_links(write_to_file=True)
         self.filter_episodes(open_from_file=True, write_to_file=True)
 
         # self.playwright_manager.compile_series_data()

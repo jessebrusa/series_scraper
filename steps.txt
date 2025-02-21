@@ -15,7 +15,7 @@ extract video url, video downloader
 
 7. iterate through all links formating an output file name 
 
-8. every iteration create a sub list [link, output file name]
+8. file manager creates directories
 
 9. go to each link and append sub list with extracted video url
 
