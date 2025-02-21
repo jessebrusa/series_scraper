@@ -1,3 +1,3 @@
-from .episode_data_processor_test import EpisodeDataProcessor
+from .episode_data_processor import EpisodeDataProcessor
 
 __all__ = ['EpisodeDataProcessor']
