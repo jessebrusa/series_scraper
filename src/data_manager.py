@@ -38,17 +38,17 @@ class DataManager:
         self.processed_episodes = processed_episodes
 
     def write_episodes(self):
-        with open('episodes.json', 'w') as json_file:
+        with open('./test_data/episodes.json', 'w') as json_file:
             json.dump(self.episode_titles, json_file, indent=4)
 
     def read_episodes(self):
-        with open('episodes.json', 'r') as json_file:
+        with open('./test_data/episodes.json', 'r') as json_file:
             self.episode_titles = json.load(json_file)
 
     def write_processed_episodes(self):
-        with open('processed_episodes.json', 'w') as json_file:
+        with open('./test_data/processed_episodes.json', 'w') as json_file:
             json.dump(self.processed_episodes, json_file, indent=4)
 
     def read_processed_episodes(self):
-        with open('processed_episodes.json', 'r') as json_file:
+        with open('./test_data/processed_episodes.json', 'r') as json_file:
             self.processed_episodes = json.load(json_file)
