@@ -10,14 +10,14 @@ class Main:
         self.playwright_manager = PlaywrightManager(self.data_manager)
 
     def nav_to_site(self):
-        self.playwright_manager.start_browser(headless=False)
+        self.playwright_manager.start_browser(headless=True)
         self.page = self.playwright_manager.get_page()
 
         self.page.goto(self.data_manager.base_url)
 
     def search_anime(self, debug=False):
         if debug:
-            title = 'Naruto'
+            title = 'Attack on Titan'
         else:
             title = input('Enter the title of the anime you want to download: ')
 
@@ -26,7 +26,7 @@ class Main:
 
     def choose_anime(self, debug=False):
         if debug:
-            anime_number = 2
+            anime_number = 1
         else:
             print('Enter the number of the anime you want to download: ')
 
@@ -41,11 +41,19 @@ class Main:
     def navigate_to_anime_page(self):
         self.page.goto(self.data_manager.get_series_title_href())
 
-    def collect_episode_links(self):
+    def collect_episode_links(self, write_to_file=False):
         self.playwright_manager.collect_episode_titles()
+        if write_to_file:
+            self.data_manager.write_episodes()
 
-    def filter_episodes(self):
+    def filter_episodes(self, open_from_file=False, write_to_file=False):
+        if open_from_file:
+            self.data_manager.read_episodes()
+
         self.data_manager.filter_episodes()
+
+        if write_to_file:
+            self.data_manager.write_processed_episodes()
 
     def format_output_file_name(self):
         pass
@@ -64,8 +72,8 @@ class Main:
         self.search_anime(debug=True)
         self.choose_anime(debug=True)
         self.navigate_to_anime_page()
-        self.collect_episode_links()
-        self.filter_episodes()
+        self.collect_episode_links(write_to_file=True)
+        self.filter_episodes(open_from_file=True, write_to_file=True)
 
         # self.playwright_manager.compile_series_data()
         # name_video = self.playwright_manager.extract_video_urls()
