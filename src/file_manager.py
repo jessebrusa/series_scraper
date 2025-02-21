@@ -8,7 +8,7 @@ class FileManager:
         self.series_path = os.path.join(self.mount_point, series_title)
         os.makedirs(self.series_path, exist_ok=True)
 
-    def create_seasons_directory(self, num_seasons):
+    def create_seasons_directories(self, num_seasons):
         season_int = int(num_seasons)
         for season in range(1, season_int + 1):
             season_path = os.path.join(self.mount_point, f"{self.series_path}/Season {season:02}")

@@ -11,6 +11,9 @@ class DataManager:
     def set_series_title(self, series_title):
         self.series_title = series_title
 
+    def get_series_title(self):
+        return self.series_title['title']
+
     def get_series_title_href(self):
         return f'{self.base_url}{self.series_title["href"]}'
 
@@ -36,6 +39,14 @@ class DataManager:
             else:
                 processed_episodes.append(data)
         self.processed_episodes = processed_episodes
+
+    def num_seasons(self):
+        season_num = 1
+        for episode in self.processed_episodes:
+            if episode['season_number'] is not None:
+                if int(episode['season_number']) > season_num:
+                    season_num = int(episode['season_number'])
+        return season_num
 
     def write_episodes(self):
         with open('./test_data/episodes.json', 'w') as json_file:
