@@ -9,8 +9,8 @@ class Main:
         self.file_manager = FileManager()
         self.playwright_manager = PlaywrightManager(self.data_manager)
 
-    def nav_to_site(self):
-        self.playwright_manager.start_browser(headless=True)
+    def nav_to_site(self, headless=True):
+        self.playwright_manager.start_browser(headless=headless)
         self.page = self.playwright_manager.get_page()
 
         self.page.goto(self.data_manager.base_url)
@@ -59,20 +59,27 @@ class Main:
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
         self.file_manager.create_seasons_directories(self.data_manager.num_seasons())
         
-    def extract_video_urls(self):
-        pass
+    def extract_video_urls(self, open_from_file=False, write_to_file=False):
+        if open_from_file:
+            self.data_manager.read_processed_episodes()
+
+        self.playwright_manager.extract_video_urls()
+
+        if write_to_file:
+            self.data_manager.write_finished_episodes()
 
     def download_videos(self):
         pass
 
     def run(self):
-        self.nav_to_site()
-        self.search_anime(debug=True)
-        self.choose_anime(debug=True)
-        self.navigate_to_anime_page()
-        self.collect_episode_links(write_to_file=True)
-        self.filter_episodes(open_from_file=True, write_to_file=True)
-        self.create_file_structure()
+        self.nav_to_site(headless=False)
+        # self.search_anime(debug=True)
+        # self.choose_anime(debug=True)
+        # self.navigate_to_anime_page()
+        # self.collect_episode_links(write_to_file=True)
+        # self.filter_episodes(open_from_file=True, write_to_file=True)
+        # self.create_file_structure()
+        self.extract_video_urls(open_from_file=True, write_to_file=True)
 
         # self.playwright_manager.compile_series_data()
         # name_video = self.playwright_manager.extract_video_urls()

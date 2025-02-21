@@ -5,6 +5,7 @@ class FileManager:
         self.mount_point = "/Volumes/Plex Movies and Shows/Anime"
 
     def create_series_directory(self, series_title):
+        self.series = series_title
         self.series_path = os.path.join(self.mount_point, series_title)
         os.makedirs(self.series_path, exist_ok=True)
 

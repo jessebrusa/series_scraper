@@ -39,6 +39,9 @@ class DataManager:
             else:
                 processed_episodes.append(data)
         self.processed_episodes = processed_episodes
+    
+    def get_processed_episodes(self):
+        return self.processed_episodes
 
     def num_seasons(self):
         season_num = 1
@@ -47,6 +50,11 @@ class DataManager:
                 if int(episode['season_number']) > season_num:
                     season_num = int(episode['season_number'])
         return season_num
+
+    def add_video_url(self, title, url):
+        for episode in self.processed_episodes:
+            if episode['title'] == title:
+                episode['video_url'] = url
 
     def write_episodes(self):
         with open('./test_data/episodes.json', 'w') as json_file:
@@ -62,4 +70,12 @@ class DataManager:
 
     def read_processed_episodes(self):
         with open('./test_data/processed_episodes.json', 'r') as json_file:
+            self.processed_episodes = json.load(json_file)
+
+    def write_finished_episodes(self):
+        with open('./test_data/finished_episodes.json', 'w') as json_file:
+            json.dump(self.processed_episodes, json_file, indent=4)
+
+    def read_finished_episodes(self):
+        with open('./test_data/finished_episodes.json', 'r') as json_file:
             self.processed_episodes = json.load(json_file)
