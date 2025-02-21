@@ -1,4 +1,5 @@
 from playwright.sync_api import sync_playwright
+from bs4 import BeautifulSoup, Comment
 
 class ExtractVideoUrl:
     def __init__(self, page):
@@ -6,7 +7,7 @@ class ExtractVideoUrl:
 
     def extract_video_url(self):
         try:
-            self.page.wait_for_timeout(1000)
+            self.page.wait_for_timeout(1250)
             self.page.wait_for_selector('iframe')
             iframe_element = self.page.query_selector('iframe')
             if not iframe_element:
@@ -17,14 +18,30 @@ class ExtractVideoUrl:
             if not iframe:
                 print("Iframe content not found")
                 return None
-
-            iframe.wait_for_selector('video#video-js_html5_api')
-            video_element = iframe.query_selector('video#video-js_html5_api')
+            
+            iframe.wait_for_selector('video#video-js_html5_api, video#hls_html5_api')
+            video_element = iframe.query_selector('video#video-js_html5_api, video#hls_html5_api')
             if not video_element:
                 print("Video element not found")
                 return None
 
+            # Print the video element's outer HTML
+            video_html = video_element.evaluate("element => element.outerHTML")
+            print(video_html)
+
             video_src = video_element.get_attribute('src')
+            if not video_src:
+                print("Video source not found in video element")
+                # Use BeautifulSoup to parse the HTML and extract the URL from the commented source tag
+                soup = BeautifulSoup(video_html, 'html.parser')
+                comment = soup.find(string=lambda text: isinstance(text, Comment))
+                if comment:
+                    source_soup = BeautifulSoup(comment, 'html.parser')
+                    source_element = source_soup.find('source')
+                    if source_element:
+                        video_src = source_element.get('src')
+                        print("Video source found in commented source element")
+            print(f"Extracted video URL: {video_src}")
             return video_src
         except Exception as e:
             print(f"Error extracting video URL: {e}")
@@ -59,7 +76,6 @@ if __name__ == "__main__":
         page.goto(episode_url)
         
         extractor = ExtractVideoUrl(page)
-        extractor.save_page_content()
         video_url = extractor.extract_video_url()
         
         if video_url:

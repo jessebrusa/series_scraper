@@ -1,13 +1,21 @@
 import os
+import re
 
 class FileManager:
-    def __init__(self):
-        self.mount_point = "/Volumes/Plex Movies and Shows/Anime"
+    def __init__(self, ssd_mount_point=False):
+        if ssd_mount_point:
+            self.mount_point = "E:\\Anime"
+        else:
+            self.mount_point = "/Volumes/Plex Movies and Shows/Anime"
         self.series_path = None
 
+    def sanitize_title(self, title):
+        return re.sub(r'[<>:"/\\|?*]', '', title)
+
     def create_series_directory(self, series_title):
-        self.series = series_title
-        self.series_path = os.path.join(self.mount_point, series_title)
+        sanitized_title = self.sanitize_title(series_title)
+        self.series = sanitized_title
+        self.series_path = os.path.join(self.mount_point, sanitized_title)
         os.makedirs(self.series_path, exist_ok=True)
 
     def create_seasons_directories(self, num_seasons):

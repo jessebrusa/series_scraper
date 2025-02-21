@@ -6,7 +6,7 @@ from src.video_downloader import VideoDownloader
 class Main:
     def __init__(self):
         self.data_manager = DataManager()
-        self.file_manager = FileManager()
+        self.file_manager = FileManager(ssd_mount_point=True)
         self.playwright_manager = PlaywrightManager(self.data_manager)
 
     def nav_to_site(self, headless=True):
@@ -16,7 +16,7 @@ class Main:
 
     def search_anime(self, debug=False):
         if debug:
-            title = 'Attack on Titan'
+            title = 'Solo Leveling'
         else:
             title = input('Enter the title of the anime you want to download: ')
         self.playwright_manager.search_for_series(title)
@@ -37,7 +37,9 @@ class Main:
     def navigate_to_anime_page(self):
         self.page.goto(self.data_manager.get_series_title_href())
 
-    def collect_episode_links(self, write_to_file=False):
+    def collect_episode_links(self, write_to_file=False, open_from_file=False):
+        if open_from_file:
+            self.data_manager.read_episodes()
         self.playwright_manager.collect_episode_titles()
         if write_to_file:
             self.data_manager.write_episodes()
@@ -67,15 +69,15 @@ class Main:
         VideoDownloader(self.file_manager, self.data_manager, max_workers=20).download_videos()
 
     def run(self):
-        self.data_manager.read_series_title()
-        self.nav_to_site(headless=False)
-        # self.search_anime(debug=False)
-        # self.choose_anime(debug=False)
-        # self.navigate_to_anime_page()
-        # self.collect_episode_links(write_to_file=True)
-        # self.filter_episodes(write_to_file=True)
-        # self.create_file_structure()
-        self.extract_video_urls(write_to_file=True, open_from_file=True)
+        # self.data_manager.read_series_title()
+        self.nav_to_site(headless=True)
+        self.search_anime(debug=False)
+        self.choose_anime(debug=False)
+        self.navigate_to_anime_page()
+        self.collect_episode_links(write_to_file=True, open_from_file=False)
+        self.filter_episodes(write_to_file=True, open_from_file=False)   
+        self.create_file_structure()
+        self.extract_video_urls(write_to_file=True, open_from_file=False)
         self.download_videos(read_from_file=False)
 
 if __name__ == "__main__":

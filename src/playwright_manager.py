@@ -2,7 +2,6 @@ from playwright.sync_api import sync_playwright
 from .playwright_modules.playwright_super import PlaywrightSuper
 from .playwright_modules.compile_episode_titles import CompileEpisodeTitles
 from .playwright_modules.extract_video_url import ExtractVideoUrl
-import random
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self, data_manager):
@@ -10,7 +9,6 @@ class PlaywrightManager(PlaywrightSuper):
         self.data_manager = data_manager    
         self.playwright = sync_playwright().start()
         self.set_headers()
-        # self.name_url = []
 
     def set_headers(self):
         self.headers = {
@@ -75,44 +73,3 @@ class PlaywrightManager(PlaywrightSuper):
 
             self.page.close()
     
-
-    # def compile_series(self):
-    #     def choose_series(series_list):
-    #         result = 1  
-    #         selected_series = series_list[result]
-    #         return selected_series
-        
-    #     # compile_series_data = CompileSeriesData(self.page)
-    #     # test_title = 'Naruto'
-    #     # series_list = compile_series_data.search_for_series(test_title)
-    #     # selected_series = choose_series(series_list)
-    #     # self.go_to(f'https://www.wcostream.tv{selected_series["href"]}')
-    #     # self.episodes = compile_series_data.get_episode_titles()
-    #     # self.episode_data = compile_series_data.get_episode_data()
-
-    # def extract_video_urls(self):   
-    #     random_episode = random.randint(1, 350)
-    #     for i in range(random_episode, random_episode+15):  
-    #         episode_index = i - 1  
-    #         self.page = self.browser.new_page(extra_http_headers=self.headers)
-    #         self.go_to(self.episodes[episode_index]['href'])
-    #         if self.episode_data[episode_index][0] is None:
-    #             season_number = '01'
-    #         else:
-    #             season_number = self.episode_data[episode_index][0]
-    #         if self.episode_data[episode_index][1] is None:
-    #             continue
-    #         else:
-    #             episode_number = self.episode_data[episode_index][1]
-            
-    #         output_file_name = f's{season_number}e{episode_number}.mp4'
-    
-    #         extractor = ExtractVideoUrl(self.page)
-    #         video_url = extractor.extract_video_url()
-
-    #         if video_url and output_file_name:
-    #             self.name_url.append([output_file_name, video_url])
-
-    #         self.page.close()
-
-    #     return self.name_url
