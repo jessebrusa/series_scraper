@@ -9,23 +9,20 @@ class EpisodeDataProcessor:
     def title_to_list(self):
         self.title_list = self.title.lower().split(' ')
     
-    def format_episode_data(self, data):
-        data = int(data)
-        if data < 10:
-            return f'0{data}'
-        return str(data)
-    
     def get_season_number(self):
         if 'season' in self.title_list:
-            self.season_number = self.format_episode_data(self.title_list[self.title_list.index('season') + 1])
+            season_number = int(self.title_list[self.title_list.index('season') + 1])
+            self.season_number = f'{season_number:02}'
         else:
             self.season_number = '01'
     
     def get_episode_number(self):
         if 'episode' in self.title_list:
-            self.episode_number = self.title_list[self.title_list.index('episode') + 1]
-            if '-' in self.episode_number:
-                self.episode_number = self.episode_number.split('-')
+            episode_number = self.title_list[self.title_list.index('episode') + 1]
+            if '-' in episode_number:
+                self.episode_number = [f'{int(ep):02}' for ep in episode_number.split('-')]
+            else:
+                self.episode_number = f'{int(episode_number):02}'
 
     def format_output_file_name(self):
         if isinstance(self.episode_number, list):
