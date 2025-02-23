@@ -36,61 +36,44 @@ class DataManager:
     def filter_episodes(self):
         processed_episodes = []
         for episode in self.episode_titles:
-            data = EpisodeDataProcessor(episode).process_episode()
-            if isinstance(data, list):
-                for episode in data:
-                    processed_episodes.append(episode)
-            else:
+            try:
+                data = EpisodeDataProcessor(episode).process_episode()
                 processed_episodes.append(data)
+            except ValueError as e:
+                print(f"Skipping episode due to error: {e}")
         self.processed_episodes = processed_episodes
     
     def get_processed_episodes(self):
         return self.processed_episodes
 
+    def add_video_url(self, episode_number, video_url):
+        for episode in self.processed_episodes:
+            if episode['episode_number'] == episode_number:
+                episode['video_url'] = video_url
+                return
+
     def num_seasons(self):
         season_num = 1
         for episode in self.processed_episodes:
-            if episode['season_number'] is not None:
-                if int(episode['season_number']) > season_num:
-                    season_num = int(episode['season_number'])
+            season_num = max(season_num, int(episode['season_number']))
         return season_num
-
-    def add_video_url(self, title, url):
-        for episode in self.processed_episodes:
-            if episode['title'] == title:
-                episode['video_url'] = url
+    
+    def write_series_title(self):
+        with open('./test_data/series_title.json', 'w') as f:
+            json.dump(self.series_title, f)
 
     def write_episodes(self):
-        with open('./test_data/episodes.json', 'w') as json_file:
-            json.dump(self.episode_titles, json_file, indent=4)
-
-    def read_episodes(self):
-        with open('./test_data/episodes.json', 'r') as json_file:
-            self.episode_titles = json.load(json_file)
+        with open('./test_data/episodes.json', 'w') as f:
+            json.dump(self.episode_titles, f)   
 
     def write_processed_episodes(self):
-        with open('./test_data/processed_episodes.json', 'w') as json_file:
-            json.dump(self.processed_episodes, json_file, indent=4)
-
-    def read_processed_episodes(self):
-        with open('./test_data/processed_episodes.json', 'r') as json_file:
-            self.processed_episodes = json.load(json_file)
-
-    def write_finished_episodes(self):
-        with open('./test_data/finished_episodes.json', 'w') as json_file:
-            json.dump(self.processed_episodes, json_file, indent=4)
-
-    def read_finished_episodes(self):
-        with open('./test_data/finished_episodes.json', 'r') as json_file:
-            self.processed_episodes = json.load(json_file)
-
-    def write_series_title(self):
-        with open('./test_data/series_title.json', 'w') as json_file:
-            json.dump(self.series_title, json_file, indent=4)
+        with open('./test_data/processed_episodes.json', 'w') as f:
+            json.dump(self.processed_episodes, f)
 
     def read_series_title(self):
-        try:
-            with open('./test_data/series_title.json', 'r') as json_file:
-                self.series_title = json.load(json_file)
-        except FileNotFoundError:
-            self.series_title = None
+        with open('./test_data/series_title.json', 'r') as f:
+            self.series_title = json.load(f)
+
+    def write_finished_episodes(self):
+        with open('./test_data/finished_episodes.json', 'w') as f:
+            json.dump(self.processed_episodes, f)

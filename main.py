@@ -6,7 +6,7 @@ from src.video_downloader import VideoDownloader
 class Main:
     def __init__(self):
         self.data_manager = DataManager()
-        self.file_manager = FileManager(ssd_mount_point=True)
+        self.file_manager = FileManager()
         self.playwright_manager = PlaywrightManager(self.data_manager)
 
     def nav_to_site(self, headless=True):
@@ -16,7 +16,7 @@ class Main:
 
     def search_anime(self, debug=False):
         if debug:
-            title = 'Solo Leveling'
+            title = 'Attack on Titan'
         else:
             title = input('Enter the title of the anime you want to download: ')
         self.playwright_manager.search_for_series(title)

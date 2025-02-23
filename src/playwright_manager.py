@@ -1,4 +1,4 @@
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, TimeoutError, Error
 from .playwright_modules.playwright_super import PlaywrightSuper
 from .playwright_modules.compile_episode_titles import CompileEpisodeTitles
 from .playwright_modules.extract_video_url import ExtractVideoUrl
@@ -57,19 +57,23 @@ class PlaywrightManager(PlaywrightSuper):
             })
 
         self.data_manager.set_series_title_options(series_titles_options)
-    
+
     def collect_episode_titles(self):
         CompileEpisodeTitles(self.data_manager, self.page).get_episode_titles()
 
     def extract_video_urls(self):
         for episode in self.data_manager.get_processed_episodes():
             self.page = self.browser.new_page(extra_http_headers=self.headers)
-            self.page.goto(episode['href'])
+            try:
+                self.page.goto(episode['href'], timeout=30000)
+            except (TimeoutError, Error) as e:
+                print(f"Error: Failed to load {episode['href']} - {e}")
+                self.page.close()
+                continue
 
             video_url = ExtractVideoUrl(self.page).extract_video_url()
 
             if video_url:
-                self.data_manager.add_video_url(episode['title'], video_url)
+                self.data_manager.add_video_url(episode['episode_number'], video_url)
 
             self.page.close()
-    

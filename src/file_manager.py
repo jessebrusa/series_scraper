@@ -16,7 +16,12 @@ class FileManager:
         sanitized_title = self.sanitize_title(series_title)
         self.series = sanitized_title
         self.series_path = os.path.join(self.mount_point, sanitized_title)
-        os.makedirs(self.series_path, exist_ok=True)
+        try:
+            os.makedirs(self.series_path, exist_ok=True)
+        except PermissionError as e:
+            print(f"PermissionError: {e}")
+            print("Please check the permissions or change the directory path.")
+            raise
 
     def create_seasons_directories(self, num_seasons):
         if not self.series_path:
