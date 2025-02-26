@@ -1,6 +1,7 @@
 from playwright.sync_api import sync_playwright
 from .playwright_modules import PlaywrightSuper
 from .playwright_modules import TitleAnime
+from .playwright_modules import CompileEpisodeData
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self, data_manager, headless=True):
@@ -27,7 +28,11 @@ class PlaywrightManager(PlaywrightSuper):
 
     def nav_to_series_url(self):
         self.page.goto(self.data_manager.get_series_url())
-        self.page.pause()
+
+    def collect_episode_data(self):
+        episodes = CompileEpisodeData(self.page).get_episodes()
+        self.data_manager.set_episodes(episodes)
+        return self.data_manager.get_episodes()
 
     def close_browser(self):    
         self.page.close()

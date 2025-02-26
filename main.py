@@ -16,23 +16,26 @@ class Main:
 
     def run(self):
         if not self.define_media(skip=True):
-            self.exit_program()
+            print('No media type selected. Exiting program...')
             return 
         
         if not self.search_title(skip=True):
-            self.exit_program()
+            print('No titles found. Exiting program...')
             return
         
-        if not self.select_title():
-            self.exit_program()
+        if not self.select_title(skip=True):
+            print('No title selected. Exiting program...')
+            return
+        
+        if not self.compile_episode_data(skip=False):
+            print('No episodes found. Exiting program...')
             return
 
-        self.exit_program()
-        
-    def exit_program(self):
+        print(self.data_manager.get_episodes()[30:])
+
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
-
+        
     def define_media(self, skip=False):
         if skip:
             self.data_manager.set_media_type(SKIP_MEDIA_TYPE)
@@ -52,11 +55,14 @@ class Main:
         if skip:
             self.data_manager.set_series_title(SKIP_SERIES_TITLE['title'])
             self.data_manager.set_series_url(SKIP_SERIES_TITLE['href'])
+            self.playwright_manager.nav_to_series_url()
             return True
         self.ask_input.ask_series_title()
         self.playwright_manager.nav_to_series_url()
         return True
 
+    def compile_episode_data(self, skip=False):
+        return self.playwright_manager.collect_episode_data()
 
 if __name__ == '__main__':
     main = Main()
