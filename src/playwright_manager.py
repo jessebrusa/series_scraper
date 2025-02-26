@@ -25,6 +25,10 @@ class PlaywrightManager(PlaywrightSuper):
     def collect_titles(self):
         self.data_manager.set_searched_titles(TitleAnime(self.page).collect_titles())
 
+    def nav_to_series_url(self):
+        self.page.goto(self.data_manager.get_series_url())
+        self.page.pause()
+
     def close_browser(self):    
         self.page.close()
         self.browser.close()

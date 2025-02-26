@@ -15,3 +15,14 @@ class AskInput:
         if title:
             return title
         return None
+    
+    def ask_series_title(self):
+        title_list = self.data_manager.get_searched_titles()
+        options = '\n'.join([f"{i+1}. {title['title']}" for i, title in enumerate(title_list)])
+        options += f"\n{len(title_list)+1}. Cancel"
+        choice = int(input(f'Type Number Of Series Title: \n{options}\nChoose a series title: ')) - 1
+        if 0 <= choice < len(title_list):
+            self.data_manager.set_series_title(title_list[choice]['title'])
+            self.data_manager.set_series_url(title_list[choice]['href'])
+            return title_list[choice]['title']
+        return None

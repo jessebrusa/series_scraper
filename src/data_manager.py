@@ -1,13 +1,17 @@
+import os
+
 class DataManager:
     def __init__(self):
         self.media_type = None
         self.base_url = None
         self.searched_titles = []
         self.series_title = None
+        self.series_url = None
         self.series_episodes = []
 
     def set_media_type(self, media_type):
         self.media_type = media_type
+        self.get_media_type_url()
 
     def get_media_type(self):
         return self.media_type
@@ -21,3 +25,18 @@ class DataManager:
         
     def set_searched_titles(self, titles):
         self.searched_titles = titles
+
+    def get_searched_titles(self):
+        return self.searched_titles
+    
+    def set_series_title(self, title):
+        self.series_title = title
+    
+    def get_series_title(self):
+        return self.series_title
+    
+    def set_series_url(self, url):
+        self.series_url = f'{self.base_url}{url}'
+
+    def get_series_url(self):
+        return self.series_url

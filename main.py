@@ -2,11 +2,11 @@ from src.data_manager import DataManager
 from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 
-HEADLESS = True
+HEADLESS = False
 
 SKIP_MEDIA_TYPE = 'Anime'
 SKIP_SERIES_TITLES = [{'title': 'Black Clover English Subbed', 'href': '/anime/black-clover-english-subbed'}, {'title': 'Black Clover', 'href': '/anime/black-clover'}, {'title': 'Mugyutto! Black Clover English Subbed', 'href': '/anime/mugyutto-black-clover-english-subbed'}]
-SKIP_SERIES_TITLE = 'Black Clover'
+SKIP_SERIES_TITLE = {'title': 'Black Clover', 'href': '/anime/black-clover'}
 
 class Main:
     def __init__(self):
@@ -19,7 +19,11 @@ class Main:
             self.exit_program()
             return 
         
-        if not self.search_title(skip=False):
+        if not self.search_title(skip=True):
+            self.exit_program()
+            return
+        
+        if not self.select_title():
             self.exit_program()
             return
 
@@ -32,19 +36,26 @@ class Main:
     def define_media(self, skip=False):
         if skip:
             self.data_manager.set_media_type(SKIP_MEDIA_TYPE)
-            return SKIP_MEDIA_TYPE
+            return True
         return self.ask_input.ask_media_type()
 
     def search_title(self, skip=False):
         if skip:
             self.data_manager.set_searched_titles(SKIP_SERIES_TITLES)
-            return SKIP_SERIES_TITLES
+            return True
         self.playwright_manager.nav_to_media_type_url()
         self.playwright_manager.search_title(self.ask_input.ask_title())
         self.playwright_manager.collect_titles()
+        return self.data_manager.get_searched_titles()
 
-    def select_title(self):
-        pass
+    def select_title(self, skip=False):
+        if skip:
+            self.data_manager.set_series_title(SKIP_SERIES_TITLE['title'])
+            self.data_manager.set_series_url(SKIP_SERIES_TITLE['href'])
+            return True
+        self.ask_input.ask_series_title()
+        self.playwright_manager.nav_to_series_url()
+        return True
 
 
 if __name__ == '__main__':
