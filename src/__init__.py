@@ -1,5 +1,5 @@
 from .data_manager import DataManager
-from .define_media import DefineMedia
+from .ask_input import AskInput
 from .playwright_manager import PlaywrightManager
 
-__all__ = ['DataManager', 'DefineMedia', 'PlaywrightManager']
+__all__ = ['DataManager', 'AskInput', 'PlaywrightManager']

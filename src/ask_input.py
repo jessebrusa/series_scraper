@@ -1,4 +1,4 @@
-class DefineMedia:
+class AskInput:
     def __init__(self, data_manager):
         self.data_manager = data_manager
 
@@ -9,3 +9,9 @@ class DefineMedia:
             self.data_manager.set_media_type(media_list[media_type])
         
         return self.data_manager.get_media_type() is not None
+    
+    def ask_title(self):
+        title = input('Enter Title: ')
+        if title:
+            return title
+        return None
