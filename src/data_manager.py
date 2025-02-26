@@ -1,6 +1,7 @@
 class DataManager:
     def __init__(self):
         self.media_type = None
+        self.base_url = None
         self.searched_titles = []
         self.series_title = None
         self.series_episodes = []
@@ -13,9 +14,10 @@ class DataManager:
     
     def get_media_type_url(self):
         if self.get_media_type() == 'Anime':
-            return 'https://www.wcostream.tv/'
+            self.base_url = 'https://www.wcostream.tv'
+            return self.base_url
         else:
-            return 'https://example.com/'
+            return 'https://example.com'
         
     def set_searched_titles(self, titles):
         self.searched_titles = titles

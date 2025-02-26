@@ -1,5 +1,6 @@
 from playwright.sync_api import sync_playwright
 from .playwright_modules import PlaywrightSuper
+from .playwright_modules import TitleAnime
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self, data_manager, headless=True):
@@ -19,29 +20,10 @@ class PlaywrightManager(PlaywrightSuper):
         self.page.goto(self.data_manager.get_media_type_url())
 
     def search_title(self, title):
-        input_selector = '#searchbox'
-        self.page.wait_for_selector(input_selector)
-        self.page.fill(input_selector, title)
-
-        submit_button = '#konuara > div > input[type=submit]'
-        self.page.wait_for_selector(submit_button)
-        self.page.click(submit_button)
-        self.page.pause()
+        TitleAnime(self.page).search_title(title)
 
     def collect_titles(self):
-        title_selector = '.aramadabaslik a'
-        self.page.wait_for_selector(title_selector)
-
-        title_selector_list = self.page.query_selector_all(title_selector)
-
-        searched_titles = []
-        for title in title_selector_list:
-            searched_titles.append({
-                'title': title.text_content().strip(),
-                'href': title.get_attribute('href')
-            })
-
-        self.data_manager.set_searched_titles(searched_titles)
+        self.data_manager.set_searched_titles(TitleAnime(self.page).collect_titles())
 
     def close_browser(self):    
         self.page.close()
