@@ -20,14 +20,14 @@ class DataManager:
         }
 
     def set_media_type(self, media_type):
-        self.media_type = media_type
+        self.media_type = media_type.lower()
         self.get_media_type_url()
 
     def get_media_type(self):
         return self.media_type
     
     def get_media_type_url(self):
-        if self.get_media_type() == 'Anime':
+        if self.get_media_type() == 'anime':
             self.base_url = 'https://www.wcostream.tv'
             return self.base_url
         else:

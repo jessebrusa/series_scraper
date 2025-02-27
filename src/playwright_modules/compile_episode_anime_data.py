@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-class CompileEpisodeData:
+class CompileEpisodeAnimeData:
     def __init__(self, page):
         self.page = page
         self.episodes = []

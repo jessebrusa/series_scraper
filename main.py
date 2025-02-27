@@ -2,7 +2,7 @@ from src.data_manager import DataManager
 from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 
-HEADLESS = False
+HEADLESS = True
 
 SKIP_MEDIA_TYPE = 'Anime'
 SKIP_SERIES_TITLES = [{'title': 'Black Clover English Subbed', 'href': '/anime/black-clover-english-subbed'}, {'title': 'Black Clover', 'href': '/anime/black-clover'}, {'title': 'Mugyutto! Black Clover English Subbed', 'href': '/anime/mugyutto-black-clover-english-subbed'}]
@@ -27,11 +27,9 @@ class Main:
             print('No title selected. Exiting program...')
             return
         
-        if not self.compile_episode_data(skip=False):
+        if not self.compile_episode_data(skip=True):
             print('No episodes found. Exiting program...')
             return
-
-        print(self.data_manager.get_episodes()[30:])
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -62,7 +60,12 @@ class Main:
         return True
 
     def compile_episode_data(self, skip=False):
+        if skip:
+            self.data_manager.set_episodes([{'episode_title': '1', 'href': '/black-clover-episode-1-english-subbed'}, {'episode_title': '2', 'href': '/black-clover-episode-2-english-subbed'}, {'episode_title': '3', 'href': '/black-clover-episode-3-english-subbed'}])
+            return True
         return self.playwright_manager.collect_episode_data()
+
+    
 
 if __name__ == '__main__':
     main = Main()
