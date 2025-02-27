@@ -1,6 +1,7 @@
 from src.data_manager import DataManager
 from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
+from src.file_manager import FileManager
 
 HEADLESS = True
 
@@ -13,6 +14,7 @@ class Main:
         self.data_manager = DataManager()
         self.ask_input = AskInput(self.data_manager)
         self.playwright_manager = PlaywrightManager(self.data_manager, HEADLESS)
+        self.file_manager = FileManager()
 
     def run(self):
         if not self.define_media(skip=True):
@@ -31,7 +33,6 @@ class Main:
             print('No episodes found. Exiting program...')
             return
 
-        print(self.data_manager.get_episodes())
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
         
@@ -68,7 +69,8 @@ class Main:
         return self.playwright_manager.collect_episode_data()
     
     def create_file_structure(self):
-        pass
+        self.file_manager.create_series_directory(self.data_manager.get_series_title())
+        self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
 
 
 

@@ -56,3 +56,9 @@ class DataManager:
 
     def get_episodes(self):
         return self.series_episodes
+    
+    def get_num_seasons(self):
+        season_num = 1
+        for episode in self.processed_episodes:
+            season_num = max(season_num, int(episode['season_number']))
+        return season_num
