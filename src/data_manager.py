@@ -1,4 +1,5 @@
 import os
+import json
 
 class DataManager:
     def __init__(self):
@@ -68,5 +69,5 @@ class DataManager:
 
     def write_data(self):
         data = self.get_data()
-        with open(f'./data/anime/{self.get_series_title()}.json', 'w') as f:
-            f.write(str(data))
+        with open(f"./data/anime/{self.get_series_title()}.json", "w") as f:
+            json.dump(data, f, indent=4)
