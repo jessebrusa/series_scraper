@@ -65,3 +65,8 @@ class DataManager:
     
     def add_video_src(self, index, video_src):
         self.series_episodes[index]['video_src'] = video_src
+
+    def write_data(self):
+        data = self.get_data()
+        with open(f'./data/anime/{self.get_series_title()}.json', 'w') as f:
+            f.write(str(data))

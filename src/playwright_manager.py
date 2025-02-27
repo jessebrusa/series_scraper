@@ -47,12 +47,13 @@ class PlaywrightManager(PlaywrightSuper):
         if self.data_manager.get_media_type() == 'anime':
             self.page.close()
             for index, episode in enumerate(self.data_manager.get_episodes()):
+                print(f'Extracting video src: {index + 1}/{len(self.data_manager.get_episodes())}...')
                 self.page = self.browser.new_page()
                 self.page.goto(episode['href'])
                 video_link = ExtractVideoLinkAnime(self.page).extract_video_link()
                 self.data_manager.add_video_src(index, video_link)
-                print(self.data_manager.get_episodes()[index])
                 self.page.close()
+            self.close_browser()
     
     def close_browser(self):    
         self.page.close()

@@ -18,19 +18,19 @@ class Main:
         self.file_manager = FileManager(directory=WORK_DIRECTORY)
 
     def run(self):
-        if not self.define_media(skip=True):
+        if not self.define_media(skip=False):
             print('No media type selected. Exiting program...')
             return 
         
-        if not self.search_title(skip=True):
+        if not self.search_title(skip=False):
             print('No titles found. Exiting program...')
             return
         
-        if not self.select_title(skip=True):
+        if not self.select_title(skip=False):
             print('No title selected. Exiting program...')
             return
         
-        if not self.compile_episode_data(skip=True):
+        if not self.compile_episode_data(skip=False):
             print('No episodes found. Exiting program...')
             return
 
@@ -82,6 +82,7 @@ class Main:
 
     def extract_video_links(self):
         self.playwright_manager.extract_video_links()
+        self.data_manager.write_data()
 
 
 if __name__ == '__main__':
