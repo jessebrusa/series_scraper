@@ -3,7 +3,7 @@ from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
 
-HEADLESS = False
+HEADLESS = True
 WORK_DIRECTORY = 'E:/Anime'
 
 SKIP_MEDIA_TYPE = 'Anime'
@@ -20,22 +20,27 @@ class Main:
     def run(self):
         if not self.define_media(skip=False):
             print('No media type selected. Exiting program...')
+            self.playwright_manager.close_browser()
             return 
         
         if not self.search_title(skip=False):
             print('No titles found. Exiting program...')
+            self.playwright_manager.close_browser()
             return
         
         if not self.select_title(skip=False):
             print('No title selected. Exiting program...')
+            self.playwright_manager.close_browser()
             return
         
         if not self.compile_episode_data(skip=False):
             print('No episodes found. Exiting program...')
+            self.playwright_manager.close_browser()
             return
 
         if not self.create_file_structure():
             print('Failed to create file structure. Exiting program...')
+            self.playwright_manager.close_browser()
             return
         
         self.extract_video_links()

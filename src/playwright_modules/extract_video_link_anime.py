@@ -11,7 +11,11 @@ class ExtractVideoLinkAnime:
 
     def extract_video_link(self):
         self.set_iframe()
+        if not self.soup:
+            return None
         self.get_video_element()
+        if not self.video_element:
+            return None
         self.get_video_src()
         if self.video_src:
             return self.video_src

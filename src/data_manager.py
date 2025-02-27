@@ -1,4 +1,4 @@
-import os
+import re
 import json
 
 class DataManager:
@@ -67,7 +67,10 @@ class DataManager:
     def add_video_src(self, index, video_src):
         self.series_episodes[index]['video_src'] = video_src
 
+    def get_sanitized_series_title(self):
+        return re.sub(r'[\\/*?:"<>|]', "", self.series_title)
+
     def write_data(self):
         data = self.get_data()
-        with open(f"./data/anime/{self.get_series_title()}.json", "w") as f:
+        with open(f"./data/anime/{self.get_sanitized_series_title()}.json", "w") as f:
             json.dump(data, f, indent=4)

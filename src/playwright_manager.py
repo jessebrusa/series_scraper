@@ -43,19 +43,28 @@ class PlaywrightManager(PlaywrightSuper):
         self.data_manager.set_episodes(episodes)
         return self.data_manager.get_episodes()
 
+    def relaunch_browser_non_headless(self):
+        self.close_browser()
+        self.headless = False
+        self.open_browser()
+
     def extract_video_links(self):
+        self.relaunch_browser_non_headless()
         if self.data_manager.get_media_type() == 'anime':
             self.page.close()
             for index, episode in enumerate(self.data_manager.get_episodes()):
                 print(f'Extracting video src: {index + 1}/{len(self.data_manager.get_episodes())}...')
-                self.page = self.browser.new_page()
+                self.page = self.browser.new_page(viewport={"width": 1, "height": 1})
                 self.page.goto(episode['href'])
                 video_link = ExtractVideoLinkAnime(self.page).extract_video_link()
                 self.data_manager.add_video_src(index, video_link)
                 self.page.close()
             self.close_browser()
     
-    def close_browser(self):    
-        self.page.close()
-        self.browser.close()
-        self.playwright.stop()
+    def close_browser(self):
+        if self.page and not self.page.is_closed():
+            self.page.close()
+        if self.browser and self.browser.is_connected():
+            self.browser.close()
+        if self.playwright:
+            self.playwright.stop()

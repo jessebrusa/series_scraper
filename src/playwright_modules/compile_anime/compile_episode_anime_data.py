@@ -26,5 +26,7 @@ class CompileEpisodeAnimeData:
 
     def extract_episode_data(self, episode_list):
         for episode in episode_list:
-            self.episodes.append(AnimeEpisodeProcessor(episode).process_episode())
+            episode_data = AnimeEpisodeProcessor(episode).process_episode()
+            if episode_data['episode_title'] is not None:
+                self.episodes.append(episode_data)
         self.episodes.reverse()

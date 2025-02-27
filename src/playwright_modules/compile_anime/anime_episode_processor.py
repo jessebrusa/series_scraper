@@ -13,7 +13,7 @@ class AnimeEpisodeProcessor:
         self.get_episode_number()
         self.output_file_name = f's{self.season_number}e{self.episode_number}.mp4'
         return {
-            'title': self.episode_title,
+            'episode_title': self.episode_title,
             'href': self.href,
             'season_number': self.season_number,
             'episode_number': self.episode_number,
