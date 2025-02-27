@@ -62,3 +62,6 @@ class DataManager:
         for episode in self.series_episodes:
             season_num = max(season_num, int(episode['season_number']))
         return season_num
+    
+    def add_video_src(self, index, video_src):
+        self.series_episodes[index]['video_src'] = video_src

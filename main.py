@@ -3,7 +3,7 @@ from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
 
-HEADLESS = True
+HEADLESS = False
 WORK_DIRECTORY = 'E:/Anime'
 
 SKIP_MEDIA_TYPE = 'Anime'
@@ -38,7 +38,7 @@ class Main:
             print('Failed to create file structure. Exiting program...')
             return
         
-
+        self.extract_video_links()
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -81,7 +81,7 @@ class Main:
         return True
 
     def extract_video_links(self):
-        pass
+        self.playwright_manager.extract_video_links()
 
 
 if __name__ == '__main__':
