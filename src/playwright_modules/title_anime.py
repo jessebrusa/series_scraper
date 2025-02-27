@@ -1,3 +1,5 @@
+from playwright.sync_api import TimeoutError
+
 class TitleAnime:
     def __init__(self, page):
         self.page = page
@@ -13,7 +15,11 @@ class TitleAnime:
 
     def collect_titles(self):
         title_selector = '.aramadabaslik a'
-        self.page.wait_for_selector(title_selector)
+        try:
+            self.page.wait_for_selector(title_selector, timeout=4000)
+        except TimeoutError:
+            print('No title found. Try again. Check for misspelling.')
+            return None
 
         title_selector_list = self.page.query_selector_all(title_selector)
 
@@ -24,4 +30,4 @@ class TitleAnime:
                 'href': title.get_attribute('href')
             })
         
-        return searched_titles  
+        return searched_titles

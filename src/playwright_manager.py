@@ -3,6 +3,7 @@ from .playwright_modules import PlaywrightSuper
 from .playwright_modules import TitleAnime
 from .playwright_modules.compile_anime import CompileEpisodeAnimeData
 from .playwright_modules.extract_video_link_anime import ExtractVideoLinkAnime
+from .ask_input import AskInput
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self, data_manager, headless=True):
@@ -23,7 +24,15 @@ class PlaywrightManager(PlaywrightSuper):
 
     def search_title(self, title):
         if self.data_manager.get_media_type() == 'anime':
-            TitleAnime(self.page).search_title(title)
+            while True:
+                TitleAnime(self.page).search_title(title)
+                titles = TitleAnime(self.page).collect_titles()
+                if titles:
+                    self.data_manager.set_searched_titles(titles)
+                    break
+                else:
+                    self.page.goto(self.data_manager.get_media_type_url())
+                    title = AskInput(self.data_manager).ask_title()
         else:
             print('Media type not supported.')
 
