@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from .anime_episode_processor import AnimeEpisodeProcessor
 
 class CompileEpisodeAnimeData:
     def __init__(self, page):
@@ -11,7 +12,6 @@ class CompileEpisodeAnimeData:
         html_content = self.get_page_content()
         episode_element_list = self.parse_html_content(html_content, episode_selector)
         self.extract_episode_data(episode_element_list)
-
         return self.episodes
 
     def wait_for_episodes(self, selector):
@@ -26,11 +26,5 @@ class CompileEpisodeAnimeData:
 
     def extract_episode_data(self, episode_list):
         for episode in episode_list:
-            episode_title = episode.text.strip()
-            href = episode.get('href')
-            if 'episode' in episode_title.lower():
-                self.episodes.append({
-                    'episode_title': episode_title,
-                    'href': href
-                })
+            self.episodes.append(AnimeEpisodeProcessor(episode).process_episode())
         self.episodes.reverse()

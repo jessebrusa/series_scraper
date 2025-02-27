@@ -31,6 +31,7 @@ class Main:
             print('No episodes found. Exiting program...')
             return
 
+        print(self.data_manager.get_episodes())
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
         
@@ -62,10 +63,14 @@ class Main:
     def compile_episode_data(self, skip=False):
         if skip:
             self.data_manager.set_episodes([{'episode_title': '1', 'href': '/black-clover-episode-1-english-subbed'}, {'episode_title': '2', 'href': '/black-clover-episode-2-english-subbed'}, {'episode_title': '3', 'href': '/black-clover-episode-3-english-subbed'}])
+            self.playwright_manager.collect_episode_data()
             return True
         return self.playwright_manager.collect_episode_data()
-
     
+    def create_file_structure(self):
+        pass
+
+
 
 if __name__ == '__main__':
     main = Main()

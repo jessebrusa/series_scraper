@@ -1,7 +1,7 @@
 from playwright.sync_api import sync_playwright
 from .playwright_modules import PlaywrightSuper
 from .playwright_modules import TitleAnime
-from .playwright_modules import CompileEpisodeAnimeData
+from .playwright_modules.compile_anime import CompileEpisodeAnimeData
 
 class PlaywrightManager(PlaywrightSuper):
     def __init__(self, data_manager, headless=True):
