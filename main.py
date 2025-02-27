@@ -16,7 +16,10 @@ class Main:
         self.file_manager = FileManager(directory=WORK_DIRECTORY)
 
     def run(self):
-        self.load_test_data(load='anime')
+        if not self.load_test_data(load='anime'):
+            print('Failed to load test data. Exiting program...')
+            self.playwright_manager.close_browser()
+            return
 
         if not self.define_media(skip=True):
             print('No media type selected. Exiting program...')
@@ -38,12 +41,17 @@ class Main:
             self.playwright_manager.close_browser()
             return
 
-        if not self.create_file_structure():
+        if not self.create_file_structure(skip=True):
             print('Failed to create file structure. Exiting program...')
             self.playwright_manager.close_browser()
             return
         
-        self.extract_video_links()
+        if not self.extract_video_links(skip=True):
+            print('Failed to extract video links. Exiting.')
+            self.playwright_manager.close_browser()
+            return
+
+        print(self.data_manager.get_data())
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -51,42 +59,46 @@ class Main:
     def load_test_data(self, load=False):
         if load == 'anime':
             self.data_manager.load_data(ANIME_TEST_DATA)
+            if self.data_manager.get_media_type() is not None:
+                return True
         
     def define_media(self, skip=False):
-        if skip:
-            return True
-        return self.ask_input.ask_media_type()
+        if not skip:
+            return self.ask_input.ask_media_type()
 
     def search_title(self, skip=False):
-        if skip:
-            return True
-        self.playwright_manager.nav_to_media_type_url()
-        self.playwright_manager.search_title(self.ask_input.ask_title())
-        self.playwright_manager.collect_titles()
-        return self.data_manager.get_searched_titles()
+        if not skip:
+            self.playwright_manager.nav_to_media_type_url()
+            self.playwright_manager.search_title(self.ask_input.ask_title())
+            self.playwright_manager.collect_titles()
+            return self.data_manager.get_searched_titles()
 
     def select_title(self, skip=False):
-        if skip:
+        if not skip:
+            self.ask_input.ask_series_title()
             self.playwright_manager.nav_to_series_url()
             return True
-        self.ask_input.ask_series_title()
-        self.playwright_manager.nav_to_series_url()
-        return True
+        else:
+            self.playwright_manager.nav_to_series_url()
+            return True
 
     def compile_episode_data(self, skip=False):
-        if skip:
+        if not skip:
+            return self.playwright_manager.collect_episode_data()
+        else:
             self.playwright_manager.collect_episode_data()
             return True
-        return self.playwright_manager.collect_episode_data()
-    
-    def create_file_structure(self):
-        self.file_manager.create_series_directory(self.data_manager.get_series_title())
-        self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
-        return True
+          
+    def create_file_structure(self, skip=False):
+        if not skip:
+            self.file_manager.create_series_directory(self.data_manager.get_series_title())
+            self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
 
-    def extract_video_links(self):
-        self.playwright_manager.extract_video_links()
-        self.data_manager.write_data()
+    def extract_video_links(self, skip=False):
+        if not skip:
+            self.playwright_manager.extract_video_links()
+            self.data_manager.write_data()
+            return True
 
 
 if __name__ == '__main__':
