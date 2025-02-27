@@ -6,9 +6,7 @@ from src.file_manager import FileManager
 HEADLESS = True
 WORK_DIRECTORY = 'E:/Anime'
 
-SKIP_MEDIA_TYPE = 'Anime'
-SKIP_SERIES_TITLES = [{'title': 'Black Clover English Subbed', 'href': '/anime/black-clover-english-subbed'}, {'title': 'Black Clover', 'href': '/anime/black-clover'}, {'title': 'Mugyutto! Black Clover English Subbed', 'href': '/anime/mugyutto-black-clover-english-subbed'}]
-SKIP_SERIES_TITLE = {'title': 'Black Clover', 'href': '/anime/black-clover'}
+ANIME_TEST_DATA = './data/anime/Eve no Jikan English Subbed.json'
 
 class Main:
     def __init__(self):
@@ -18,22 +16,24 @@ class Main:
         self.file_manager = FileManager(directory=WORK_DIRECTORY)
 
     def run(self):
-        if not self.define_media(skip=False):
+        self.load_test_data(load='anime')
+
+        if not self.define_media(skip=True):
             print('No media type selected. Exiting program...')
             self.playwright_manager.close_browser()
             return 
         
-        if not self.search_title(skip=False):
+        if not self.search_title(skip=True):
             print('No titles found. Exiting program...')
             self.playwright_manager.close_browser()
             return
         
-        if not self.select_title(skip=False):
+        if not self.select_title(skip=True):
             print('No title selected. Exiting program...')
             self.playwright_manager.close_browser()
             return
         
-        if not self.compile_episode_data(skip=False):
+        if not self.compile_episode_data(skip=True):
             print('No episodes found. Exiting program...')
             self.playwright_manager.close_browser()
             return
@@ -47,16 +47,18 @@ class Main:
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
+
+    def load_test_data(self, load=False):
+        if load == 'anime':
+            self.data_manager.load_data(ANIME_TEST_DATA)
         
     def define_media(self, skip=False):
         if skip:
-            self.data_manager.set_media_type(SKIP_MEDIA_TYPE)
             return True
         return self.ask_input.ask_media_type()
 
     def search_title(self, skip=False):
         if skip:
-            self.data_manager.set_searched_titles(SKIP_SERIES_TITLES)
             return True
         self.playwright_manager.nav_to_media_type_url()
         self.playwright_manager.search_title(self.ask_input.ask_title())
@@ -65,8 +67,6 @@ class Main:
 
     def select_title(self, skip=False):
         if skip:
-            self.data_manager.set_series_title(SKIP_SERIES_TITLE['title'])
-            self.data_manager.set_series_url(SKIP_SERIES_TITLE['href'])
             self.playwright_manager.nav_to_series_url()
             return True
         self.ask_input.ask_series_title()
@@ -75,7 +75,6 @@ class Main:
 
     def compile_episode_data(self, skip=False):
         if skip:
-            self.data_manager.set_episodes([{'episode_title': '1', 'href': '/black-clover-episode-1-english-subbed'}, {'episode_title': '2', 'href': '/black-clover-episode-2-english-subbed'}, {'episode_title': '3', 'href': '/black-clover-episode-3-english-subbed'}])
             self.playwright_manager.collect_episode_data()
             return True
         return self.playwright_manager.collect_episode_data()

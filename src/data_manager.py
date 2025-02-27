@@ -74,3 +74,13 @@ class DataManager:
         data = self.get_data()
         with open(f"./data/anime/{self.get_sanitized_series_title()}.json", "w") as f:
             json.dump(data, f, indent=4)
+
+    def load_data(self, file_path):
+        with open(file_path, "r") as f:
+            data = json.load(f)
+            self.media_type = data['media_type']
+            self.base_url = data['base_url']
+            self.searched_titles = data['searched_titles']
+            self.series_title = data['series_title']
+            self.series_url = data['series_url']
+            self.series_episodes = data['series_episodes']
