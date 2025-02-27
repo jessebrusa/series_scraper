@@ -1,85 +1,69 @@
 from src.data_manager import DataManager
-from src.file_manager import FileManager
+from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
-from src.video_downloader import VideoDownloader
+
+HEADLESS = False
+
+SKIP_MEDIA_TYPE = 'Anime'
+SKIP_SERIES_TITLES = [{'title': 'Black Clover English Subbed', 'href': '/anime/black-clover-english-subbed'}, {'title': 'Black Clover', 'href': '/anime/black-clover'}, {'title': 'Mugyutto! Black Clover English Subbed', 'href': '/anime/mugyutto-black-clover-english-subbed'}]
+SKIP_SERIES_TITLE = {'title': 'Black Clover', 'href': '/anime/black-clover'}
 
 class Main:
     def __init__(self):
         self.data_manager = DataManager()
-        self.file_manager = FileManager()
-        self.playwright_manager = PlaywrightManager(self.data_manager)
-
-    def nav_to_site(self, headless=True):
-        self.playwright_manager.start_browser(headless=headless)
-        self.page = self.playwright_manager.get_page()
-        self.page.goto(self.data_manager.base_url)
-
-    def search_anime(self, debug=False):
-        if debug:
-            title = 'Attack on Titan'
-        else:
-            title = input('Enter the title of the anime you want to download: ')
-        self.playwright_manager.search_for_series(title)
-        self.playwright_manager.collect_series_titles()
-
-    def choose_anime(self, debug=False):
-        if debug:
-            anime_number = 1
-        else:
-            print('Enter the number of the anime you want to download:')
-            for i, anime in enumerate(self.data_manager.get_series_title_options()):
-                print(f'{i+1}. {anime["title"]}')
-            anime_number = int(input('Enter the number: '))
-        selected_anime = self.data_manager.get_series_title_options()[anime_number-1]
-        self.data_manager.set_series_title(selected_anime)
-        self.data_manager.write_series_title()
-
-    def navigate_to_anime_page(self):
-        self.page.goto(self.data_manager.get_series_title_href())
-
-    def collect_episode_links(self, write_to_file=False, open_from_file=False):
-        if open_from_file:
-            self.data_manager.read_episodes()
-        self.playwright_manager.collect_episode_titles()
-        if write_to_file:
-            self.data_manager.write_episodes()
-
-    def filter_episodes(self, open_from_file=False, write_to_file=False):
-        if open_from_file:
-            self.data_manager.read_episodes()
-        self.data_manager.filter_episodes()
-        if write_to_file:
-            self.data_manager.write_processed_episodes()
-
-    def create_file_structure(self):
-        self.file_manager.create_series_directory(self.data_manager.get_series_title())
-        self.file_manager.create_seasons_directories(self.data_manager.num_seasons())
-
-    def extract_video_urls(self, open_from_file=False, write_to_file=False):
-        if open_from_file:
-            self.data_manager.read_processed_episodes()
-        self.playwright_manager.extract_video_urls()
-        if write_to_file:
-            self.data_manager.write_finished_episodes()
-
-    def download_videos(self, read_from_file=False):
-        if read_from_file:
-            self.data_manager.read_finished_episodes()
-        self.create_file_structure() 
-        VideoDownloader(self.file_manager, self.data_manager, max_workers=20).download_videos()
+        self.ask_input = AskInput(self.data_manager)
+        self.playwright_manager = PlaywrightManager(self.data_manager, HEADLESS)
 
     def run(self):
-        # self.data_manager.read_series_title()
-        self.nav_to_site(headless=True)
-        self.search_anime(debug=False)
-        self.choose_anime(debug=False)
-        self.navigate_to_anime_page()
-        self.collect_episode_links(write_to_file=True, open_from_file=False)
-        self.filter_episodes(write_to_file=True, open_from_file=False)   
-        self.create_file_structure()
-        self.extract_video_urls(write_to_file=True, open_from_file=False)
-        self.download_videos(read_from_file=False)
+        if not self.define_media(skip=True):
+            print('No media type selected. Exiting program...')
+            return 
+        
+        if not self.search_title(skip=True):
+            print('No titles found. Exiting program...')
+            return
+        
+        if not self.select_title(skip=True):
+            print('No title selected. Exiting program...')
+            return
+        
+        if not self.compile_episode_data(skip=False):
+            print('No episodes found. Exiting program...')
+            return
 
-if __name__ == "__main__":
+        print(self.data_manager.get_episodes()[30:])
+
+        print('Thanks for using the program!')
+        self.playwright_manager.close_browser()
+        
+    def define_media(self, skip=False):
+        if skip:
+            self.data_manager.set_media_type(SKIP_MEDIA_TYPE)
+            return True
+        return self.ask_input.ask_media_type()
+
+    def search_title(self, skip=False):
+        if skip:
+            self.data_manager.set_searched_titles(SKIP_SERIES_TITLES)
+            return True
+        self.playwright_manager.nav_to_media_type_url()
+        self.playwright_manager.search_title(self.ask_input.ask_title())
+        self.playwright_manager.collect_titles()
+        return self.data_manager.get_searched_titles()
+
+    def select_title(self, skip=False):
+        if skip:
+            self.data_manager.set_series_title(SKIP_SERIES_TITLE['title'])
+            self.data_manager.set_series_url(SKIP_SERIES_TITLE['href'])
+            self.playwright_manager.nav_to_series_url()
+            return True
+        self.ask_input.ask_series_title()
+        self.playwright_manager.nav_to_series_url()
+        return True
+
+    def compile_episode_data(self, skip=False):
+        return self.playwright_manager.collect_episode_data()
+
+if __name__ == '__main__':
     main = Main()
     main.run()

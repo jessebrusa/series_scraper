@@ -1,5 +1,5 @@
 from .playwright_super import PlaywrightSuper
-from .compile_episode_titles import CompileEpisodeTitles
-from .extract_video_url import ExtractVideoUrl
+from .title_anime import TitleAnime
+from .CompileEpisodeData import CompileEpisodeData
 
-__all__ = ['PlaywrightSuper', 'CompileEpisodeTitles', 'ExtractVideoUrl']
+__all__ = ['PlaywrightSuper', 'TitleAnime' 'CompileEpisodeData']
