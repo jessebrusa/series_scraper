@@ -4,6 +4,7 @@ from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
 
 HEADLESS = True
+WORK_DIRECTORY = 'E:/Anime'
 
 SKIP_MEDIA_TYPE = 'Anime'
 SKIP_SERIES_TITLES = [{'title': 'Black Clover English Subbed', 'href': '/anime/black-clover-english-subbed'}, {'title': 'Black Clover', 'href': '/anime/black-clover'}, {'title': 'Mugyutto! Black Clover English Subbed', 'href': '/anime/mugyutto-black-clover-english-subbed'}]
@@ -14,7 +15,7 @@ class Main:
         self.data_manager = DataManager()
         self.ask_input = AskInput(self.data_manager)
         self.playwright_manager = PlaywrightManager(self.data_manager, HEADLESS)
-        self.file_manager = FileManager()
+        self.file_manager = FileManager(directory=WORK_DIRECTORY)
 
     def run(self):
         if not self.define_media(skip=True):
@@ -32,6 +33,12 @@ class Main:
         if not self.compile_episode_data(skip=True):
             print('No episodes found. Exiting program...')
             return
+
+        if not self.create_file_structure():
+            print('Failed to create file structure. Exiting program...')
+            return
+        
+
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -71,7 +78,10 @@ class Main:
     def create_file_structure(self):
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
         self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
+        return True
 
+    def extract_video_links(self):
+        pass
 
 
 if __name__ == '__main__':

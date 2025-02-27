@@ -59,6 +59,6 @@ class DataManager:
     
     def get_num_seasons(self):
         season_num = 1
-        for episode in self.processed_episodes:
+        for episode in self.series_episodes:
             season_num = max(season_num, int(episode['season_number']))
         return season_num
