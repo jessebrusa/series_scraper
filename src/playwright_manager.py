@@ -43,7 +43,18 @@ class PlaywrightManager(PlaywrightSuper):
             print('Media type not supported.')
 
     def nav_to_series_url(self):
-        self.page.goto(self.data_manager.get_series_url())
+        series_url = self.data_manager.get_series_url()
+        try:
+            self.page.goto(series_url)
+        except Exception as e:
+            print("Retrying navigation with route interception disabled")
+            self.page.unroute("**/*", self.route_intercept)
+            try:
+                self.page.goto(series_url)
+            except Exception as e:
+                print(f"Failed to navigate to series URL even with route interception disabled: {e}")
+                self.close_browser()
+                raise e
 
     def collect_episode_data(self):
         episodes = None
