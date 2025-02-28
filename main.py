@@ -4,7 +4,7 @@ from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
 
 HEADLESS = True
-WORK_DIRECTORY = 'E:/Anime'
+WORK_DIRECTORY = './content/anime/'
 
 ANIME_TEST_DATA = './data/anime/Eve no Jikan English Subbed.json'
 
@@ -41,7 +41,7 @@ class Main:
             self.playwright_manager.close_browser()
             return
 
-        if not self.create_file_structure(skip=True):
+        if not self.create_file_structure(skip=False):
             print('Failed to create file structure. Exiting program...')
             self.playwright_manager.close_browser()
             return
@@ -65,12 +65,16 @@ class Main:
     def define_media(self, skip=False):
         if not skip:
             return self.ask_input.ask_media_type()
+        else:
+            return self.data_manager.get_media_type()   
 
     def search_title(self, skip=False):
         if not skip:
             self.playwright_manager.nav_to_media_type_url()
             self.playwright_manager.search_title(self.ask_input.ask_title())
             self.playwright_manager.collect_titles()
+            return self.data_manager.get_searched_titles()
+        else:
             return self.data_manager.get_searched_titles()
 
     def select_title(self, skip=False):
@@ -93,12 +97,13 @@ class Main:
         if not skip:
             self.file_manager.create_series_directory(self.data_manager.get_series_title())
             self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
+            return True
 
     def extract_video_links(self, skip=False):
         if not skip:
             self.playwright_manager.extract_video_links()
             self.data_manager.write_data()
-            return True
+        return self.data_manager.get_episodes()
 
 
 if __name__ == '__main__':
