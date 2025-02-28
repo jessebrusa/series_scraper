@@ -9,6 +9,7 @@ WORK_DIRECTORY = './content/anime/'
 
 ANIME_TEST_DATA = './data/anime/Death Note.json'
 
+SKIP_LOAD_TEST_DATA = True
 SKIP_DEFINE_MEDIA = True
 SKIP_SEARCH_TITLE = True
 SKIP_SELECT_TITLE = True
@@ -24,7 +25,7 @@ class Main:
         self.file_manager = FileManager(directory=WORK_DIRECTORY)
 
     def run(self):
-        if not self.load_test_data(load='anime'):
+        if not self.load_test_data(skip=SKIP_LOAD_TEST_DATA, load='anime'):
             print('Failed to load test data. Exiting program...')
             self.playwright_manager.close_browser()
             return
@@ -60,7 +61,7 @@ class Main:
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
 
-    def load_test_data(self, load=False):
+    def load_test_data(self, skip=False, load=False):
         if load == 'anime':
             self.data_manager.load_data(ANIME_TEST_DATA)
             if self.data_manager.get_media_type() is not None:
