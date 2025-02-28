@@ -2,6 +2,7 @@ from src.data_manager import DataManager
 from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
+from src.video_downloader import VideoDownloader
 
 HEADLESS = True
 WORK_DIRECTORY = './content/anime/'
@@ -25,12 +26,12 @@ class Main:
             print('No media type selected. Exiting program...')
             self.playwright_manager.close_browser()
             return 
-        
+
         if not self.search_title(skip=True):
             print('No titles found. Exiting program...')
             self.playwright_manager.close_browser()
             return
-        
+
         if not self.select_title(skip=True):
             print('No title selected. Exiting program...')
             self.playwright_manager.close_browser()
@@ -41,17 +42,13 @@ class Main:
             self.playwright_manager.close_browser()
             return
 
-        if not self.create_file_structure(skip=False):
-            print('Failed to create file structure. Exiting program...')
-            self.playwright_manager.close_browser()
-            return
-        
         if not self.extract_video_links(skip=True):
             print('Failed to extract video links. Exiting.')
             self.playwright_manager.close_browser()
             return
 
-        print(self.data_manager.get_data())
+        self.create_file_structure()
+        self.download_videos()
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -90,20 +87,21 @@ class Main:
         if not skip:
             return self.playwright_manager.collect_episode_data()
         else:
-            self.playwright_manager.collect_episode_data()
-            return True
+            return self.data_manager.get_episodes()
           
-    def create_file_structure(self, skip=False):
-        if not skip:
-            self.file_manager.create_series_directory(self.data_manager.get_series_title())
-            self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
-            return True
+    def create_file_structure(self):
+        self.file_manager.create_series_directory(self.data_manager.get_series_title())
+        self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
 
     def extract_video_links(self, skip=False):
         if not skip:
             self.playwright_manager.extract_video_links()
             self.data_manager.write_data()
         return self.data_manager.get_episodes()
+
+    def download_videos(self, skip=False):
+        if not skip:
+            VideoDownloader(self.file_manager, self.data_manager).download_videos()
 
 
 if __name__ == '__main__':
