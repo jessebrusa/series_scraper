@@ -8,34 +8,47 @@ class ExtractVideoLinkAnime:
         self.video_element = None
         self.video_html = None
         self.video_src = None
+        self.soup = None
 
     def extract_video_link(self):
         self.set_iframe()
         if not self.soup:
-            return None
+            print('Failed to set iframe or parse iframe content.')
+            return None, None
         self.get_video_element()
         if not self.video_element:
-            return None
+            print('No video element found.')
+            return None, None
         self.get_video_src()
         if self.video_src:
-            return self.video_src
-        return None
+            cookies = self.get_cookies()
+            return self.video_src, cookies
+        return None, None
 
     def set_iframe(self):
-        iframe_selector = 'iframe'
         try:
             self.page.wait_for_timeout(1250)
-            self.page.wait_for_selector(iframe_selector)
-            self.iframe_element = self.page.query_selector(iframe_selector)
+            
+            iframe_element = self.page.query_selector('iframe#frameNewcizgifilmuploads0')
+            if iframe_element:
+                self.iframe_element = iframe_element
+            else:
+                self.page.wait_for_selector('iframe', timeout=30000)
+                self.iframe_element = self.page.query_selector('iframe')
+            
             if not self.iframe_element:
                 print('No iframe element found.')
                 return None
+            
             iframe_html = self.iframe_element.content_frame().content()
             self.soup = BeautifulSoup(iframe_html, 'html.parser')
         except Exception as e:
             print(e)
 
     def get_video_element(self):
+        if not self.soup:
+            print('Soup not initialized.')
+            return
         video_selector = 'video#video-js_html5_api, video#hls_html5_api'
         video_element = self.soup.select_one(video_selector)
         if video_element:
@@ -55,3 +68,6 @@ class ExtractVideoLinkAnime:
                 source_element = source_soup.find('source')
                 if source_element:
                     self.video_src = source_element.get('src')
+
+    def get_cookies(self):
+        return self.page.context.cookies()

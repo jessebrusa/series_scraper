@@ -7,7 +7,14 @@ from src.video_downloader import VideoDownloader
 HEADLESS = True
 WORK_DIRECTORY = './content/anime/'
 
-ANIME_TEST_DATA = './data/anime/Eve no Jikan English Subbed.json'
+ANIME_TEST_DATA = './data/anime/Death Note.json'
+
+SKIP_DEFINE_MEDIA = True
+SKIP_SEARCH_TITLE = True
+SKIP_SELECT_TITLE = True
+SKIP_COMPILE_EPISODE_DATA = True
+SKIP_EXTRACT_VIDEO_LINKS = False
+SKIP_DOWNLOAD_VIDEOS = False
 
 class Main:
     def __init__(self):
@@ -22,33 +29,33 @@ class Main:
             self.playwright_manager.close_browser()
             return
 
-        if not self.define_media(skip=True):
+        if not self.define_media(skip=SKIP_DEFINE_MEDIA):
             print('No media type selected. Exiting program...')
             self.playwright_manager.close_browser()
             return 
 
-        if not self.search_title(skip=True):
+        if not self.search_title(skip=SKIP_SEARCH_TITLE):
             print('No titles found. Exiting program...')
             self.playwright_manager.close_browser()
             return
 
-        if not self.select_title(skip=True):
+        if not self.select_title(skip=SKIP_SELECT_TITLE):
             print('No title selected. Exiting program...')
             self.playwright_manager.close_browser()
             return
         
-        if not self.compile_episode_data(skip=True):
+        if not self.compile_episode_data(skip=SKIP_COMPILE_EPISODE_DATA):
             print('No episodes found. Exiting program...')
             self.playwright_manager.close_browser()
             return
 
-        if not self.extract_video_links(skip=False):
+        if not self.extract_video_links(skip=SKIP_EXTRACT_VIDEO_LINKS):
             print('Failed to extract video links. Exiting.')
             self.playwright_manager.close_browser()
             return
 
         self.create_file_structure()
-        self.download_videos()
+        self.download_videos(skip=SKIP_DOWNLOAD_VIDEOS)
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()

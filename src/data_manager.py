@@ -67,6 +67,9 @@ class DataManager:
     def add_video_src(self, index, video_src):
         self.series_episodes[index]['video_src'] = video_src
 
+    def add_cookies(self, index, cookies):
+        self.series_episodes[index]['cookies'] = cookies
+
     def get_sanitized_series_title(self):
         return re.sub(r'[\\/*?:"<>|]', "", self.series_title)
 
