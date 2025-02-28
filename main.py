@@ -42,7 +42,7 @@ class Main:
             self.playwright_manager.close_browser()
             return
 
-        if not self.extract_video_links(skip=True):
+        if not self.extract_video_links(skip=False):
             print('Failed to extract video links. Exiting.')
             self.playwright_manager.close_browser()
             return
