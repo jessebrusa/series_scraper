@@ -59,21 +59,180 @@
             "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-1-english-subbed",
             "season_number": "01",
             "episode_number": "01",
-            "output_file_name": "s01e01.mp4"
+            "output_file_name": "s01e01.mp4",
+            "video_src": "https://t01.cizgifilmlerizle.com/getvid?evid=E-ggE0nTzqhDPe26LV8QDSZbKLcV-r6j5AwKHmbRg03RBP_MjWwROFadohuOVmsYmjiz11EjcXF9wVJcRsWGXY70l37-t86BP38vpIxYO2EgLknFeq93KxtSp5nK51_h21qitFuDUNRT0MGGGGWdy9IBEvc-El0EZ1GniLonzu2H-u8VKFLa0GlQ5Q8HzgPfqgO1nlw6JBCAEL5tks9EoTq6L_kFSSbsNKvKj6dc2eCI4yRcsgKmhtdT3Ao73oO_UqpQQKhvengFwJrXMPKd8VaQCf9ws3rm5ne7b1poQNPCK_Iw8jx3d34jKKFN-8gR9HGkFDgI8T6gQN_ppco3TuvX2nZY_e4SY-QDor9Sc6xSsPqfX7-Pj3vguu-ukukH&json",
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.781159618.1740866746",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775426745.844423,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1448409745.1740866746",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740953145,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gat",
+                    "value": "1",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740866805,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "cf_clearance",
+                    "value": "0hGEu9Ko.XikN7SG6ZT5ETmuL2P5n5B7Ldu.XhHoCW8-1740866746-1.2.1.1-Q3diJw0g23YDrIUH.SUz5lHruYSeKE03BwlGLq0c3gsQN.IkMbbBswYj7bO5Je3I8IbHbWClGxh7igab_WdMzbYF1H4eLeEky0cg0fPX.5DrrlBJOJ1RyhqVeipqa5KjZCGxLO.3LnE2b6bGm4GqIExsuhsBVtUfRphm0yT46AsVR4JwjSh_jQ_Yjmf65PIprqqxaJaMI3nz4rw3fS5HbNByYqOVxaLtH1FEtqt9bqx0EK5ciZPSVz5V_EfDWM81.6iV2ZYNTZGAMLyztb7HZJnjl2oIhrQ_yIP.QY6_xj_BJ9_pwsDL8fPi1L.KEzJCQdzm0ZXTcLjWaSXmJQiDu.xsWuTQG8r33UuaI2o7ng_lTytPLWKIwv2FEQKxa7UROMmPchH3e5xGaQdWWeh_x00H5nKBbIH_DaT5o2enV0g",
+                    "domain": ".watchanimesub.net",
+                    "path": "/",
+                    "expires": 1772402746.082154,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "_ga_JS2S6TS4LC",
+                    "value": "GS1.2.1740866746.1.0.1740866746.0.0.0",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775426746.156273,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            ]
         },
         {
             "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 2 English Subbed",
             "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-2-english-subbed",
             "season_number": "01",
             "episode_number": "02",
-            "output_file_name": "s01e02.mp4"
+            "output_file_name": "s01e02.mp4",
+            "video_src": "https://udisk6.cizgifilmlerizle.com/getvid?evid=eM9xGkZ3ZpVvkKOsARsK7eAEptA7Qr_INTpQvmR_940ubScN1YZMi4ReIjHJC3Njf2A6Po9C-U04vIN5YNvf-BIIbtZzaXW2-rMGIsmzbQVDuDQoWxASizlr0TKmZVYqsWdoscXpQXfLimHUKRYas2Ct6mgwclCuU1bVGJcOdqFnWFUUQM6GtdGMTq-oWrQqY4IUKmHZZdOpfhKK6JRxECzlekM2vf1cR7WfX3PFjAFKRTrrgIjWI3wEf14HF6DKJzwXR-ZKd8KvDcIZWTt3biVSBg04ooQokR_PON64jYKZ-1BCdlIBlpK7ZQ9uia2jz1ZXBtIHuUMG2QcacL1ZXXbLjbh83mCbkluE6RYcNWE&json",
+            "cookies": [
+                {
+                    "name": "cf_clearance",
+                    "value": "pSww7iaMktpZGc4ZUyagV1Tzr80HsJMav9e_jdJ68S8-1740866751-1.2.1.1-zOFx1EmTMauBhz6DKXHTC6R65vlHkWC94bHOFz9aFN6M2i4oJZBwOh_X0SIayrzQ6ewSm_z8IABWos436RYGO3VLNGTjVlCpO_uYdbvOXsjLU6sBnqfjEQg6xbsavkYCxEigwZSlpKSVYn121obwhpqrXkt2JxmtbjX5rNg8gQBiD1bOMfcbsyyqYuJH65RmHrhBtZC3RGvL4Xuf_EsUwfLRjfgthL1PbzyHb8Pz0u2NpoVmz9CimwzxEzfUbCXcWkVq_b5jkNYY.PLX_NictzdVd4inLkhDCrgDXXSkBQmY5_Fg7A9ZGHpGmQwMmaWYRM7y6D9AdLsqBo7xuZO6IaCf9NeyfDVrXv19FF0vbuRpGVaJlEBtw.XUpKO3pIhJ5vmCZPzqXg2JyC25nW6VYd2ZlDS1ou2X15TEZ9SGLxQ",
+                    "domain": ".watchanimesub.net",
+                    "path": "/",
+                    "expires": 1772402751.542471,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.630722072.1740866752",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775426751.695294,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1060415432.1740866752",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740953151,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gat",
+                    "value": "1",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740866811,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_ga_JS2S6TS4LC",
+                    "value": "GS1.2.1740866752.1.0.1740866752.0.0.0",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775426752.019061,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            ]
         },
         {
             "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 3 English Subbed",
             "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-3-english-subbed",
             "season_number": "01",
             "episode_number": "03",
-            "output_file_name": "s01e03.mp4"
+            "output_file_name": "s01e03.mp4",
+            "video_src": "https://t01.cizgifilmlerizle.com/getvid?evid=E-ggE0nTzqhDPe26LV8QDSZbKLcV-r6j5AwKHmbRg03RBP_MjWwROFadohuOVmsYV9B1499HRiI9d1YdUc8cJAdl9B0udpaezdzpcrfJMgPoY-YiQE2jGubuUYoRcSXLzKMzs_HAOJAff92Sf3MBwmKcZz8A4WdWNbUvo7F41gXvqun4L6D6UfUcPGxcTNqI3HZ_JqQ2Fm25DVVbaXZcKdCGjJIU58aOFKBi1SlPu3CzbV3vzWsFz0oGwGy9cnP5Dj78yTyybQPxQqzNNDh3tf5kxRFOWKMZ8-JNskDm_l-UDWHc5HQvq6t48uWy6IyE7PRy3ih2NmAnRxy3X4gLrCLndgsjFqDNz5KQpPngSnLYsy8Or-jfkP0AFdeegVViBx9MY-k7qVF0NaVO-QHXMQ&json",
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.518172507.1740866755",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775426755.130344,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1905178829.1740866755",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740953155,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gat",
+                    "value": "1",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740866815,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_ga_JS2S6TS4LC",
+                    "value": "GS1.2.1740866755.1.0.1740866755.0.0.0",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775426755.435823,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "cf_clearance",
+                    "value": "ZgLdf7yIuSOsRchwnGIaWWFtxPm6AFhzPK0V8Zl7EWM-1740866755-1.2.1.1-Z7P5ea11wriPRxVXp5POxHKaqktT1owwosJU0KiivAZ6MdPBET55Q.095xZrpWNcx8O9.1CjzQHUEXBCCKryHM3wfiE2je8TOaGneyrQvftmRqSb6O_vS06ZkB9nibsRaRa8lr7iGmM3jbrhnPR_Zulb7sZ6FV3mXDcggXCOUh9jy_IEztC3927LjGtIzf0w0GaiBoVolf0TYhQwNd0NsTMSOnsXmX6r1D0c8ktpQIVR3yn5Gx1ElIELoR_MZLUqKnYx4IqvYh49yzHz7cRQW1CyoLoXwDmwMzK3JMuGNT4fg4GCVIhYo7VzYT3llYFtTLiJPL9DoVlFhImyJsH7ybJYHtfAC9jXlKa5LqbURBf1.j65yHyacIFysCGJ_Nu19JIwGHt2yCt4z2rLgXrdZGr3Qb_nqhdCL3_SJXskdbk",
+                    "domain": ".watchanimesub.net",
+                    "path": "/",
+                    "expires": 1772402755.522472,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            ]
         },
         {
             "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 4 English Subbed",

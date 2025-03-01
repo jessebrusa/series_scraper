@@ -3,17 +3,18 @@ from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
 from src.video_downloader import VideoDownloader
+from src.scan_library import ScanLibrary
 
 HEADLESS = True
-WORK_DIRECTORY = './content/anime/'
+WORK_DIRECTORY = None
 
-ANIME_TEST_DATA = './data/anime/Dragon Ball Heroes English Subbed.json'
+ANIME_TEST_DATA = './data/anime/Digimon Adventure.json'
 
-SKIP_LOAD_TEST_DATA = False
+SKIP_LOAD_TEST_DATA = True
 SKIP_DEFINE_MEDIA = True
 SKIP_SEARCH_TITLE = True
 SKIP_SELECT_TITLE = True
-SKIP_COMPILE_EPISODE_DATA = False
+SKIP_COMPILE_EPISODE_DATA = True
 SKIP_EXTRACT_VIDEO_LINKS = True
 SKIP_DOWNLOAD_VIDEOS = True
 
@@ -57,6 +58,8 @@ class Main:
 
         self.create_file_structure()
         self.download_videos(skip=SKIP_DOWNLOAD_VIDEOS)
+        
+        self.scan_library()
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -97,9 +100,7 @@ class Main:
             self.data_manager.write_data()
             return True
         else:
-            return self.data_manager.get_episodes()
-        
-        
+            return self.data_manager.get_episodes() 
           
     def create_file_structure(self):
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
@@ -115,6 +116,11 @@ class Main:
         if not skip:
             VideoDownloader(self.file_manager, self.data_manager).download_videos()
 
+
+    def scan_library(self, skip=False):
+        if self.data_manager.get_media_type() == 'anime':
+            library_id = '5'
+        ScanLibrary().scan_library(library_id)
 
 if __name__ == '__main__':
     main = Main()
