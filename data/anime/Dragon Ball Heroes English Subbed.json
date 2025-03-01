@@ -1,0 +1,502 @@
+{
+    "media_type": "anime",
+    "base_url": "https://www.wcostream.tv",
+    "searched_titles": [
+        {
+            "title": "Dragon Ball Movies",
+            "href": "/anime/dragon-ball-movies"
+        },
+        {
+            "title": "Dragon Ball Z",
+            "href": "/anime/dragon-ball-z"
+        },
+        {
+            "title": "Dragon Ball Kai",
+            "href": "/anime/dragon-ball-kai"
+        },
+        {
+            "title": "Dragon Ball",
+            "href": "/anime/dragon-ball"
+        },
+        {
+            "title": "Dragon Ball GT",
+            "href": "/anime/dragon-ball-gt"
+        },
+        {
+            "title": "Dragon Ball Kai English Subbed",
+            "href": "/anime/dragon-ball-kai-english-subbed"
+        },
+        {
+            "title": "Dragon Ball Super English Subbed",
+            "href": "/anime/dragon-ball-super-english-subbed"
+        },
+        {
+            "title": "Dragon Ball Super",
+            "href": "/anime/dragon-ball-super"
+        },
+        {
+            "title": "Dragon Ball Z: Plan to Eradicate Saiyans English Subbed",
+            "href": "/anime/dragon-ball-z-plan-to-eradicate-saiyans-english-subbed"
+        },
+        {
+            "title": "Dragon Ball Heroes English Subbed",
+            "href": "/anime/dragon-ball-heroes-english-subbed"
+        },
+        {
+            "title": "Super Dragon Ball Heroes: Big Bang Mission English Subbed",
+            "href": "/anime/super-dragon-ball-heroes-big-bang-mission-english-subbed"
+        },
+        {
+            "title": "Dragon Ball Daima English Subbed",
+            "href": "/anime/dragon-ball-daima-english-subbed"
+        }
+    ],
+    "series_title": "Dragon Ball Heroes English Subbed",
+    "series_url": "https://www.wcostream.tv/anime/dragon-ball-heroes-english-subbed",
+    "series_episodes": [
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 1 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-1-english-subbed",
+            "season_number": "01",
+            "episode_number": "01",
+            "output_file_name": "s01e01.mp4",
+            "video_src": "https://t02.cizgifilmlerizle.com/getvid?evid=E-ggE0nTzqhDPe26LV8QDSZbKLcV-r6j5AwKHmbRg03RBP_MjWwROFadohuOVmsYmjiz11EjcXF9wVJcRsWGXY70l37-t86BP38vpIxYO2EgLknFeq93KxtSp5nK51_h21qitFuDUNRT0MGGGGWdy9IBEvc-El0EZ1GniLonzu2H-u8VKFLa0GlQ5Q8HzgPfqgO1nlw6JBCAEL5tks9EoTq6L_kFSSbsNKvKj6dc2eCI4yRcsgKmhtdT3Ao73oO_UqpQQKhvengFwJrXMPKd8atahcgdN0ur6NbpWJydWBLAUgB7Qj-frp8N_p2aVeOsoqwsmUzYWixUnfSxpGEwWjwtASOe4T9TX2_wnwLbo_mHJ6jqkx61pM5yfpzzMo78mLavTSrLXQHEyjtBK9G1RA&json",
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.2047133606.1740861475",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775421475.072562,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.813748535.1740861475",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740947875,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gat",
+                    "value": "1",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740861535,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_ga_JS2S6TS4LC",
+                    "value": "GS1.2.1740861475.1.0.1740861475.0.0.0",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775421475.375479,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "cf_clearance",
+                    "value": "_0xC2IgG73OBdmZz52jtWJn7GJv_iWxmLfICw__.R5Y-1740861475-1.2.1.1-k9b0mUALxTPzwqoChDpxHyqx9YWVIkGoUutoIC4yPsBc7EiHzwGdwfrROoYgprZlOyVPvMgKfeWm4j8bw6IJ9UC42LQe8wgI0J49kwhOs7GSqAhuJ_3c2_.sHGe4Bi.HHMuLt3mLmSk9MMNOY5epbjaPAcJeKgBOjMTiKIzhHUsx.37UvGFH8fiqWpyxQIjGwUbJvFNqJLn0jQpn4jFhnetcbiMVSbftgStIll4HhGwxzWpL_yJ_XmxX9sf_mn4UV.wjsBMRxRCuamlzt8gqxm4NFlGOndX6qyf5UCjm200wxRlmEfOwJGUsdv_01qQVZPcs2QBXdV4qdGWEn7RnGAvKiSbhQi_dmufRL0x9mGkyNQuGsXTPr6Se9j0LHZJTlhFxONRBpmx04ThSrVHeUTfPkl7Zd3I6IN72h6khrj0",
+                    "domain": ".watchanimesub.net",
+                    "path": "/",
+                    "expires": 1772397475.88443,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            ]
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 2 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-2-english-subbed",
+            "season_number": "01",
+            "episode_number": "02",
+            "output_file_name": "s01e02.mp4",
+            "video_src": "https://t01.cizgifilmlerizle.com/getvid?evid=eM9xGkZ3ZpVvkKOsARsK7eAEptA7Qr_INTpQvmR_940ubScN1YZMi4ReIjHJC3Njf2A6Po9C-U04vIN5YNvf-BIIbtZzaXW2-rMGIsmzbQVDuDQoWxASizlr0TKmZVYqsWdoscXpQXfLimHUKRYas2Ct6mgwclCuU1bVGJcOdqFnWFUUQM6GtdGMTq-oWrQqY4IUKmHZZdOpfhKK6JRxECzlekM2vf1cR7WfX3PFjAFKRTrrgIjWI3wEf14HF6DKDqA-52sdENO7V_b7o0dftpFrx3_J6oURpCTJjs1fJjwCI7eBe3zFoNFgSjAPK14CLDp5vQkXatGSMoq9bMy6o-GPNIbmuGjOAlKS8DQaYNs&json",
+            "cookies": [
+                {
+                    "name": "cf_clearance",
+                    "value": "KMMaK.buwsHUuqhq4DAx7vhoOZvpZ7hwqKvQc.WXKOc-1740861485-1.2.1.1-B5ilS_a96r2D66s9OewYXfG15qsotA0gESVWdyMgUGs0V58mEqb1iwLcndlxiHMd.B5uMGNiP9RBYjA.ZPxbxEUK9rf1KdjXfQYaCs71YrZXe3BdQSry7ra4m6HL4LV3_pwRycY_mh3GWnIVWI5QycmWlpg1bQMCoiX8Ixt9cMnqLz45iCVfeFyI_ToddUXEpb0PNes3248tTTenMpOXOEZG6htJ4tYAsiLysQKTtG7HH5YyIuJzBmHeGTOxzsSrV2_p2EZEUbw6cWvyyIi5kCX7IXCODTyiFgAMTseJbssTFePgwlPflB6Cu7E125C1dOipLxmCSiY1nEUtbew5U513Eb3qyfBaooeyTSeu5SSpWvHZhW_HBfv66EUZX1viPhvd_JWjFJ2Mdy6lA6hlyyhIdewja5bD4ugRH4lybXk",
+                    "domain": ".watchanimesub.net",
+                    "path": "/",
+                    "expires": 1772397485.326034,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.49978311.1740861486",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775421485.634161,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1178422186.1740861486",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740947885,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gat",
+                    "value": "1",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740861545,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_ga_JS2S6TS4LC",
+                    "value": "GS1.2.1740861485.1.0.1740861485.0.0.0",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775421485.949391,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                }
+            ]
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 3 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-3-english-subbed",
+            "season_number": "01",
+            "episode_number": "03",
+            "output_file_name": "s01e03.mp4",
+            "video_src": "https://udisk3.cizgifilmlerizle.com/getvid?evid=E-ggE0nTzqhDPe26LV8QDSZbKLcV-r6j5AwKHmbRg03RBP_MjWwROFadohuOVmsYV9B1499HRiI9d1YdUc8cJAdl9B0udpaezdzpcrfJMgPoY-YiQE2jGubuUYoRcSXLzKMzs_HAOJAff92Sf3MBwmKcZz8A4WdWNbUvo7F41gXvqun4L6D6UfUcPGxcTNqI3HZ_JqQ2Fm25DVVbaXZcKdCGjJIU58aOFKBi1SlPu3CzbV3vzWsFz0oGwGy9cnP5Dj78yTyybQPxQqzNNDh3tVDsqLxp7cuJcwEbgKfUQ4k6-4qjOGp8Fjzxdzpu8zTPu8W1RM-2ZvQ2E30fNRpH7aFjLnQniN7Gvp47ancHe5yR__dznxI0CjYG5VJD8r8FwzrVYPWBWOLpd4mnrOREWA&json",
+            "cookies": [
+                {
+                    "name": "_ga",
+                    "value": "GA1.2.838196563.1740861496",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775421495.756553,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gid",
+                    "value": "GA1.2.1082601048.1740861496",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740947895,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_gat",
+                    "value": "1",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1740861555,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "_ga_JS2S6TS4LC",
+                    "value": "GS1.2.1740861496.1.0.1740861496.0.0.0",
+                    "domain": ".wcostream.tv",
+                    "path": "/",
+                    "expires": 1775421496.096665,
+                    "httpOnly": false,
+                    "secure": false,
+                    "sameSite": "Lax"
+                },
+                {
+                    "name": "cf_clearance",
+                    "value": "CCPJ63roGp9VmSRDPZTKBbpyzrPzf6GtUSQs77O3o2w-1740861496-1.2.1.1-y4dVyF2vaBpC6UsY4XxMizvA2oSJy.DeJt.hKylJMxK6SlxM3VsyZ1opw9uve3eUsxnDxDVriyO0f2s9JbNL4cBJntcSOFt.6gJDvL8UQG9eVAKPx9bkDRQm5ivDwJSJHUIg_MqyhZVtfeiOmc5aUUIxCqlmeTUwIZV9BOu9Tiw.rEJAg4mE7DW7u03Y_BYb71a_ZjLRtJPWArwg.TCAEsagJBvpzy3Vnl2tSvX8X4RrzmzuQEsa9GuoSaqPlX7uymdEwzcIlOCn7u1wLnkmJXIXHXujLnGh88TQTWV6EBRfJCxM661N4Jdr2jcU0c9IERYJygpisJVPaKSiZR9GZk2Kb8Wv5O69nFMafWMuGg8cI5Bv8lR02sq5YtM1GDuKpbLbRUXN1iLZLiKiDc0.n3bTldRzFqu6q906.EmJC2U",
+                    "domain": ".watchanimesub.net",
+                    "path": "/",
+                    "expires": 1772397496.165734,
+                    "httpOnly": true,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "GL_UI4",
+                    "value": "eJw9jclOhEAARNmH0QGthA%2FgE9gG5Wg8Gw9evJHeYHCge9K0jP69HRO9VFUqL3mO43jZHdwt2sP%2FJEfk9LEoedM1Q1lVD11Ni7as2rqlA6nqhnYM%2B2ntDaGzMAHidSHa9GYLcBiFFHpiPVNcJLi31N9zluoqA4RUE8kThIsl5gQ7qtV1FTrzEUiyCETPJ61shwv5UBp%2BWdd2T9Jut4Cn1sxPbxC%2FEJa%2FvuXv6QFeWaSpzSNuLzMxg9JLP%2FHIQzhqwgXcJ8SMGDEq%2FY0dF%2BvZqAugZt7%2F879qX61fiLjYJmb9ypyE%2FgEuwE4b",
+                    "domain": "dp.cudavagommier.com",
+                    "path": "/",
+                    "expires": 1740947896.172979,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "GL_GI10",
+                    "value": "eJwNyUEKwjAQBdBkwFbBLj72AJ6gEipYl6JLuwo9QEyDBjSGZOr5ze7BE0JQuwX5iEadjt3Qd0r13XmAfIImDbIBzRQ8u3mv2bDLkAk0XkCpzGhyNva1ZMdcxqLW0QXrEqTHuthyWj6gkLG5msfbHW76DhkrAeJvvQLluRWQv2r3B7flIPk%3D",
+                    "domain": "dp.cudavagommier.com",
+                    "path": "/",
+                    "expires": 1740947896.173003,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "a97fa794a0f9",
+                    "value": "67b87a329723e71b40645e",
+                    "domain": ".tealeryinsurer.top",
+                    "path": "/",
+                    "expires": 1775421496.766921,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                },
+                {
+                    "name": "GL_UI4",
+                    "value": "eJw9jclOhEAARNmH0QGthA%2FgE9gG5Wg8Gw9evJHeYHCge9K0jP69HRO9VFUqL3mO43jZHdwt2sP%2FJEfk9LEoedM1Q1lVD11Ni7as2rqlA6nqhnYM%2B2ntDaGzMAHidSHa9GYLcBiFFHpiPVNcJLi31N9zluoqA4RUE8kThIsl5gQ7qtV1FTrzEUiyCETPJ61shwv5UBp%2BWdd2T9Jut4Cn1sxPbxC%2FEJa%2FvuXv6QFeWaSpzSNuLzMxg9JLP%2FHIQzhqwgXcJ8SMGDEq%2FY0dF%2BvZqAugZt7%2F879qX61fiLjYJmb9ypyE%2FgEuwE4b",
+                    "domain": "weftybaggage.top",
+                    "path": "/",
+                    "expires": 1740947896.790824,
+                    "httpOnly": false,
+                    "secure": true,
+                    "sameSite": "None"
+                }
+            ]
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 4 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-4-english-subbed",
+            "season_number": "01",
+            "episode_number": "04",
+            "output_file_name": "s01e04.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 5 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-5-english-subbed",
+            "season_number": "01",
+            "episode_number": "05",
+            "output_file_name": "s01e05.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Prison Planet Arc Episode 6 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-6-english-subbed",
+            "season_number": "01",
+            "episode_number": "06",
+            "output_file_name": "s01e06.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 1 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-7-english-subbed",
+            "season_number": "01",
+            "episode_number": "01",
+            "output_file_name": "s01e01.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 2 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-8-english-subbed",
+            "season_number": "01",
+            "episode_number": "02",
+            "output_file_name": "s01e02.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 3 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-9-english-subbed",
+            "season_number": "01",
+            "episode_number": "03",
+            "output_file_name": "s01e03.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 4 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-10-english-subbed",
+            "season_number": "01",
+            "episode_number": "04",
+            "output_file_name": "s01e04.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 5 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-11-english-subbed",
+            "season_number": "01",
+            "episode_number": "05",
+            "output_file_name": "s01e05.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 6 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-12-english-subbed",
+            "season_number": "01",
+            "episode_number": "06",
+            "output_file_name": "s01e06.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 7 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-13-english-subbed",
+            "season_number": "01",
+            "episode_number": "07",
+            "output_file_name": "s01e07.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 8 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-14-english-subbed",
+            "season_number": "01",
+            "episode_number": "08",
+            "output_file_name": "s01e08.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 9 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-15-english-subbed",
+            "season_number": "01",
+            "episode_number": "09",
+            "output_file_name": "s01e09.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 10 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-16-english-subbed",
+            "season_number": "01",
+            "episode_number": "10",
+            "output_file_name": "s01e10.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 11 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-17-english-subbed",
+            "season_number": "01",
+            "episode_number": "11",
+            "output_file_name": "s01e11.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 12 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-18-english-subbed",
+            "season_number": "01",
+            "episode_number": "12",
+            "output_file_name": "s01e12.mp4"
+        },
+        {
+            "episode_title": "Dragon Ball Heroes Universe Mission Universal Conflict Arc Episode 13 English Subbed",
+            "href": "https://www.wcostream.tv/dragon-ball-heroes-episode-19-english-subbed",
+            "season_number": "01",
+            "episode_number": "13",
+            "output_file_name": "s01e13.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 1 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-1-english-subbed",
+            "season_number": "01",
+            "episode_number": "01",
+            "output_file_name": "s01e01.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 2 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-2-english-subbed",
+            "season_number": "01",
+            "episode_number": "02",
+            "output_file_name": "s01e02.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 3 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-3-english-subbed",
+            "season_number": "01",
+            "episode_number": "03",
+            "output_file_name": "s01e03.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 4 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-4-english-subbed",
+            "season_number": "01",
+            "episode_number": "04",
+            "output_file_name": "s01e04.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 5 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-5-english-subbed",
+            "season_number": "01",
+            "episode_number": "05",
+            "output_file_name": "s01e05.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 6 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-6-english-subbed",
+            "season_number": "01",
+            "episode_number": "06",
+            "output_file_name": "s01e06.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 7 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-7-english-subbed",
+            "season_number": "01",
+            "episode_number": "07",
+            "output_file_name": "s01e07.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 8 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-8-english-subbed",
+            "season_number": "01",
+            "episode_number": "08",
+            "output_file_name": "s01e08.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 9 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-9-english-subbed",
+            "season_number": "01",
+            "episode_number": "09",
+            "output_file_name": "s01e09.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Ultra God Mission Episode 10 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-ultra-god-mission-episode-10-english-subbed",
+            "season_number": "01",
+            "episode_number": "10",
+            "output_file_name": "s01e10.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Meteor Mission Episode 1 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-meteor-mission-episode-1-english-subbed",
+            "season_number": "01",
+            "episode_number": "01",
+            "output_file_name": "s01e01.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Meteor Mission Episode 2 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-meteor-mission-episode-2-english-subbed",
+            "season_number": "01",
+            "episode_number": "02",
+            "output_file_name": "s01e02.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Meteor Mission Episode 3 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-meteor-mission-episode-3-english-subbed",
+            "season_number": "01",
+            "episode_number": "03",
+            "output_file_name": "s01e03.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Meteor Mission Episode 4 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-meteor-mission-episode-4-english-subbed",
+            "season_number": "01",
+            "episode_number": "04",
+            "output_file_name": "s01e04.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Meteor Mission Episode 5 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-meteor-mission-episode-5-english-subbed",
+            "season_number": "01",
+            "episode_number": "05",
+            "output_file_name": "s01e05.mp4"
+        },
+        {
+            "episode_title": "Super Dragon Ball Heroes: Meteor Mission Episode 6 English Subbed",
+            "href": "https://www.wcostream.tv/super-dragon-ball-heroes-meteor-mission-episode-6-english-subbed",
+            "season_number": "01",
+            "episode_number": "06",
+            "output_file_name": "s01e06.mp4"
+        }
+    ]
+}

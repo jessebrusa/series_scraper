@@ -2,6 +2,7 @@ import yt_dlp
 import concurrent.futures
 import os
 import time
+import platform
 
 class VideoDownloader:
     def __init__(self, file_manager, data_manager):
@@ -44,22 +45,30 @@ class VideoDownloader:
         else:
             print(f"No video URL found for {output_file_name}")
 
+    def get_platform(self):
+        if platform.system() == 'Windows':
+            self.sec_ch_ua_platform = '"Windows"'
+            self.user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+        else:
+            self.sec_ch_ua_platform = '"macOS"'
+            self.user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+
     def get_headers(self, cookies):
+        self.get_platform()
         return {
             'accept': 'application/json, text/javascript, */*; q=0.01',
             'accept-encoding': 'gzip, deflate, br, zstd',
-            'accept-language': 'en-US,en;q=0.8',
+            'accept-language': 'en-US,en;q=0.9',
             'cookie': cookies,
-            'referer': 'https://embed.watchanimesub.net/inc/embed/video-js.php?file=reload%2F%5BYameii%5D%20Solo%20Leveling%20-%20S01E01%20%5BEnglish%20Dub%5D%20%5BCR%20WEB-DL%201080p%5D%20%5B5A1D9152%5D.flv&fullhd=1&pid=904149&h=884c6a462f619e391c2a2351480973a5&t=1740768642&embed=neptun',
-            'sec-ch-ua': '"Not(A:Brand";v="99", "Brave";v="133", "Chromium";v="133"',
+            'referer': 'https://embed.watchanimesub.net/inc/embed/video-js.php?file=Watch%20Dragon%20Ball%20Heroes%20Episode%201.flv&hd=1&pid=423566&h=fbdeffbb573d679d7258e6ab47fbb710&t=1740872269&embed=www',
+            'sec-ch-ua': '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"',
             'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
+            'sec-ch-ua-platform': self.sec_ch_ua_platform,
             'sec-fetch-dest': 'empty',
             'sec-fetch-mode': 'cors',
             'sec-fetch-site': 'same-origin',
-            'sec-fetch-storage-access': 'none',
-            'sec-gpc': '1',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+            'sec-fetch-storage-access': 'active',
+            'user-agent': self.user_agent,
             'x-requested-with': 'XMLHttpRequest'
         }
 

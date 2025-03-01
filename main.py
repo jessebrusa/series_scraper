@@ -7,14 +7,14 @@ from src.video_downloader import VideoDownloader
 HEADLESS = True
 WORK_DIRECTORY = './content/anime/'
 
-ANIME_TEST_DATA = './data/anime/Death Note.json'
+ANIME_TEST_DATA = './data/anime/Dragon Ball Heroes English Subbed.json'
 
 SKIP_LOAD_TEST_DATA = False
-SKIP_DEFINE_MEDIA = False
-SKIP_SEARCH_TITLE = False
-SKIP_SELECT_TITLE = False
-SKIP_COMPILE_EPISODE_DATA = False
-SKIP_EXTRACT_VIDEO_LINKS = False
+SKIP_DEFINE_MEDIA = True
+SKIP_SEARCH_TITLE = True
+SKIP_SELECT_TITLE = True
+SKIP_COMPILE_EPISODE_DATA = True
+SKIP_EXTRACT_VIDEO_LINKS = True
 SKIP_DOWNLOAD_VIDEOS = False
 
 class Main:
