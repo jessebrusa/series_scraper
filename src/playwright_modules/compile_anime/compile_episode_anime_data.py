@@ -5,13 +5,16 @@ class CompileEpisodeAnimeData:
     def __init__(self, page):
         self.page = page
         self.episodes = []
+        self.episode_element_list = []
+        self.assigned_episode_numbers = {} 
 
     def get_episodes(self):
         episode_selector = '#catlist-listview li a'
         self.wait_for_episodes(episode_selector)
         html_content = self.get_page_content()
-        episode_element_list = self.parse_html_content(html_content, episode_selector)
-        self.extract_episode_data(episode_element_list)
+        self.episode_element_list = self.parse_html_content(html_content, episode_selector)
+        self.episode_element_list.reverse()
+        self.extract_episode_data()
         return self.episodes
 
     def wait_for_episodes(self, selector):
@@ -24,9 +27,9 @@ class CompileEpisodeAnimeData:
         soup = BeautifulSoup(html_content, 'html.parser')
         return soup.select(selector)
 
-    def extract_episode_data(self, episode_list):
-        for episode in episode_list:
-            episode_data = AnimeEpisodeProcessor(episode).process_episode()
+    def extract_episode_data(self):
+        for episode in self.episode_element_list:
+            episode_data = AnimeEpisodeProcessor(episode, self.assigned_episode_numbers).process_episode()
             if episode_data['episode_title'] is not None:
                 self.episodes.append(episode_data)
-        self.episodes.reverse()
+        

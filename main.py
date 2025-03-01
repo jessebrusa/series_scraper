@@ -13,9 +13,9 @@ SKIP_LOAD_TEST_DATA = False
 SKIP_DEFINE_MEDIA = True
 SKIP_SEARCH_TITLE = True
 SKIP_SELECT_TITLE = True
-SKIP_COMPILE_EPISODE_DATA = True
+SKIP_COMPILE_EPISODE_DATA = False
 SKIP_EXTRACT_VIDEO_LINKS = True
-SKIP_DOWNLOAD_VIDEOS = False
+SKIP_DOWNLOAD_VIDEOS = True
 
 class Main:
     def __init__(self):
@@ -93,9 +93,13 @@ class Main:
 
     def compile_episode_data(self, skip=False):
         if not skip:
-            return self.playwright_manager.collect_episode_data()
+            self.playwright_manager.collect_episode_data()
+            self.data_manager.write_data()
+            return True
         else:
             return self.data_manager.get_episodes()
+        
+        
           
     def create_file_structure(self):
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
