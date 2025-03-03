@@ -8,13 +8,15 @@ class VideoDownloader:
     def __init__(self, file_manager, data_manager):
         self.data_manager = data_manager
         self.file_manager = file_manager
-        self.episodes = self.data_manager.get_episodes()[:3]
+        self.episodes = self.data_manager.get_episodes()
 
     def download_videos(self):
+        # Clean up old files if necessary
+        self.cleanup_old_files()
+
         with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
             futures = []
             for episode in self.episodes:
-                print(episode)
                 futures.append(executor.submit(self.download_video, episode['video_src'], self.output_path(episode), episode['cookies']))
             for future in concurrent.futures.as_completed(futures):
                 try:
@@ -29,7 +31,7 @@ class VideoDownloader:
                 'http_headers': self.get_headers(cookies)
             }
             attempts = 0
-            while attempts < 3:
+            while attempts < 5:  # Increase retry attempts
                 try:
                     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         ydl.download([video_url])
@@ -39,9 +41,9 @@ class VideoDownloader:
                     attempts += 1
                     print(f"DownloadError: {e}")
                     print(f"Attempt {attempts} failed for {output_file_name}. Retrying...")
-                    time.sleep(2) 
+                    time.sleep(5)  # Increase delay between retries
             else:
-                print(f"Failed to download {output_file_name} after 3 attempts.")
+                print(f"Failed to download {output_file_name} after 5 attempts.")
         else:
             print(f"No video URL found for {output_file_name}")
 
@@ -74,3 +76,14 @@ class VideoDownloader:
 
     def output_path(self, episode):
         return os.path.join(self.file_manager.get_season_directory(episode['season_number']), episode['output_file_name'])
+
+    def cleanup_old_files(self):
+        # Implement cleanup logic to delete files that do not end with .mp4
+        for episode in self.episodes:
+            season_directory = self.file_manager.get_season_directory(episode['season_number'])
+            for filename in os.listdir(season_directory):
+                if not filename.endswith('.mp4'):
+                    file_path = os.path.join(season_directory, filename)
+                    if os.path.exists(file_path):
+                        os.remove(file_path)
+                        print(f"Deleted old file: {file_path}")

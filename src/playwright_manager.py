@@ -72,7 +72,7 @@ class PlaywrightManager(PlaywrightSuper):
         self.relaunch_browser_non_headless()
         if self.data_manager.get_media_type() == 'anime':
             self.page.close()
-            for index, episode in enumerate(self.data_manager.get_episodes()[:3]):
+            for index, episode in enumerate(self.data_manager.get_episodes()):
                 print(f'Extracting video src: {index + 1}/{len(self.data_manager.get_episodes())}...')
                 self.page = self.browser.new_page(viewport={"width": 1, "height": 1})
                 self.page.goto(episode['href'])

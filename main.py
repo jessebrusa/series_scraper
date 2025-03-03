@@ -8,15 +8,16 @@ from src.scan_library import ScanLibrary
 HEADLESS = True
 WORK_DIRECTORY = None
 
-ANIME_TEST_DATA = './data/anime/Digimon Adventure.json'
+ANIME_TEST_DATA = './data/anime/Hunter x Hunter (2011).json'
 
-SKIP_LOAD_TEST_DATA = True
+SKIP_LOAD_TEST_DATA = False
 SKIP_DEFINE_MEDIA = True
 SKIP_SEARCH_TITLE = True
 SKIP_SELECT_TITLE = True
 SKIP_COMPILE_EPISODE_DATA = True
 SKIP_EXTRACT_VIDEO_LINKS = True
-SKIP_DOWNLOAD_VIDEOS = True
+SKIP_DOWNLOAD_VIDEOS = False
+SKIP_SCAN_LIBRARY = False
 
 class Main:
     def __init__(self):
@@ -59,7 +60,7 @@ class Main:
         self.create_file_structure()
         self.download_videos(skip=SKIP_DOWNLOAD_VIDEOS)
         
-        self.scan_library()
+        self.scan_library(skip=SKIP_SCAN_LIBRARY)
 
         print('Thanks for using the program!')
         self.playwright_manager.close_browser()
@@ -116,11 +117,11 @@ class Main:
         if not skip:
             VideoDownloader(self.file_manager, self.data_manager).download_videos()
 
-
     def scan_library(self, skip=False):
-        if self.data_manager.get_media_type() == 'anime':
-            library_id = '5'
-        ScanLibrary().scan_library(library_id)
+        if not skip:
+            if self.data_manager.get_media_type() == 'anime':
+                library_id = '5'
+            ScanLibrary().scan_library(library_id)
 
 if __name__ == '__main__':
     main = Main()
