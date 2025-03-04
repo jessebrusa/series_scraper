@@ -18,4 +18,4 @@ class NewEpisodeAnime:
             if not os.path.exists(episode_file_path):
                 missing_episodes.append(episode)
 
-        return missing_episodes
+        self.data_manager.set_episodes(missing_episodes)

@@ -16,6 +16,7 @@ SKIP_DEFINE_MEDIA = False
 SKIP_SEARCH_TITLE = False
 SKIP_SELECT_TITLE = False
 SKIP_COMPILE_EPISODE_DATA = False
+SKIP_NEW_EPISODES = False
 SKIP_EXTRACT_VIDEO_LINKS = False
 SKIP_DOWNLOAD_VIDEOS = False
 SKIP_SCAN_LIBRARY = True
@@ -54,6 +55,8 @@ class Main:
             return
 
         self.create_file_structure()
+
+        self.filter_new_episodes(skip=SKIP_NEW_EPISODES)
 
         if not self.extract_video_links(skip=SKIP_EXTRACT_VIDEO_LINKS):
             print('Failed to extract video links. Exiting.')
@@ -109,8 +112,9 @@ class Main:
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
         self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
 
-    def filter_new_episodes(self):
-        NewEpisodeAnime(self.data_manager).filter_new_episodes
+    def filter_new_episodes(self, skip=False):
+        if not skip:
+            NewEpisodeAnime(self.data_manager, self.file_manager).get_missing_episodes()
 
     def extract_video_links(self, skip=False):
         if not skip:
