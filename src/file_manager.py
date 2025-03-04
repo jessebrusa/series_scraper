@@ -23,6 +23,9 @@ class FileManager:
             print("Please check the permissions or change the directory path.")
             raise
 
+    def get_series_directory(self):
+        return self.series_path
+
     def create_seasons_directories(self, num_seasons):
         if not self.series_path:
             raise ValueError("Series path is not set. Call create_series_directory first.")

@@ -11,7 +11,6 @@ class VideoDownloader:
         self.episodes = self.data_manager.get_episodes()
 
     def download_videos(self):
-        # Clean up old files if necessary
         self.cleanup_old_files()
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:

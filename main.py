@@ -2,22 +2,23 @@ from src.data_manager import DataManager
 from src.ask_input import AskInput
 from src.playwright_manager import PlaywrightManager
 from src.file_manager import FileManager
+from src.new_episodes_anime import NewEpisodeAnime
 from src.video_downloader import VideoDownloader
 from src.scan_library import ScanLibrary
 
 HEADLESS = True
-WORK_DIRECTORY = None
+WORK_DIRECTORY = r'E:\Anime'
 
-ANIME_TEST_DATA = './data/anime/Hunter x Hunter (2011).json'
+ANIME_TEST_DATA = './data/anime/Fullmetal Alchemist Brotherhood.json'
 
-SKIP_LOAD_TEST_DATA = False
-SKIP_DEFINE_MEDIA = True
-SKIP_SEARCH_TITLE = True
-SKIP_SELECT_TITLE = True
-SKIP_COMPILE_EPISODE_DATA = True
-SKIP_EXTRACT_VIDEO_LINKS = True
+SKIP_LOAD_TEST_DATA = True
+SKIP_DEFINE_MEDIA = False
+SKIP_SEARCH_TITLE = False
+SKIP_SELECT_TITLE = False
+SKIP_COMPILE_EPISODE_DATA = False
+SKIP_EXTRACT_VIDEO_LINKS = False
 SKIP_DOWNLOAD_VIDEOS = False
-SKIP_SCAN_LIBRARY = False
+SKIP_SCAN_LIBRARY = True
 
 class Main:
     def __init__(self):
@@ -52,12 +53,13 @@ class Main:
             self.playwright_manager.close_browser()
             return
 
+        self.create_file_structure()
+
         if not self.extract_video_links(skip=SKIP_EXTRACT_VIDEO_LINKS):
             print('Failed to extract video links. Exiting.')
             self.playwright_manager.close_browser()
             return
 
-        self.create_file_structure()
         self.download_videos(skip=SKIP_DOWNLOAD_VIDEOS)
         
         self.scan_library(skip=SKIP_SCAN_LIBRARY)
@@ -106,6 +108,9 @@ class Main:
     def create_file_structure(self):
         self.file_manager.create_series_directory(self.data_manager.get_series_title())
         self.file_manager.create_seasons_directories(self.data_manager.get_num_seasons())
+
+    def filter_new_episodes(self):
+        NewEpisodeAnime(self.data_manager).filter_new_episodes
 
     def extract_video_links(self, skip=False):
         if not skip:
