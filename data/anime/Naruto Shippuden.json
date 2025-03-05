@@ -1,0 +1,3587 @@
+{
+    "media_type": "anime",
+    "base_url": "https://www.wcostream.tv",
+    "searched_titles": [
+        {
+            "title": "Naruto",
+            "href": "/anime/naruto"
+        },
+        {
+            "title": "Naruto Shippuden",
+            "href": "/anime/naruto-shippuden"
+        },
+        {
+            "title": "Naruto Shippuden English Subbed",
+            "href": "/anime/naruto-shippuden-english-subbed"
+        },
+        {
+            "title": "Naruto Movies",
+            "href": "/anime/naruto-movies"
+        },
+        {
+            "title": "Boruto: Naruto Next Generations English Subbed",
+            "href": "/anime/boruto-naruto-next-generations-english-subbed"
+        },
+        {
+            "title": "Boruto: Naruto Next Generations",
+            "href": "/anime/boruto-naruto-next-generations"
+        },
+        {
+            "title": "Naruto Kai English Subbed",
+            "href": "/anime/naruto-kai-english-subbed"
+        }
+    ],
+    "series_title": "Naruto Shippuden",
+    "series_url": "https://www.wcostream.tv/anime/naruto-shippuden",
+    "series_episodes": [
+        {
+            "episode_title": "Naruto Shippuden Episode 1 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-1-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "01",
+            "output_file_name": "s01e01.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 2 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-2-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "02",
+            "output_file_name": "s01e02.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 3 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-3-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "03",
+            "output_file_name": "s01e03.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 4 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-4-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "04",
+            "output_file_name": "s01e04.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 5 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-5-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "05",
+            "output_file_name": "s01e05.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 6 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-6-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "06",
+            "output_file_name": "s01e06.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 7 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-7-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "07",
+            "output_file_name": "s01e07.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 8 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-8-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "08",
+            "output_file_name": "s01e08.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 9 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-9-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "09",
+            "output_file_name": "s01e09.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 10 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-10-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "10",
+            "output_file_name": "s01e10.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 11 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-11-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "11",
+            "output_file_name": "s01e11.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 12 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-12-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "12",
+            "output_file_name": "s01e12.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 13 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-13-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "13",
+            "output_file_name": "s01e13.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 14 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-14-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "14",
+            "output_file_name": "s01e14.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 15 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-15-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "15",
+            "output_file_name": "s01e15.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 16 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-16-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "16",
+            "output_file_name": "s01e16.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 17 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-17-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "17",
+            "output_file_name": "s01e17.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 18 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-18-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "18",
+            "output_file_name": "s01e18.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 19 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-19-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "19",
+            "output_file_name": "s01e19.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 20 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-20-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "20",
+            "output_file_name": "s01e20.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 21 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-21-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "21",
+            "output_file_name": "s01e21.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 22 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-22-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "22",
+            "output_file_name": "s01e22.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 23 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-23-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "23",
+            "output_file_name": "s01e23.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 24 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-24-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "24",
+            "output_file_name": "s01e24.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 25 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-25-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "25",
+            "output_file_name": "s01e25.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 26 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-26-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "26",
+            "output_file_name": "s01e26.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 27 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-27-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "27",
+            "output_file_name": "s01e27.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 28 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-28-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "28",
+            "output_file_name": "s01e28.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 29 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-29-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "29",
+            "output_file_name": "s01e29.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 30 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-30-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "30",
+            "output_file_name": "s01e30.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 31 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-31-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "31",
+            "output_file_name": "s01e31.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 32 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-32-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "32",
+            "output_file_name": "s01e32.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 33 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-33-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "33",
+            "output_file_name": "s01e33.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 34 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-34-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "34",
+            "output_file_name": "s01e34.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 35 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-35-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "35",
+            "output_file_name": "s01e35.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 36 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-36-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "36",
+            "output_file_name": "s01e36.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 37 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-37-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "37",
+            "output_file_name": "s01e37.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 38 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-38-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "38",
+            "output_file_name": "s01e38.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 39 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-39-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "39",
+            "output_file_name": "s01e39.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 40 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-40-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "40",
+            "output_file_name": "s01e40.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 41 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-41-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "41",
+            "output_file_name": "s01e41.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 42 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-42-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "42",
+            "output_file_name": "s01e42.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 43 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-43-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "43",
+            "output_file_name": "s01e43.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 44 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-44-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "44",
+            "output_file_name": "s01e44.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 45 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-45-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "45",
+            "output_file_name": "s01e45.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 46 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-46-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "46",
+            "output_file_name": "s01e46.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 47 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-47-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "47",
+            "output_file_name": "s01e47.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 48 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-48-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "48",
+            "output_file_name": "s01e48.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 49 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-49-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "49",
+            "output_file_name": "s01e49.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 50 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-50-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "50",
+            "output_file_name": "s01e50.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 51 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-51-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "51",
+            "output_file_name": "s01e51.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 52 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-52-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "52",
+            "output_file_name": "s01e52.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 53 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-53-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "53",
+            "output_file_name": "s01e53.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 54 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-54-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "54",
+            "output_file_name": "s01e54.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 55 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-55-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "55",
+            "output_file_name": "s01e55.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 56 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-56-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "56",
+            "output_file_name": "s01e56.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 57 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-57-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "57",
+            "output_file_name": "s01e57.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 58 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-58-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "58",
+            "output_file_name": "s01e58.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 59 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-59-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "59",
+            "output_file_name": "s01e59.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 60 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-60-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "60",
+            "output_file_name": "s01e60.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 61 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-61-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "61",
+            "output_file_name": "s01e61.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 62 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-62-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "62",
+            "output_file_name": "s01e62.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 63 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-63-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "63",
+            "output_file_name": "s01e63.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 64 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-64-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "64",
+            "output_file_name": "s01e64.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 65 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-65-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "65",
+            "output_file_name": "s01e65.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 66 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-66-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "66",
+            "output_file_name": "s01e66.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 67 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-67-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "67",
+            "output_file_name": "s01e67.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 68 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-68-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "68",
+            "output_file_name": "s01e68.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 69 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-69-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "69",
+            "output_file_name": "s01e69.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 70 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-70-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "70",
+            "output_file_name": "s01e70.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 71 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-71-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "71",
+            "output_file_name": "s01e71.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 72 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-72-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "72",
+            "output_file_name": "s01e72.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 73 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-73-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "73",
+            "output_file_name": "s01e73.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 74 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-74-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "74",
+            "output_file_name": "s01e74.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 75 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-75-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "75",
+            "output_file_name": "s01e75.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 76 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-76-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "76",
+            "output_file_name": "s01e76.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 77 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-77-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "77",
+            "output_file_name": "s01e77.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 78 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-78-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "78",
+            "output_file_name": "s01e78.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 79 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-79-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "79",
+            "output_file_name": "s01e79.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 80 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-80-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "80",
+            "output_file_name": "s01e80.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 81 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-81-2",
+            "season_number": "01",
+            "episode_number": "81",
+            "output_file_name": "s01e81.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 82 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-82-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "82",
+            "output_file_name": "s01e82.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 83 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-83-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "83",
+            "output_file_name": "s01e83.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 84 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-84-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "84",
+            "output_file_name": "s01e84.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 85 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-85-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "85",
+            "output_file_name": "s01e85.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 86 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-86-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "86",
+            "output_file_name": "s01e86.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 87 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-87-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "87",
+            "output_file_name": "s01e87.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 88 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-88-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "88",
+            "output_file_name": "s01e88.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 89 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-89-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "89",
+            "output_file_name": "s01e89.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 90 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-90-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "90",
+            "output_file_name": "s01e90.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 91 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-91-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "91",
+            "output_file_name": "s01e91.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 92 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-92-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "92",
+            "output_file_name": "s01e92.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 93 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-93-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "93",
+            "output_file_name": "s01e93.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 94 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-94-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "94",
+            "output_file_name": "s01e94.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 95 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-95-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "95",
+            "output_file_name": "s01e95.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 96 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-96-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "96",
+            "output_file_name": "s01e96.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 97 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-97-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "97",
+            "output_file_name": "s01e97.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 98 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-98-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "98",
+            "output_file_name": "s01e98.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 99 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-99-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "99",
+            "output_file_name": "s01e99.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 100 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-100-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "100",
+            "output_file_name": "s01e100.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 101 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-101-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "101",
+            "output_file_name": "s01e101.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 102 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-102-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "102",
+            "output_file_name": "s01e102.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 103 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-103-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "103",
+            "output_file_name": "s01e103.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 104 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-104-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "104",
+            "output_file_name": "s01e104.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 105 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-105-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "105",
+            "output_file_name": "s01e105.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 106 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-106-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "106",
+            "output_file_name": "s01e106.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 107 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-107-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "107",
+            "output_file_name": "s01e107.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 108 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-108-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "108",
+            "output_file_name": "s01e108.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 109 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-109-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "109",
+            "output_file_name": "s01e109.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 110 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-110-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "110",
+            "output_file_name": "s01e110.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 111 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-111-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "111",
+            "output_file_name": "s01e111.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 112 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-112-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "112",
+            "output_file_name": "s01e112.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Movie 2: Bonds English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-movie-2-bonds-2",
+            "season_number": "01",
+            "episode_number": "113",
+            "output_file_name": "s01e113.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 113 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-113-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "114",
+            "output_file_name": "s01e114.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 114 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-114-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "115",
+            "output_file_name": "s01e115.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 115 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-115-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "116",
+            "output_file_name": "s01e116.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 116 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-116-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "117",
+            "output_file_name": "s01e117.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 117 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-117-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "118",
+            "output_file_name": "s01e118.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 118 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-118-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "119",
+            "output_file_name": "s01e119.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 119 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-119-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "120",
+            "output_file_name": "s01e120.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 120 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-120-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "121",
+            "output_file_name": "s01e121.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 121 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-121-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "122",
+            "output_file_name": "s01e122.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 122 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-122-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "123",
+            "output_file_name": "s01e123.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 123 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-123-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "124",
+            "output_file_name": "s01e124.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 124-125 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-124-125english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "125",
+            "output_file_name": "s01e125.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 126 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-126-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "126",
+            "output_file_name": "s01e126.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 127 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-127-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "127",
+            "output_file_name": "s01e127.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 128 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-128-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "128",
+            "output_file_name": "s01e128.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 129 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-129-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "129",
+            "output_file_name": "s01e129.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 130 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-130-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "130",
+            "output_file_name": "s01e130.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 131 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-131-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "131",
+            "output_file_name": "s01e131.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 132 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-132-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "132",
+            "output_file_name": "s01e132.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 133 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-133-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "133",
+            "output_file_name": "s01e133.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 134 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-134-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "134",
+            "output_file_name": "s01e134.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 135 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-135-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "135",
+            "output_file_name": "s01e135.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 136 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-136-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "136",
+            "output_file_name": "s01e136.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 137 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-137-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "137",
+            "output_file_name": "s01e137.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 138 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-138-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "138",
+            "output_file_name": "s01e138.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 139 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-139-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "139",
+            "output_file_name": "s01e139.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 140 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-140-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "140",
+            "output_file_name": "s01e140.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 141 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-141-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "141",
+            "output_file_name": "s01e141.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 142 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-142-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "142",
+            "output_file_name": "s01e142.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 143 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-143-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "143",
+            "output_file_name": "s01e143.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 144 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-144-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "144",
+            "output_file_name": "s01e144.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 145 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-145-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "145",
+            "output_file_name": "s01e145.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 146 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-146-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "146",
+            "output_file_name": "s01e146.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 147 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-147-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "147",
+            "output_file_name": "s01e147.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 148 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-148-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "148",
+            "output_file_name": "s01e148.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 149 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-149-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "149",
+            "output_file_name": "s01e149.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 150 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-150-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "150",
+            "output_file_name": "s01e150.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 151 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-151-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "151",
+            "output_file_name": "s01e151.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 152 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-152-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "152",
+            "output_file_name": "s01e152.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 153 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-153-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "153",
+            "output_file_name": "s01e153.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Movie 3: Inheritors of the Will of Fire English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-movie-3-the-will-of-fire-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "154",
+            "output_file_name": "s01e154.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 154 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-154-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "155",
+            "output_file_name": "s01e155.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 155 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-155-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "156",
+            "output_file_name": "s01e156.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 156 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-156-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "157",
+            "output_file_name": "s01e157.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 157 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-157-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "158",
+            "output_file_name": "s01e158.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 158 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-158-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "159",
+            "output_file_name": "s01e159.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 159 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-159-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "160",
+            "output_file_name": "s01e160.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 160 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-160-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "161",
+            "output_file_name": "s01e161.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 161 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-161-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "162",
+            "output_file_name": "s01e162.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 162 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-162-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "163",
+            "output_file_name": "s01e163.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 163 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-163-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "164",
+            "output_file_name": "s01e164.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 164 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-164-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "165",
+            "output_file_name": "s01e165.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 165 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-165-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "166",
+            "output_file_name": "s01e166.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 166 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-166-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "167",
+            "output_file_name": "s01e167.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 167 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-167-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "168",
+            "output_file_name": "s01e168.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 168 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-168-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "169",
+            "output_file_name": "s01e169.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 169 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-169-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "170",
+            "output_file_name": "s01e170.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 170 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-170-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "171",
+            "output_file_name": "s01e171.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 171 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-171-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "172",
+            "output_file_name": "s01e172.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 172 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-172-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "173",
+            "output_file_name": "s01e173.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 173 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-173-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "174",
+            "output_file_name": "s01e174.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 174 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-174-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "175",
+            "output_file_name": "s01e175.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 175 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-175-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "176",
+            "output_file_name": "s01e176.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 176 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-176-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "177",
+            "output_file_name": "s01e177.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 177 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-177-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "178",
+            "output_file_name": "s01e178.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 178 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-178-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "179",
+            "output_file_name": "s01e179.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 179 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-179-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "180",
+            "output_file_name": "s01e180.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 180 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-180-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "181",
+            "output_file_name": "s01e181.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 181 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-181-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "182",
+            "output_file_name": "s01e182.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 182 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-182-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "183",
+            "output_file_name": "s01e183.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 183 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-183-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "184",
+            "output_file_name": "s01e184.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 184 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-184-english-dubbed-3",
+            "season_number": "01",
+            "episode_number": "185",
+            "output_file_name": "s01e185.mp4"
+        },
+        {
+            "episode_title": "Naruto: Shippuden Episode 185 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-185-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "186",
+            "output_file_name": "s01e186.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 186 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-186-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "187",
+            "output_file_name": "s01e187.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 187 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-187-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "188",
+            "output_file_name": "s01e188.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 188 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-188-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "189",
+            "output_file_name": "s01e189.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 189 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-189-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "190",
+            "output_file_name": "s01e190.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 190 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-190-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "191",
+            "output_file_name": "s01e191.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 191 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-191-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "192",
+            "output_file_name": "s01e192.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 192 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-192-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "193",
+            "output_file_name": "s01e193.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 193 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-193-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "194",
+            "output_file_name": "s01e194.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 194 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-194-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "195",
+            "output_file_name": "s01e195.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 195 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-195-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "196",
+            "output_file_name": "s01e196.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 196 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-196-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "197",
+            "output_file_name": "s01e197.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 197 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-197-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "198",
+            "output_file_name": "s01e198.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 198 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-198-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "199",
+            "output_file_name": "s01e199.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 199 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-199-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "200",
+            "output_file_name": "s01e200.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Movie 4: The Lost Tower English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-movie-4-the-lost-tower-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "201",
+            "output_file_name": "s01e201.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 200 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-200-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "202",
+            "output_file_name": "s01e202.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 201 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-201-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "203",
+            "output_file_name": "s01e203.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 202 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-202-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "204",
+            "output_file_name": "s01e204.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 203 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-203-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "205",
+            "output_file_name": "s01e205.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 204 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-204-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "206",
+            "output_file_name": "s01e206.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 205 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-205-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "207",
+            "output_file_name": "s01e207.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 206 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-206-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "208",
+            "output_file_name": "s01e208.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 207 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-207-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "209",
+            "output_file_name": "s01e209.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 208 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-208-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "210",
+            "output_file_name": "s01e210.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 209 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-209-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "211",
+            "output_file_name": "s01e211.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 210 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-210-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "212",
+            "output_file_name": "s01e212.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 211 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-211-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "213",
+            "output_file_name": "s01e213.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 212 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-212-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "214",
+            "output_file_name": "s01e214.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 213 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-213-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "215",
+            "output_file_name": "s01e215.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 214 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-214-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "216",
+            "output_file_name": "s01e216.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 215 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-215-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "217",
+            "output_file_name": "s01e217.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 216 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-216-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "218",
+            "output_file_name": "s01e218.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 217 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-217-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "219",
+            "output_file_name": "s01e219.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 218 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-218-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "220",
+            "output_file_name": "s01e220.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 219 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-219-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "221",
+            "output_file_name": "s01e221.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 220 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-220-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "222",
+            "output_file_name": "s01e222.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 221 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-221-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "223",
+            "output_file_name": "s01e223.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 222 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-222-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "224",
+            "output_file_name": "s01e224.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 223 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-223-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "225",
+            "output_file_name": "s01e225.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 224 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-224-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "226",
+            "output_file_name": "s01e226.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 225 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-225-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "227",
+            "output_file_name": "s01e227.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 226 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-226-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "228",
+            "output_file_name": "s01e228.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Movie 5: Blood Prison English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-movie-blood-prison-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "229",
+            "output_file_name": "s01e229.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 227 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-227-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "230",
+            "output_file_name": "s01e230.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 228 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-228-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "231",
+            "output_file_name": "s01e231.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 229 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-229-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "232",
+            "output_file_name": "s01e232.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 230 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-230-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "233",
+            "output_file_name": "s01e233.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 231 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-231-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "234",
+            "output_file_name": "s01e234.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 232 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-232-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "235",
+            "output_file_name": "s01e235.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 233 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-233-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "236",
+            "output_file_name": "s01e236.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 234 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-234-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "237",
+            "output_file_name": "s01e237.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 235 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-235-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "238",
+            "output_file_name": "s01e238.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 236 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-236-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "239",
+            "output_file_name": "s01e239.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 237 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-237-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "240",
+            "output_file_name": "s01e240.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 238 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-238-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "241",
+            "output_file_name": "s01e241.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 239 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-239-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "242",
+            "output_file_name": "s01e242.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 240 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-240-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "243",
+            "output_file_name": "s01e243.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 241 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-241-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "244",
+            "output_file_name": "s01e244.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 242 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-242-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "245",
+            "output_file_name": "s01e245.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 243 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-243-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "246",
+            "output_file_name": "s01e246.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 244 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-244-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "247",
+            "output_file_name": "s01e247.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 245 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-245-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "248",
+            "output_file_name": "s01e248.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 246 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-246-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "249",
+            "output_file_name": "s01e249.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 247 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-247-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "250",
+            "output_file_name": "s01e250.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 248 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-248-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "251",
+            "output_file_name": "s01e251.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 249 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-249-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "252",
+            "output_file_name": "s01e252.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 250 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-250-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "253",
+            "output_file_name": "s01e253.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 251 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-251-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "254",
+            "output_file_name": "s01e254.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 252 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-252-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "255",
+            "output_file_name": "s01e255.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 253 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-253-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "256",
+            "output_file_name": "s01e256.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 254 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-254-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "257",
+            "output_file_name": "s01e257.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 255 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-255-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "258",
+            "output_file_name": "s01e258.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 256 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-256-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "259",
+            "output_file_name": "s01e259.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 257 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-257-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "260",
+            "output_file_name": "s01e260.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 258 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-258-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "261",
+            "output_file_name": "s01e261.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 259 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-259-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "262",
+            "output_file_name": "s01e262.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 260 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-260-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "263",
+            "output_file_name": "s01e263.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 261 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-261-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "264",
+            "output_file_name": "s01e264.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 262 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-262-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "265",
+            "output_file_name": "s01e265.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 263 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-263-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "266",
+            "output_file_name": "s01e266.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 264 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-264-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "267",
+            "output_file_name": "s01e267.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 265 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-265-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "268",
+            "output_file_name": "s01e268.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 266 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-266-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "269",
+            "output_file_name": "s01e269.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 267 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-267-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "270",
+            "output_file_name": "s01e270.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 268 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-268-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "271",
+            "output_file_name": "s01e271.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 269 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-269-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "272",
+            "output_file_name": "s01e272.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Movie 6: Road to Ninja English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-movie-6-road-to-ninja-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "273",
+            "output_file_name": "s01e273.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 270 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-270-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "274",
+            "output_file_name": "s01e274.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 271 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-271-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "275",
+            "output_file_name": "s01e275.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 272 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-272-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "276",
+            "output_file_name": "s01e276.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 273 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-273-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "277",
+            "output_file_name": "s01e277.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 274 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-274-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "278",
+            "output_file_name": "s01e278.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 275 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-275-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "279",
+            "output_file_name": "s01e279.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 276 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-276-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "280",
+            "output_file_name": "s01e280.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 277 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-277-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "281",
+            "output_file_name": "s01e281.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 278 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-278-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "282",
+            "output_file_name": "s01e282.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 279 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-279-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "283",
+            "output_file_name": "s01e283.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 280 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-280-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "284",
+            "output_file_name": "s01e284.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 281 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-281-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "285",
+            "output_file_name": "s01e285.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 282 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-282-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "286",
+            "output_file_name": "s01e286.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 283 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-283-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "287",
+            "output_file_name": "s01e287.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 284 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-284-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "288",
+            "output_file_name": "s01e288.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 285 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-285-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "289",
+            "output_file_name": "s01e289.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 286 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-286-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "290",
+            "output_file_name": "s01e290.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 287 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-287-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "291",
+            "output_file_name": "s01e291.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 288 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-288-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "292",
+            "output_file_name": "s01e292.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 289 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-289-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "293",
+            "output_file_name": "s01e293.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 290 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-290-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "294",
+            "output_file_name": "s01e294.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 291 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-291-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "295",
+            "output_file_name": "s01e295.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 292 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-292-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "296",
+            "output_file_name": "s01e296.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 293 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-293-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "297",
+            "output_file_name": "s01e297.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 294 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-294-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "298",
+            "output_file_name": "s01e298.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 295 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-295-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "299",
+            "output_file_name": "s01e299.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 296 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-296-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "300",
+            "output_file_name": "s01e300.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 297 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-297-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "301",
+            "output_file_name": "s01e301.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 298 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-298-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "302",
+            "output_file_name": "s01e302.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 299 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-299-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "303",
+            "output_file_name": "s01e303.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 300 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-300-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "304",
+            "output_file_name": "s01e304.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 301 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-301-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "305",
+            "output_file_name": "s01e305.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 302 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-302-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "306",
+            "output_file_name": "s01e306.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 303 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-303-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "307",
+            "output_file_name": "s01e307.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 304 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-304-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "308",
+            "output_file_name": "s01e308.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 305 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-305-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "309",
+            "output_file_name": "s01e309.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 306 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-306-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "310",
+            "output_file_name": "s01e310.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 307 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-307-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "311",
+            "output_file_name": "s01e311.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 308 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-308-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "312",
+            "output_file_name": "s01e312.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 309 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-309-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "313",
+            "output_file_name": "s01e313.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 310 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-310-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "314",
+            "output_file_name": "s01e314.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 311 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-311-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "315",
+            "output_file_name": "s01e315.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 312 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-312-english-dubbed-2",
+            "season_number": "01",
+            "episode_number": "316",
+            "output_file_name": "s01e316.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 313 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-313-english-dubbed",
+            "season_number": "01",
+            "episode_number": "317",
+            "output_file_name": "s01e317.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 314 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-314-english-dubbed",
+            "season_number": "01",
+            "episode_number": "318",
+            "output_file_name": "s01e318.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 315 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-315-english-dubbed",
+            "season_number": "01",
+            "episode_number": "319",
+            "output_file_name": "s01e319.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 316 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-316-english-dubbed",
+            "season_number": "01",
+            "episode_number": "320",
+            "output_file_name": "s01e320.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 317 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-317-english-dubbed",
+            "season_number": "01",
+            "episode_number": "321",
+            "output_file_name": "s01e321.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 318 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-318-english-dubbed",
+            "season_number": "01",
+            "episode_number": "322",
+            "output_file_name": "s01e322.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 319 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-319-english-dubbed",
+            "season_number": "01",
+            "episode_number": "323",
+            "output_file_name": "s01e323.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 320 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-320-english-dubbed",
+            "season_number": "01",
+            "episode_number": "324",
+            "output_file_name": "s01e324.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 321 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-321-english-dubbed",
+            "season_number": "01",
+            "episode_number": "325",
+            "output_file_name": "s01e325.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 322 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-322-english-dubbed",
+            "season_number": "01",
+            "episode_number": "326",
+            "output_file_name": "s01e326.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 323 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-323-english-dubbed",
+            "season_number": "01",
+            "episode_number": "327",
+            "output_file_name": "s01e327.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 324 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-324-english-dubbed",
+            "season_number": "01",
+            "episode_number": "328",
+            "output_file_name": "s01e328.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 325 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-325-english-dubbed",
+            "season_number": "01",
+            "episode_number": "329",
+            "output_file_name": "s01e329.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 326 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-326-english-dubbed",
+            "season_number": "01",
+            "episode_number": "330",
+            "output_file_name": "s01e330.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 327 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-327-english-dubbed",
+            "season_number": "01",
+            "episode_number": "331",
+            "output_file_name": "s01e331.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 328 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-328-english-dubbed",
+            "season_number": "01",
+            "episode_number": "332",
+            "output_file_name": "s01e332.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 329 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-329-english-dubbed",
+            "season_number": "01",
+            "episode_number": "333",
+            "output_file_name": "s01e333.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 330 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-330-english-dubbed",
+            "season_number": "01",
+            "episode_number": "334",
+            "output_file_name": "s01e334.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 331 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-331-english-dubbed",
+            "season_number": "01",
+            "episode_number": "335",
+            "output_file_name": "s01e335.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 332 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-332-english-dubbed",
+            "season_number": "01",
+            "episode_number": "336",
+            "output_file_name": "s01e336.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 333 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-333-english-dubbed",
+            "season_number": "01",
+            "episode_number": "337",
+            "output_file_name": "s01e337.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 334 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-334-english-dubbed",
+            "season_number": "01",
+            "episode_number": "338",
+            "output_file_name": "s01e338.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 335 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-335-english-dubbed",
+            "season_number": "01",
+            "episode_number": "339",
+            "output_file_name": "s01e339.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 336 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-336-english-dubbed",
+            "season_number": "01",
+            "episode_number": "340",
+            "output_file_name": "s01e340.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 337 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-337-english-dubbed",
+            "season_number": "01",
+            "episode_number": "341",
+            "output_file_name": "s01e341.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 338 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-338-english-dubbed",
+            "season_number": "01",
+            "episode_number": "342",
+            "output_file_name": "s01e342.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 339 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-339-english-dubbed",
+            "season_number": "01",
+            "episode_number": "343",
+            "output_file_name": "s01e343.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 340 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-340-english-dubbed",
+            "season_number": "01",
+            "episode_number": "344",
+            "output_file_name": "s01e344.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 341 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-341-english-dubbed",
+            "season_number": "01",
+            "episode_number": "345",
+            "output_file_name": "s01e345.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 342 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-342-english-dubbed",
+            "season_number": "01",
+            "episode_number": "346",
+            "output_file_name": "s01e346.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 343 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-343-english-dubbed",
+            "season_number": "01",
+            "episode_number": "347",
+            "output_file_name": "s01e347.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 344 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-344-english-dubbed",
+            "season_number": "01",
+            "episode_number": "348",
+            "output_file_name": "s01e348.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 345 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-345-english-dubbed",
+            "season_number": "01",
+            "episode_number": "349",
+            "output_file_name": "s01e349.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 346 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-346-english-dubbed",
+            "season_number": "01",
+            "episode_number": "350",
+            "output_file_name": "s01e350.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 347 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-347-english-dubbed",
+            "season_number": "01",
+            "episode_number": "351",
+            "output_file_name": "s01e351.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 348 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-348-english-dubbed",
+            "season_number": "01",
+            "episode_number": "352",
+            "output_file_name": "s01e352.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 349 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-349-english-dubbed",
+            "season_number": "01",
+            "episode_number": "353",
+            "output_file_name": "s01e353.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 350 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-350-english-dubbed",
+            "season_number": "01",
+            "episode_number": "354",
+            "output_file_name": "s01e354.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 351 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-351-english-dubbed",
+            "season_number": "01",
+            "episode_number": "355",
+            "output_file_name": "s01e355.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 352 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-352-english-dubbed",
+            "season_number": "01",
+            "episode_number": "356",
+            "output_file_name": "s01e356.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 353 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-353-english-dubbed",
+            "season_number": "01",
+            "episode_number": "357",
+            "output_file_name": "s01e357.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 354 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-354-english-dubbed",
+            "season_number": "01",
+            "episode_number": "358",
+            "output_file_name": "s01e358.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 355 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-355-english-dubbed",
+            "season_number": "01",
+            "episode_number": "359",
+            "output_file_name": "s01e359.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 356 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-356-english-dubbed",
+            "season_number": "01",
+            "episode_number": "360",
+            "output_file_name": "s01e360.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 357 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-357-english-dubbed",
+            "season_number": "01",
+            "episode_number": "361",
+            "output_file_name": "s01e361.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 358 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-358-english-dubbed",
+            "season_number": "01",
+            "episode_number": "362",
+            "output_file_name": "s01e362.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 359 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-359-english-dubbed",
+            "season_number": "01",
+            "episode_number": "363",
+            "output_file_name": "s01e363.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 360 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-360-english-dubbed",
+            "season_number": "01",
+            "episode_number": "364",
+            "output_file_name": "s01e364.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 361 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-361-english-dubbed",
+            "season_number": "01",
+            "episode_number": "365",
+            "output_file_name": "s01e365.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 362 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-362-english-dubbed",
+            "season_number": "01",
+            "episode_number": "366",
+            "output_file_name": "s01e366.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 363 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-363-english-dubbed",
+            "season_number": "01",
+            "episode_number": "367",
+            "output_file_name": "s01e367.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 364 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-364-english-dubbed",
+            "season_number": "01",
+            "episode_number": "368",
+            "output_file_name": "s01e368.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 365 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-365-english-dubbed",
+            "season_number": "01",
+            "episode_number": "369",
+            "output_file_name": "s01e369.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 366 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-366-english-dubbed",
+            "season_number": "01",
+            "episode_number": "370",
+            "output_file_name": "s01e370.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 367 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-367-english-dubbed",
+            "season_number": "01",
+            "episode_number": "371",
+            "output_file_name": "s01e371.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 368 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-368-english-dubbed",
+            "season_number": "01",
+            "episode_number": "372",
+            "output_file_name": "s01e372.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 369 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-369-english-dubbed",
+            "season_number": "01",
+            "episode_number": "373",
+            "output_file_name": "s01e373.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 370 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-370-english-dubbed",
+            "season_number": "01",
+            "episode_number": "374",
+            "output_file_name": "s01e374.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 371 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-371-english-dubbed",
+            "season_number": "01",
+            "episode_number": "375",
+            "output_file_name": "s01e375.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 372 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-372-english-dubbed",
+            "season_number": "01",
+            "episode_number": "376",
+            "output_file_name": "s01e376.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 373 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-373-english-dubbed",
+            "season_number": "01",
+            "episode_number": "377",
+            "output_file_name": "s01e377.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 374 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-374-english-dubbed",
+            "season_number": "01",
+            "episode_number": "378",
+            "output_file_name": "s01e378.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 375 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-375-english-dubbed",
+            "season_number": "01",
+            "episode_number": "379",
+            "output_file_name": "s01e379.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 376 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-376-english-dubbed",
+            "season_number": "01",
+            "episode_number": "380",
+            "output_file_name": "s01e380.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 377 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-377-english-dubbed",
+            "season_number": "01",
+            "episode_number": "381",
+            "output_file_name": "s01e381.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 378 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-378-english-dubbed",
+            "season_number": "01",
+            "episode_number": "382",
+            "output_file_name": "s01e382.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 379 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-379-english-dubbed",
+            "season_number": "01",
+            "episode_number": "383",
+            "output_file_name": "s01e383.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 380 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-380-english-dubbed",
+            "season_number": "01",
+            "episode_number": "384",
+            "output_file_name": "s01e384.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 381 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-381-english-dubbed",
+            "season_number": "01",
+            "episode_number": "385",
+            "output_file_name": "s01e385.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 382 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-382-english-dubbed",
+            "season_number": "01",
+            "episode_number": "386",
+            "output_file_name": "s01e386.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 383 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-383-english-dubbed",
+            "season_number": "01",
+            "episode_number": "387",
+            "output_file_name": "s01e387.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 384 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-384-english-dubbed",
+            "season_number": "01",
+            "episode_number": "388",
+            "output_file_name": "s01e388.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 385 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-385-english-dubbed",
+            "season_number": "01",
+            "episode_number": "389",
+            "output_file_name": "s01e389.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 386 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-386-english-dubbed",
+            "season_number": "01",
+            "episode_number": "390",
+            "output_file_name": "s01e390.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 387 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-387-english-dubbed",
+            "season_number": "01",
+            "episode_number": "391",
+            "output_file_name": "s01e391.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 388 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-388-english-dubbed",
+            "season_number": "01",
+            "episode_number": "392",
+            "output_file_name": "s01e392.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 389 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-389-english-dubbed",
+            "season_number": "01",
+            "episode_number": "393",
+            "output_file_name": "s01e393.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 390 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-390-english-dubbed",
+            "season_number": "01",
+            "episode_number": "394",
+            "output_file_name": "s01e394.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 391 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-391-english-dubbed",
+            "season_number": "01",
+            "episode_number": "395",
+            "output_file_name": "s01e395.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 392 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-392-english-dubbed",
+            "season_number": "01",
+            "episode_number": "396",
+            "output_file_name": "s01e396.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 393 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-393-english-dubbed",
+            "season_number": "01",
+            "episode_number": "397",
+            "output_file_name": "s01e397.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 394 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-394-english-dubbed",
+            "season_number": "01",
+            "episode_number": "398",
+            "output_file_name": "s01e398.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 395 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-395-english-dubbed",
+            "season_number": "01",
+            "episode_number": "399",
+            "output_file_name": "s01e399.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 396 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-396-english-dubbed",
+            "season_number": "01",
+            "episode_number": "400",
+            "output_file_name": "s01e400.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 397 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-397-english-dubbed",
+            "season_number": "01",
+            "episode_number": "401",
+            "output_file_name": "s01e401.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 398 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-398-english-dubbed",
+            "season_number": "01",
+            "episode_number": "402",
+            "output_file_name": "s01e402.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 399 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-399-english-dubbed",
+            "season_number": "01",
+            "episode_number": "403",
+            "output_file_name": "s01e403.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 400 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-400-english-dubbed",
+            "season_number": "01",
+            "episode_number": "404",
+            "output_file_name": "s01e404.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 401 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-401-english-dubbed",
+            "season_number": "01",
+            "episode_number": "405",
+            "output_file_name": "s01e405.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 402 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-402-english-dubbed",
+            "season_number": "01",
+            "episode_number": "406",
+            "output_file_name": "s01e406.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 403 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-403-english-dubbed",
+            "season_number": "01",
+            "episode_number": "407",
+            "output_file_name": "s01e407.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 404 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-404-english-dubbed",
+            "season_number": "01",
+            "episode_number": "408",
+            "output_file_name": "s01e408.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 405 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-405-english-dubbed",
+            "season_number": "01",
+            "episode_number": "409",
+            "output_file_name": "s01e409.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 406 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-406-english-dubbed",
+            "season_number": "01",
+            "episode_number": "410",
+            "output_file_name": "s01e410.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 407 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-407-english-dubbed",
+            "season_number": "01",
+            "episode_number": "411",
+            "output_file_name": "s01e411.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 408 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-408-english-dubbed",
+            "season_number": "01",
+            "episode_number": "412",
+            "output_file_name": "s01e412.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 409 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-409-english-dubbed",
+            "season_number": "01",
+            "episode_number": "413",
+            "output_file_name": "s01e413.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 410 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-410-english-dubbed",
+            "season_number": "01",
+            "episode_number": "414",
+            "output_file_name": "s01e414.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 411 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-411-english-dubbed",
+            "season_number": "01",
+            "episode_number": "415",
+            "output_file_name": "s01e415.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 412 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-412-english-dubbed",
+            "season_number": "01",
+            "episode_number": "416",
+            "output_file_name": "s01e416.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 413 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-413-english-dubbed",
+            "season_number": "01",
+            "episode_number": "417",
+            "output_file_name": "s01e417.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 414 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-414-english-dubbed",
+            "season_number": "01",
+            "episode_number": "418",
+            "output_file_name": "s01e418.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 415 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-415-english-dubbed",
+            "season_number": "01",
+            "episode_number": "419",
+            "output_file_name": "s01e419.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 416 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-416-english-dubbed",
+            "season_number": "01",
+            "episode_number": "420",
+            "output_file_name": "s01e420.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 417 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-417-english-dubbed",
+            "season_number": "01",
+            "episode_number": "421",
+            "output_file_name": "s01e421.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 418 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-418-english-dubbed",
+            "season_number": "01",
+            "episode_number": "422",
+            "output_file_name": "s01e422.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 419 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-419-english-dubbed",
+            "season_number": "01",
+            "episode_number": "423",
+            "output_file_name": "s01e423.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 420 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-420-english-dubbed",
+            "season_number": "01",
+            "episode_number": "424",
+            "output_file_name": "s01e424.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 421 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-421-english-dubbed",
+            "season_number": "01",
+            "episode_number": "425",
+            "output_file_name": "s01e425.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 422 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-422-english-dubbed",
+            "season_number": "01",
+            "episode_number": "426",
+            "output_file_name": "s01e426.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 423 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-423-english-dubbed",
+            "season_number": "01",
+            "episode_number": "427",
+            "output_file_name": "s01e427.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 424 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-424-english-dubbed",
+            "season_number": "01",
+            "episode_number": "428",
+            "output_file_name": "s01e428.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 425 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-425-english-dubbed",
+            "season_number": "01",
+            "episode_number": "429",
+            "output_file_name": "s01e429.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 426 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-426-english-dubbed",
+            "season_number": "01",
+            "episode_number": "430",
+            "output_file_name": "s01e430.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 427 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-427-english-dubbed",
+            "season_number": "01",
+            "episode_number": "431",
+            "output_file_name": "s01e431.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 428 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-428-english-dubbed",
+            "season_number": "01",
+            "episode_number": "432",
+            "output_file_name": "s01e432.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 429 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-429-english-dubbed",
+            "season_number": "01",
+            "episode_number": "433",
+            "output_file_name": "s01e433.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 430 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-430-english-dubbed",
+            "season_number": "01",
+            "episode_number": "434",
+            "output_file_name": "s01e434.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 431 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-431-english-dubbed",
+            "season_number": "01",
+            "episode_number": "435",
+            "output_file_name": "s01e435.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 432 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-432-english-dubbed",
+            "season_number": "01",
+            "episode_number": "436",
+            "output_file_name": "s01e436.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 433 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-433-english-dubbed",
+            "season_number": "01",
+            "episode_number": "437",
+            "output_file_name": "s01e437.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 434 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-434-english-dubbed",
+            "season_number": "01",
+            "episode_number": "438",
+            "output_file_name": "s01e438.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 435 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-435-english-dubbed",
+            "season_number": "01",
+            "episode_number": "439",
+            "output_file_name": "s01e439.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 436 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-436-english-dubbed",
+            "season_number": "01",
+            "episode_number": "440",
+            "output_file_name": "s01e440.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 437 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-437-english-dubbed",
+            "season_number": "01",
+            "episode_number": "441",
+            "output_file_name": "s01e441.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 438 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-438-english-dubbed",
+            "season_number": "01",
+            "episode_number": "442",
+            "output_file_name": "s01e442.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 439 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-439-english-dubbed",
+            "season_number": "01",
+            "episode_number": "443",
+            "output_file_name": "s01e443.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 440 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-440-english-dubbed",
+            "season_number": "01",
+            "episode_number": "444",
+            "output_file_name": "s01e444.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 441 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-441-english-dubbed",
+            "season_number": "01",
+            "episode_number": "445",
+            "output_file_name": "s01e445.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 442 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-442-english-dubbed",
+            "season_number": "01",
+            "episode_number": "446",
+            "output_file_name": "s01e446.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 443 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-443-english-dubbed",
+            "season_number": "01",
+            "episode_number": "447",
+            "output_file_name": "s01e447.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 444 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-444-english-dubbed",
+            "season_number": "01",
+            "episode_number": "448",
+            "output_file_name": "s01e448.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 445 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-445-english-dubbed",
+            "season_number": "01",
+            "episode_number": "449",
+            "output_file_name": "s01e449.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 446 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-446-english-dubbed",
+            "season_number": "01",
+            "episode_number": "450",
+            "output_file_name": "s01e450.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 447 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-447-english-dubbed",
+            "season_number": "01",
+            "episode_number": "451",
+            "output_file_name": "s01e451.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 448 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-448-english-dubbed",
+            "season_number": "01",
+            "episode_number": "452",
+            "output_file_name": "s01e452.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 449 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-449-english-dubbed",
+            "season_number": "01",
+            "episode_number": "453",
+            "output_file_name": "s01e453.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 450 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-450-english-dubbed",
+            "season_number": "01",
+            "episode_number": "454",
+            "output_file_name": "s01e454.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 451 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-451-english-dubbed",
+            "season_number": "01",
+            "episode_number": "455",
+            "output_file_name": "s01e455.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 452 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-452-english-dubbed",
+            "season_number": "01",
+            "episode_number": "456",
+            "output_file_name": "s01e456.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 453 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-453-english-dubbed",
+            "season_number": "01",
+            "episode_number": "457",
+            "output_file_name": "s01e457.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 454 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-454-english-dubbed",
+            "season_number": "01",
+            "episode_number": "458",
+            "output_file_name": "s01e458.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 455 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-455-english-dubbed",
+            "season_number": "01",
+            "episode_number": "459",
+            "output_file_name": "s01e459.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 456 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-456-english-dubbed",
+            "season_number": "01",
+            "episode_number": "460",
+            "output_file_name": "s01e460.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 457 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-457-english-dubbed",
+            "season_number": "01",
+            "episode_number": "461",
+            "output_file_name": "s01e461.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 458 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-458-english-dubbed",
+            "season_number": "01",
+            "episode_number": "462",
+            "output_file_name": "s01e462.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 459 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-459-english-dubbed",
+            "season_number": "01",
+            "episode_number": "463",
+            "output_file_name": "s01e463.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 460 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-460-english-dubbed",
+            "season_number": "01",
+            "episode_number": "464",
+            "output_file_name": "s01e464.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 461 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-461-english-dubbed",
+            "season_number": "01",
+            "episode_number": "465",
+            "output_file_name": "s01e465.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 462 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-462-english-dubbed",
+            "season_number": "01",
+            "episode_number": "466",
+            "output_file_name": "s01e466.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 463 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-463-english-dubbed",
+            "season_number": "01",
+            "episode_number": "467",
+            "output_file_name": "s01e467.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 464 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-464-english-dubbed",
+            "season_number": "01",
+            "episode_number": "468",
+            "output_file_name": "s01e468.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 465 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-465-english-dubbed",
+            "season_number": "01",
+            "episode_number": "469",
+            "output_file_name": "s01e469.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 466 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-466-english-dubbed",
+            "season_number": "01",
+            "episode_number": "470",
+            "output_file_name": "s01e470.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 467 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-467-english-dubbed",
+            "season_number": "01",
+            "episode_number": "471",
+            "output_file_name": "s01e471.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 468 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-468-english-dubbed",
+            "season_number": "01",
+            "episode_number": "472",
+            "output_file_name": "s01e472.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 469 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-469-english-dubbed",
+            "season_number": "01",
+            "episode_number": "473",
+            "output_file_name": "s01e473.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 470 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-470-english-dubbed",
+            "season_number": "01",
+            "episode_number": "474",
+            "output_file_name": "s01e474.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 471 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-471-english-dubbed",
+            "season_number": "01",
+            "episode_number": "475",
+            "output_file_name": "s01e475.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 472 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-472-english-dubbed",
+            "season_number": "01",
+            "episode_number": "476",
+            "output_file_name": "s01e476.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 473 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-473-english-dubbed",
+            "season_number": "01",
+            "episode_number": "477",
+            "output_file_name": "s01e477.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 474 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-474-english-dubbed",
+            "season_number": "01",
+            "episode_number": "478",
+            "output_file_name": "s01e478.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 475 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-475-english-dubbed",
+            "season_number": "01",
+            "episode_number": "479",
+            "output_file_name": "s01e479.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 476 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-476-english-dubbed",
+            "season_number": "01",
+            "episode_number": "480",
+            "output_file_name": "s01e480.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 477 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-477-english-dubbed",
+            "season_number": "01",
+            "episode_number": "481",
+            "output_file_name": "s01e481.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 478 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-478-english-dubbed",
+            "season_number": "01",
+            "episode_number": "482",
+            "output_file_name": "s01e482.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 479 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-479-english-dubbed",
+            "season_number": "01",
+            "episode_number": "483",
+            "output_file_name": "s01e483.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 480 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-480-english-dubbed",
+            "season_number": "01",
+            "episode_number": "484",
+            "output_file_name": "s01e484.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 481 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-481-english-dubbed",
+            "season_number": "01",
+            "episode_number": "485",
+            "output_file_name": "s01e485.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 482 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-482-english-dubbed",
+            "season_number": "01",
+            "episode_number": "486",
+            "output_file_name": "s01e486.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 483 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-483-english-dubbed",
+            "season_number": "01",
+            "episode_number": "487",
+            "output_file_name": "s01e487.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 484 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-484-english-dubbed",
+            "season_number": "01",
+            "episode_number": "488",
+            "output_file_name": "s01e488.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 485 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-485-english-dubbed",
+            "season_number": "01",
+            "episode_number": "489",
+            "output_file_name": "s01e489.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Episode 486 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-episode-486-english-dubbed",
+            "season_number": "01",
+            "episode_number": "490",
+            "output_file_name": "s01e490.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 487 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-487-english-dubbed",
+            "season_number": "01",
+            "episode_number": "491",
+            "output_file_name": "s01e491.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 488 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-488-english-dubbed",
+            "season_number": "01",
+            "episode_number": "492",
+            "output_file_name": "s01e492.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 489 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-489-english-dubbed",
+            "season_number": "01",
+            "episode_number": "493",
+            "output_file_name": "s01e493.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 490 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-490-english-dubbed",
+            "season_number": "01",
+            "episode_number": "494",
+            "output_file_name": "s01e494.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 491 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-491-english-dubbed",
+            "season_number": "01",
+            "episode_number": "495",
+            "output_file_name": "s01e495.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 492 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-492-english-dubbed",
+            "season_number": "01",
+            "episode_number": "496",
+            "output_file_name": "s01e496.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 493 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-493-english-dubbed",
+            "season_number": "01",
+            "episode_number": "497",
+            "output_file_name": "s01e497.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 494 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-494-english-dubbed",
+            "season_number": "01",
+            "episode_number": "498",
+            "output_file_name": "s01e498.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 495 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-495-english-dubbed",
+            "season_number": "01",
+            "episode_number": "499",
+            "output_file_name": "s01e499.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 496 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-496-english-dubbed",
+            "season_number": "01",
+            "episode_number": "500",
+            "output_file_name": "s01e500.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 497 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-497-english-dubbed",
+            "season_number": "01",
+            "episode_number": "501",
+            "output_file_name": "s01e501.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 498 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-498-english-dubbed",
+            "season_number": "01",
+            "episode_number": "502",
+            "output_file_name": "s01e502.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 499 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-499-english-dubbed",
+            "season_number": "01",
+            "episode_number": "503",
+            "output_file_name": "s01e503.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuuden Episode 500 English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuuden-episode-500-english-dubbed",
+            "season_number": "01",
+            "episode_number": "504",
+            "output_file_name": "s01e504.mp4"
+        },
+        {
+            "episode_title": "Naruto OVA, the Genie, and the Three Wishes, Believe It! English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-the-genie-and-the-three-wishes-believe-it-english-dubbed",
+            "season_number": "01",
+            "episode_number": "505",
+            "output_file_name": "s01e505.mp4"
+        },
+        {
+            "episode_title": "Naruto The Movie: The Last English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-the-movie-the-last-english-dubbed",
+            "season_number": "01",
+            "episode_number": "506",
+            "output_file_name": "s01e506.mp4"
+        },
+        {
+            "episode_title": "Naruto Shippuden Movie 7: The Last English Dubbed",
+            "href": "https://www.wcostream.tv/naruto-shippuden-movie-7-the-last-english-dubbed",
+            "season_number": "01",
+            "episode_number": "507",
+            "output_file_name": "s01e507.mp4"
+        }
+    ]
+}
